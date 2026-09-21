@@ -58,7 +58,9 @@ jobs:
           key: argos-en-pt-1.9-minisbd-1.11.0-v1
       - name: Install local translation engine
         if: steps.translations.outputs.pending != '0' || inputs.test_translation == true
-        run: python -m pip install -r requirements-translation.txt
+        run: |
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install -r requirements-translation.txt
       - name: Exercise the real translation engine
         if: inputs.test_translation == true
         run: python tests/translation_smoke.py

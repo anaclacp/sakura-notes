@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 
 from bs4 import BeautifulSoup
+from bs4.element import NavigableString
 
 from parse_glossary import entries, parse_glossary
 
@@ -52,9 +53,7 @@ class ArgosTranslator:
         self.translation = translate.get_translation_from_codes("en", "pt")
 
     def __call__(self, term):
-        from translatehtml import translate_html
-
-        result = {"term": self.translation.translate(term["term"]), "html": str(translate_html(self.translation, term["html"]))}
+        result = {"term": self.translation.translate(term["term"]), "html": translate_markup(self.translation, term["html"])}
         source = BeautifulSoup(term["html"], "html.parser")
         target = BeautifulSoup(result["html"], "html.parser")
         if [(t.name, t.attrs) for t in source.find_all(True)] != [(t.name, t.attrs) for t in target.find_all(True)]:
@@ -62,6 +61,30 @@ class ArgosTranslator:
         if [t.get_text() for t in source.find_all("code")] != [t.get_text() for t in target.find_all("code")]:
             raise ValueError(f"Translation changed code: {term['anchor']}")
         return result
+
+
+def translate_markup(translation, html):
+    # Adapted from translate-html (MIT); see THIRD_PARTY_NOTICES.md.
+    # Use Argos' tag-aware engine without translatehtml's obsolete BS4 pin.
+    from argostranslate.tags import Tag, translate_tags
+
+    def wrap(node):
+        if isinstance(node, NavigableString):
+            return str(node)
+        item = Tag([wrap(child) for child in node.contents], node.name not in {"code", "pre"} and node.get("translate") != "no")
+        item.soup = node
+        return item
+
+    def unwrap(item):
+        if isinstance(item, str):
+            return NavigableString(item)
+        node = item.soup
+        node.clear()
+        node.extend(unwrap(child) for child in item.children)
+        return node
+
+    soup = BeautifulSoup(html, "html.parser")
+    return str(unwrap(translate_tags(translation, wrap(soup))))
 
 
 def synchronize(data, translations, state, translator):
