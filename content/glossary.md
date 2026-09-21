@@ -4,41 +4,45 @@ Glossary built while studying Responsible AI, OWASP GenAI and AI Engineering.
 
 ## Index
 
-**A** — [Adapter](#adapter) · [Adversarial Perturbation](#adversarial-perturbation) · [AIBOM — AI Bill of Materials](#aibom--ai-bill-of-materials) · [Artifact](#artifact) · [Attestation](#attestation)
+**A** — [Adapter](#adapter) · [Adversarial Perturbation](#adversarial-perturbation) · [AIBOM — AI Bill of Materials](#aibom--ai-bill-of-materials) · [Artifact](#artifact) · [Assumption](#assumption) · [Attestation](#attestation) · [Authorization](#authorization)
 
 **B** — [Backdoor](#backdoor) · [Baseline](#baseline) · [Biased Output](#biased-output) · [Blast Radius](#blast-radius)
 
-**C** — [Chat Template](#chat-template) · [Circuit Breaker](#circuit-breaker) · [Concurrency](#concurrency) · [Context Window](#context-window) · [Continuous Learning](#continuous-learning) · [Corpus / Corpora](#corpus--corpora) · [Cost Asymmetry](#cost-asymmetry) · [Curated Dataset](#curated-dataset)
+**C** — [Chat Template](#chat-template) · [Circuit Breaker](#circuit-breaker) · [Claim-Check-Act](#claim-check-act) · [Concurrency](#concurrency) · [Content Security Policy — CSP](#content-security-policy--csp) · [Context Window](#context-window) · [Context-Aware Output Encoding](#context-aware-output-encoding) · [Continuous Learning](#continuous-learning) · [Control Character](#control-character) · [Corpus / Corpora](#corpus--corpora) · [Cosine Similarity](#cosine-similarity) · [Cost Asymmetry](#cost-asymmetry) · [Cross-Tenant Leakage](#cross-tenant-leakage) · [Curated Dataset](#curated-dataset)
 
-**D** — [Data Exfiltration](#data-exfiltration) · [Data Poisoning](#data-poisoning) · [Denial of Wallet — DoW](#denial-of-wallet--dow) · [Deprecated](#deprecated) · [Digest](#digest) · [Distillation](#distillation) · [Downstream](#downstream) · [Downstream Operation](#downstream-operation) · [Drift](#drift) · [Durable Corruption](#durable-corruption) · [DVC — Data Version Control](#dvc--data-version-control)
+**D** — [Data Exfiltration](#data-exfiltration) · [Data Poisoning](#data-poisoning) · [Deduplication](#deduplication) · [Denial of Wallet — DoW](#denial-of-wallet--dow) · [Deprecated](#deprecated) · [Developer Instructions](#developer-instructions) · [Digest](#digest) · [Distillation](#distillation) · [Downstream](#downstream) · [Downstream Operation](#downstream-operation) · [Drift](#drift) · [Durable Corruption](#durable-corruption) · [DVC — Data Version Control](#dvc--data-version-control)
 
-**E** — [Embedding](#embedding) · [EOS — End-of-Sequence Token](#eos--end-of-sequence-token)
+**E** — [Embedding](#embedding) · [Embedding Inversion](#embedding-inversion) · [EOS — End-of-Sequence Token](#eos--end-of-sequence-token) · [Escaping](#escaping)
 
-**F** — [Fan-Out](#fan-out) · [Feedback Loop](#feedback-loop) · [Fine-Tuning](#fine-tuning)
+**F** — [Fan-Out](#fan-out) · [Feedback Loop](#feedback-loop) · [Fine-Tuning](#fine-tuning) · [Forged Evidence](#forged-evidence) · [Function Schema](#function-schema)
 
-**G** — [Graceful Degradation](#graceful-degradation) · [Grounding](#grounding)
+**G** — [Graceful Degradation](#graceful-degradation) · [Groundedness](#groundedness) · [Grounding](#grounding)
 
-**H** — [Hard Spending Cap](#hard-spending-cap) · [Hardening](#hardening) · [Hash](#hash) · [Hash Pinning](#hash-pinning)
+**H** — [Hard Spending Cap](#hard-spending-cap) · [Hardening](#hardening) · [Hash](#hash) · [Hash Pinning](#hash-pinning) · [Hidden Context](#hidden-context)
 
-**I** — [Immutable Reference](#immutable-reference) · [Inference](#inference) · [Inference Endpoint](#inference-endpoint) · [Integrity](#integrity)
+**I** — [Immutable Reference](#immutable-reference) · [Improper Output Handling](#improper-output-handling) · [Incorrect State Inference](#incorrect-state-inference) · [Inference](#inference) · [Inference Endpoint](#inference-endpoint) · [Integrity](#integrity)
 
 **L** — [Label Poisoning](#label-poisoning) · [Lineage](#lineage) · [Log-Probabilities](#log-probabilities) · [Logits](#logits) · [LoRA — Low-Rank Adaptation](#lora--low-rank-adaptation)
 
-**M** — [Model Card](#model-card) · [Model Extraction](#model-extraction) · [Model Poisoning](#model-poisoning) · [Model Provenance](#model-provenance) · [Multimodal](#multimodal) · [Mutable Reference](#mutable-reference)
+**M** — [Membership Inference](#membership-inference) · [Misattributed Evidence](#misattributed-evidence) · [Misinformation](#misinformation) · [Model Card](#model-card) · [Model Extraction](#model-extraction) · [Model Poisoning](#model-poisoning) · [Model Provenance](#model-provenance) · [Multimodal](#multimodal) · [Mutable Reference](#mutable-reference)
 
-**O** — [Output Budget](#output-budget)
+**O** — [Omission Failure](#omission-failure) · [Output Budget](#output-budget) · [Output Encoding](#output-encoding) · [Overreliance](#overreliance)
 
-**P** — [PEFT — Parameter-Efficient Fine-Tuning](#peft--parameter-efficient-fine-tuning) · [Poisoning](#poisoning) · [Pre-Flight Token Estimation](#pre-flight-token-estimation) · [Provenance](#provenance)
+**P** — [Parameterized Query](#parameterized-query) · [Path Traversal](#path-traversal) · [PEFT — Parameter-Efficient Fine-Tuning](#peft--parameter-efficient-fine-tuning) · [Poisoning](#poisoning) · [Pre-Flight Token Estimation](#pre-flight-token-estimation) · [Prepared Statement](#prepared-statement) · [Privilege Separation](#privilege-separation) · [Probing](#probing) · [Provenance](#provenance)
 
 **Q** — [Quantization](#quantization) · [Queue](#queue) · [Quota](#quota)
 
-**R** — [RAG — Retrieval-Augmented Generation](#rag--retrieval-augmented-generation) · [RAG Poisoning](#rag-poisoning) · [Rate Limiting](#rate-limiting) · [Reasoning Loop](#reasoning-loop) · [Recursion Depth](#recursion-depth) · [Red Teaming](#red-teaming) · [Resource Allocation](#resource-allocation) · [Resource Exhaustion](#resource-exhaustion) · [RLHF — Reinforcement Learning from Human Feedback](#rlhf--reinforcement-learning-from-human-feedback)
+**R** — [RAG — Retrieval-Augmented Generation](#rag--retrieval-augmented-generation) · [RAG Poisoning](#rag-poisoning) · [Rate Limiting](#rate-limiting) · [RCE — Remote Code Execution](#rce--remote-code-execution) · [Reasoning Loop](#reasoning-loop) · [Recursion Depth](#recursion-depth) · [Red Teaming](#red-teaming) · [Resource Allocation](#resource-allocation) · [Resource Exhaustion](#resource-exhaustion) · [Retrieval Jamming](#retrieval-jamming) · [Reverse Engineering](#reverse-engineering) · [RLHF — Reinforcement Learning from Human Feedback](#rlhf--reinforcement-learning-from-human-feedback) · [Runtime Verification](#runtime-verification)
 
-**S** — [Sandbox / Sandboxing](#sandbox--sandboxing) · [SBOM — Software Bill of Materials](#sbom--software-bill-of-materials) · [Serialization](#serialization) · [Sleeper Agent](#sleeper-agent) · [Slopsquatting](#slopsquatting) · [Special Token](#special-token) · [Sponge Example](#sponge-example) · [State Hashing](#state-hashing) · [Supply Chain](#supply-chain)
+**S** — [Sandbox / Sandboxing](#sandbox--sandboxing) · [Sanitization](#sanitization) · [SBOM — Software Bill of Materials](#sbom--software-bill-of-materials) · [Security Boundary](#security-boundary) · [Semantic Cache](#semantic-cache) · [Serialization](#serialization) · [Similarity Score](#similarity-score) · [Sleeper Agent](#sleeper-agent) · [Slopsquatting](#slopsquatting) · [Special Token](#special-token) · [Sponge Example](#sponge-example) · [State Hashing](#state-hashing) · [State Inference](#state-inference) · [Supply Chain](#supply-chain) · [System Prompt](#system-prompt)
 
-**T** — [Tampering](#tampering) · [T&Cs — Terms and Conditions](#tcs--terms-and-conditions) · [Thinking Tokens](#thinking-tokens) · [Third Party](#third-party) · [Token Budget](#token-budget) · [Tool-Calling Loop](#tool-calling-loop) · [Trigger](#trigger) · [Trust Boundary](#trust-boundary)
+**T** — [Tampering](#tampering) · [T&Cs — Terms and Conditions](#tcs--terms-and-conditions) · [Tenant](#tenant) · [Thinking Tokens](#thinking-tokens) · [Third Party](#third-party) · [Threshold](#threshold) · [Token Budget](#token-budget) · [Tool Schema](#tool-schema) · [Tool-Calling Loop](#tool-calling-loop) · [Trigger](#trigger) · [Trust Boundary](#trust-boundary) · [Trust Tier](#trust-tier)
 
-**V** — [Vet / Vet a Supplier](#vet--vet-a-supplier)
+**V** — [Validation](#validation) · [Vector Database](#vector-database) · [Vet / Vet a Supplier](#vet--vet-a-supplier)
+
+**X** — [XSS — Cross-Site Scripting](#xss--cross-site-scripting)
+
+**Z** — [Zero Trust](#zero-trust)
 
 **[Key Distinctions](#key-distinctions)** — [Signed ≠ Safe](#signed--safe) · [Safe Format ≠ Safe Model](#safe-format--safe-model) · [Provenance vs Integrity](#provenance-vs-integrity) · [Supply Chain vs Poisoning](#supply-chain-vs-poisoning)
 
@@ -100,11 +104,31 @@ Examples:
 
 ---
 
+### Assumption
+
+An idea or condition treated as true without having been directly verified.
+
+In AI systems, assumptions should be clearly distinguished from verified facts.
+
+**PT:** suposição.
+
+---
+
 ### Attestation
 
 A mechanism used to verify that a device, environment or software instance is running in an expected and trusted state.
 
 Often used in device and infrastructure security.
+
+---
+
+### Authorization
+
+The process of determining whether an authenticated user, agent, or service is allowed to perform a specific action or access a resource.
+
+Authentication answers **who are you?**
+
+Authorization answers **what are you allowed to do?**
 
 ---
 
@@ -157,9 +181,33 @@ A control that automatically stops execution when predefined limits such as cost
 
 ---
 
+### Claim-Check-Act
+
+A safety pattern that separates model generation from execution.
+
+```text
+Claim
+  ↓
+Check
+  ↓
+Act
+```
+
+The model may propose or infer something, but the claim must be independently verified before an action is executed.
+
+---
+
 ### Concurrency
 
 The number of operations or tasks that are running at the same time.
+
+---
+
+### Content Security Policy — CSP
+
+A browser security mechanism that restricts which resources, scripts, frames, and other content a web page is allowed to load or execute.
+
+Useful as defense in depth against attacks such as XSS.
 
 ---
 
@@ -169,9 +217,38 @@ The maximum amount of information or tokens a model can process within one infer
 
 ---
 
+### Context-Aware Output Encoding
+
+Encoding model output according to the environment where it will be used.
+
+Examples:
+
+- HTML → HTML encoding
+- JavaScript → JavaScript encoding
+- URL → URL encoding
+- database values → parameterized queries
+
+There is no universal escaping strategy for every output context.
+
+---
+
 ### Continuous Learning
 
 A process where a model or system keeps learning from newly collected data after its initial deployment.
+
+---
+
+### Control Character
+
+A non-printable character that controls how a terminal, log viewer, protocol, or other system behaves rather than representing visible text.
+
+Examples include:
+
+- ANSI escape sequences
+- BEL
+- carriage return
+- backspace
+- OSC sequences
 
 ---
 
@@ -181,9 +258,27 @@ A collection of text or data used for training, evaluation or analysis. **Corpor
 
 ---
 
+### Cosine Similarity
+
+A metric commonly used to measure how similar two embedding vectors are based on the angle between them.
+
+Higher similarity generally means that two vectors are considered more semantically related.
+
+Commonly used in vector search and RAG.
+
+---
+
 ### Cost Asymmetry
 
 A situation where a small or inexpensive attacker action causes a disproportionately large computational or financial cost for the target system.
+
+---
+
+### Cross-Tenant Leakage
+
+Exposure or inference of information belonging to one tenant by another tenant in a multi-tenant system.
+
+In vector systems, this may happen when similarity search runs across a shared index before tenant-level filtering is applied.
 
 ---
 
@@ -207,6 +302,14 @@ Manipulation or contamination of data so that a model learns incorrect, biased o
 
 ---
 
+### Deduplication
+
+The process of detecting and removing duplicate or near-duplicate data.
+
+Semantic deduplication may use embedding similarity rather than exact text matching.
+
+---
+
 ### Denial of Wallet — DoW
 
 An attack that deliberately causes excessive paid resource usage until operating the service becomes financially unsustainable.
@@ -218,6 +321,14 @@ An attack that deliberately causes excessive paid resource usage until operating
 A component that is still available but is no longer recommended or actively maintained.
 
 Deprecated components may stop receiving security fixes.
+
+---
+
+### Developer Instructions
+
+Internal instructions provided by the application developer to guide model behavior.
+
+They are normally not intended to be visible to the end user, but should still be treated as potentially discoverable.
 
 ---
 
@@ -279,9 +390,33 @@ A numerical vector representation of data such as text, images or audio, designe
 
 ---
 
+### Embedding Inversion
+
+An attack that attempts to reconstruct original or approximate source content from its embedding vectors.
+
+```text
+Embedding
+   ↓
+Inversion
+   ↓
+Approximate Source Data
+```
+
+**Important:** Embedding ≠ anonymous data.
+
+---
+
 ### EOS — End-of-Sequence Token
 
 A special token used to indicate that model generation should stop.
+
+---
+
+### Escaping
+
+Transforming special characters so they are interpreted as data rather than executable syntax or control instructions.
+
+The correct escaping method depends on the destination context.
 
 ---
 
@@ -305,11 +440,48 @@ Additional training performed on an existing model to adapt it to a specific tas
 
 ---
 
+### Forged Evidence
+
+Fabricated or manipulated information presented as if it were legitimate evidence.
+
+Examples:
+
+- nonexistent reports
+- fabricated citations
+- fake tool results
+- invented records
+
+---
+
+### Function Schema
+
+A structured description of a function available to an LLM or agent.
+
+It may define:
+
+- function name
+- parameters
+- parameter types
+- descriptions
+- required fields
+
+Function schemas can reveal application capabilities and should not be treated as secrets or authorization mechanisms.
+
+---
+
 ## G
 
 ### Graceful Degradation
 
 A design strategy where the system reduces functionality under stress instead of completely failing.
+
+---
+
+### Groundedness
+
+The degree to which a model's claims are supported by the provided or authoritative evidence.
+
+A response can be fluent and confident while having poor groundedness.
 
 ---
 
@@ -356,6 +528,23 @@ This helps prevent silently replacing one artifact with another.
 
 ---
 
+### Hidden Context
+
+Information available to the model but not normally displayed to the end user.
+
+It may include:
+
+- system prompts
+- developer instructions
+- RAG policies
+- tool schemas
+- workflow rules
+- profile context
+
+**Hidden ≠ secret.**
+
+---
+
 ## I
 
 ### Immutable Reference
@@ -373,6 +562,39 @@ Unlike mutable references such as:
 ```text
 latest
 ```
+
+---
+
+### Improper Output Handling
+
+Unsafe use of LLM-generated output before it is passed to another component or system.
+
+```text
+LLM → shell
+LLM → SQL
+LLM → browser
+LLM → filesystem
+LLM → tool
+```
+
+Model output should be treated as untrusted input.
+
+---
+
+### Incorrect State Inference
+
+A failure where a model assumes that a system condition is true without verifying the real state.
+
+Example:
+
+```text
+LLM: payment = confirmed
+
+Actual system:
+payment = pending
+```
+
+Inferred state ≠ verified state.
 
 ---
 
@@ -446,6 +668,28 @@ Adapted Model
 
 ## M
 
+### Membership Inference
+
+An attack that tries to determine whether a specific piece of data exists in a dataset or index without necessarily retrieving its contents.
+
+In vector systems, similarity scores, timing, or response patterns may reveal membership.
+
+---
+
+### Misattributed Evidence
+
+Real or fabricated information incorrectly attributed to the wrong source, document, person, or authority.
+
+---
+
+### Misinformation
+
+Incorrect, incomplete, unsupported, or misleading information produced by an AI system that may influence a human decision or automated action.
+
+The primary risk is not only generating incorrect information, but having that information trusted and acted upon.
+
+---
+
 ### Model Card
 
 Documentation describing a model.
@@ -514,13 +758,81 @@ Today it may point to one artifact and later point to another.
 
 ## O
 
+### Omission Failure
+
+A failure caused by leaving out information that is necessary for a correct decision.
+
+Examples:
+
+- missing exceptions
+- missing risks
+- missing deadlines
+- missing conditions
+- missing timestamps
+
+The remaining information may appear correct while still being misleading.
+
+---
+
 ### Output Budget
 
 The maximum amount of output a model is allowed to generate for a request.
 
 ---
 
+### Output Encoding
+
+Transforming output so special characters are interpreted safely as data instead of executable code or markup.
+
+Example:
+
+```text
+<script>
+```
+
+may be encoded for HTML so the browser displays it as text rather than executing it.
+
+---
+
+### Overreliance
+
+Excessive trust in AI-generated output.
+
+It often occurs because fluent, confident, or well-structured responses appear authoritative.
+
+**Fluency ≠ correctness. Confidence ≠ evidence.**
+
+---
+
 ## P
+
+### Parameterized Query
+
+A database query where data values are supplied separately from the SQL command structure.
+
+Instead of constructing SQL using model-generated strings:
+
+```text
+SQL + arbitrary value
+```
+
+the SQL structure remains fixed and values are treated as data. This reduces SQL injection risk.
+
+---
+
+### Path Traversal
+
+A vulnerability where an attacker manipulates a file path to access files outside the intended directory.
+
+Common pattern:
+
+```text
+../../
+```
+
+LLM-generated file paths must be validated before filesystem access.
+
+---
 
 ### PEFT — Parameter-Efficient Fine-Tuning
 
@@ -552,6 +864,35 @@ Examples:
 ### Pre-Flight Token Estimation
 
 Estimating token usage and expected cost before sending a request to the model, allowing overly expensive requests to be rejected early.
+
+---
+
+### Prepared Statement
+
+A predefined database query structure where parameters are supplied separately from SQL syntax.
+
+Prepared statements help prevent untrusted data from becoming executable SQL.
+
+---
+
+### Privilege Separation
+
+A security principle that separates tasks and components according to the privileges they require.
+
+A component should not automatically inherit access to capabilities that are unnecessary for its task.
+
+---
+
+### Probing
+
+Repeatedly interacting with a system to discover:
+
+- hidden behavior
+- internal rules
+- limits
+- permissions
+- available tools
+- potential weaknesses
 
 ---
 
@@ -619,6 +960,19 @@ Restricting how frequently a user, application or source can perform actions or 
 
 ---
 
+### RCE — Remote Code Execution
+
+A vulnerability that allows an attacker to cause arbitrary code or commands to execute on another system.
+
+In LLM applications this may happen when model output is passed directly to:
+
+- shell commands
+- `exec`
+- `eval`
+- unsafe interpreters
+
+---
+
 ### Reasoning Loop
 
 A situation where a reasoning model repeatedly processes the same or related steps without reaching a useful termination state.
@@ -649,9 +1003,57 @@ A condition where resources such as GPU, CPU, memory, tokens, connections or API
 
 ---
 
+### Retrieval Jamming
+
+An availability attack against a retrieval system where specially crafted content interferes with useful retrieval.
+
+```text
+Query
+  ↓
+Blocker Document
+  ↓
+Bad Retrieval
+  ↓
+Refusal / Missing Answer
+```
+
+Unlike prompt injection, the retrieved content does not necessarily contain malicious instructions.
+
+---
+
+### Reverse Engineering
+
+The process of studying a system's behavior, structure, or outputs to infer how its internal mechanisms work.
+
+In AI security, this may be used to infer:
+
+- refusal rules
+- hidden instructions
+- thresholds
+- tools
+- workflows
+
+---
+
 ### RLHF — Reinforcement Learning from Human Feedback
 
 A training technique that uses human preferences or feedback as a signal to shape model behavior.
+
+---
+
+### Runtime Verification
+
+Checking conditions and system state at the moment an action is about to execute.
+
+Used especially for high-impact actions.
+
+```text
+LLM proposes action
+        ↓
+Runtime Check
+        ↓
+Allow / Reject
+```
 
 ---
 
@@ -660,6 +1062,21 @@ A training technique that uses human preferences or feedback as a signal to shap
 ### Sandbox / Sandboxing
 
 An isolated environment that restricts what a model, agent or untrusted component can access or execute.
+
+---
+
+### Sanitization
+
+Removing, modifying, or neutralizing potentially dangerous content before it reaches another component.
+
+Examples include removing:
+
+- dangerous HTML
+- control characters
+- unsafe URLs
+- unexpected markup
+
+Validation asks whether something is allowed. Sanitization makes dangerous content safer.
 
 ---
 
@@ -679,6 +1096,32 @@ It may contain:
 
 ---
 
+### Security Boundary
+
+A boundary where security controls determine whether access or an action is allowed.
+
+System prompts and hidden instructions should not be treated as security boundaries.
+
+---
+
+### Semantic Cache
+
+A cache that uses semantic similarity rather than exact matching to reuse previous results.
+
+```text
+New Query
+   ↓
+Embedding Similarity
+   ↓
+Similar Cached Query?
+   ↓
+Reuse Response
+```
+
+Its similarity threshold can become an attack surface.
+
+---
+
 ### Serialization
 
 The process of converting an object or model into a format that can be stored or transferred.
@@ -690,6 +1133,16 @@ Example:
 ```text
 Python pickle
 ```
+
+---
+
+### Similarity Score
+
+A numerical measurement representing how similar two vectors are.
+
+Similarity scores are commonly used to rank retrieval results.
+
+Exposing raw scores may enable information leakage or membership inference.
 
 ---
 
@@ -731,6 +1184,12 @@ Generating hashes from agent states so repeated states can be detected, helping 
 
 ---
 
+### State Inference
+
+The process of estimating or reasoning about the current state of a system from available information instead of reading that state directly from an authoritative source.
+
+---
+
 ### Supply Chain
 
 All components, suppliers and transformations a system depends on during development, training, deployment and execution.
@@ -749,6 +1208,19 @@ For AI systems this can include:
 **Simple definition:**
 
 > If the system depends on it, it is part of the supply chain.
+
+---
+
+### System Prompt
+
+High-level instructions supplied to a model by the application to define its role, behavior, constraints, or context.
+
+A system prompt can influence behavior but should not be treated as:
+
+- secure storage
+- authentication
+- authorization
+- deterministic policy enforcement
 
 ---
 
@@ -776,6 +1248,14 @@ For AI providers, they may define:
 
 ---
 
+### Tenant
+
+A customer, organization, workspace, or isolated group sharing the same underlying application infrastructure.
+
+A multi-tenant system serves multiple tenants while attempting to keep their data and permissions isolated.
+
+---
+
 ### Thinking Tokens
 
 Tokens or computational budget used internally by reasoning models while working through a problem before producing the visible response.
@@ -799,9 +1279,39 @@ Examples:
 
 ---
 
+### Threshold
+
+A predefined boundary used to make a decision.
+
+Example:
+
+```text
+similarity >= 0.85 → match
+similarity < 0.85  → no match
+```
+
+Thresholds are common in retrieval, semantic caches, classifiers, and security controls.
+
+---
+
 ### Token Budget
 
 The maximum number of tokens allowed or allocated for input, output, reasoning or an entire execution.
+
+---
+
+### Tool Schema
+
+A structured description of a tool exposed to an LLM or agent.
+
+It may reveal:
+
+- tool capabilities
+- accepted arguments
+- required parameters
+- internal functionality
+
+Tool schemas describe capability; they should not determine authorization.
 
 ---
 
@@ -823,7 +1333,52 @@ A boundary between components, users or data sources with different levels of tr
 
 ---
 
+### Trust Tier
+
+A classification representing how much a data source or component is trusted.
+
+Example:
+
+```text
+Tier 1 → internal verified data
+Tier 2 → trusted partner data
+Tier 3 → external / untrusted web data
+```
+
+Different trust tiers may require separate indexes or security controls.
+
+---
+
 ## V
+
+### Validation
+
+Checking whether input or output conforms to expected rules before it is accepted or used.
+
+Examples:
+
+- correct type
+- allowed values
+- expected schema
+- valid range
+- permitted action
+
+Validation does not necessarily remove dangerous content; that is the role of sanitization.
+
+---
+
+### Vector Database
+
+A database designed to store and search vector representations such as embeddings.
+
+It commonly supports nearest-neighbor or similarity search and is frequently used in:
+
+- RAG
+- semantic search
+- agent memory
+- recommendation systems
+
+---
 
 ### Vet / Vet a Supplier
 
@@ -839,6 +1394,28 @@ This may include checking:
 - artifact provenance
 
 **PT:** avaliar / verificar cuidadosamente um fornecedor.
+
+---
+
+## X
+
+### XSS — Cross-Site Scripting
+
+A web vulnerability where attacker-controlled content causes JavaScript or other active content to execute in another user's browser.
+
+In LLM applications, XSS may occur when generated HTML, Markdown, or JavaScript is rendered without proper sanitization and output encoding.
+
+---
+
+## Z
+
+### Zero Trust
+
+A security principle based on not automatically trusting a user, component, network, or model output.
+
+Every access or action should be explicitly verified based on identity, permissions, context, and policy.
+
+For LLM applications: treat model output as untrusted input.
 
 ---
 
