@@ -1,0 +1,374 @@
+{
+  "adapter": {
+    "term": "Adaptador",
+    "html": "<p>Um pequeno conjunto de parâmetros adicionais usado para modificar ou especializar o comportamento de um modelo base sem retreinar o modelo inteiro.</p>\n<p>Exemplo comum: <strong>adaptador LoRA</strong>.</p>\n<pre class=\"code-block\"><code>Modelo base + Adaptador → Modelo especializado</code></pre>"
+  },
+  "adversarial-perturbation": {
+    "term": "Perturbação adversarial",
+    "html": "<p>Uma pequena modificação cuidadosamente elaborada em uma entrada, projetada para causar um comportamento inesperado ou prejudicial no modelo.</p>"
+  },
+  "aibom--ai-bill-of-materials": {
+    "term": "AIBOM — Lista de materiais de IA",
+    "html": "<p>Um inventário dos componentes relacionados à IA usados em um sistema.</p>\n<p>Pode incluir:</p>\n<ul><li>modelos</li><li>conjuntos de dados</li><li>adaptadores</li><li>tokenizadores</li><li>frameworks</li><li>ambientes de execução de inferência</li><li>serviços externos de IA</li></ul>\n<p>Útil para proveniência, segurança, governança e conformidade.</p>\n<p><strong>Pense em:</strong> uma lista de ingredientes da IA.</p>"
+  },
+  "artifact": {
+    "term": "Artefato",
+    "html": "<p>Um arquivo ou resultado produzido ou utilizado durante o processo de desenvolvimento e implantação.</p>\n<p>Exemplos:</p>\n<ul><li>pesos do modelo</li><li>checkpoints</li><li>adaptadores LoRA</li><li><code>.safetensors</code></li><li>arquivos GGUF</li><li>modelos ONNX</li><li>contêineres</li></ul>"
+  },
+  "attestation": {
+    "term": "Atestação",
+    "html": "<p>Um mecanismo usado para verificar se um dispositivo, ambiente ou instância de software está operando em um estado esperado e confiável.</p>\n<p>Frequentemente usado na segurança de dispositivos e infraestrutura.</p>"
+  },
+  "backdoor": {
+    "term": "Porta dos fundos",
+    "html": "<p>Um comportamento malicioso oculto, inserido intencionalmente em um modelo ou sistema.</p>\n<p>Pode permanecer inativo até que um gatilho específico seja fornecido.</p>\n<pre class=\"code-block\"><code>Entrada normal → Comportamento normal\nGatilho → Comportamento malicioso</code></pre>"
+  },
+  "baseline": {
+    "term": "Linha de base",
+    "html": "<p>Uma referência que representa o comportamento normal de um sistema ou seu uso normal de recursos, utilizada para identificar desvios incomuns.</p>"
+  },
+  "biased-output": {
+    "term": "Saída enviesada",
+    "html": "<p>Uma saída influenciada por padrões distorcidos, injustos ou sistematicamente tendenciosos no modelo, nos dados de treinamento ou em outros componentes do sistema.</p>\n<p><strong>Também chamada de:</strong> saída tendenciosa.</p>"
+  },
+  "blast-radius": {
+    "term": "Raio de impacto",
+    "html": "<p>O alcance máximo dos danos ou do impacto que um componente, uma conta ou um sistema comprometido pode causar.</p>"
+  },
+  "chat-template": {
+    "term": "Template de conversa",
+    "html": "<p>Um template de formatação que converte mensagens estruturadas de conversa e seus papéis na sequência de tokens esperada por um modelo específico.</p>"
+  },
+  "circuit-breaker": {
+    "term": "Disjuntor",
+    "html": "<p>Um controle que interrompe automaticamente a execução quando limites predefinidos de custo, tempo, etapas ou profundidade de recursão são atingidos.</p>"
+  },
+  "concurrency": {
+    "term": "Concorrência",
+    "html": "<p>O número de operações ou tarefas em execução ao mesmo tempo.</p>"
+  },
+  "context-window": {
+    "term": "Janela de contexto",
+    "html": "<p>A quantidade máxima de informações ou tokens que um modelo consegue processar em um único contexto de inferência.</p>"
+  },
+  "continuous-learning": {
+    "term": "Aprendizado contínuo",
+    "html": "<p>Um processo no qual um modelo ou sistema continua aprendendo com dados recém-coletados após sua implantação inicial.</p>"
+  },
+  "corpus--corpora": {
+    "term": "Corpus / Corpora",
+    "html": "<p>Uma coleção de textos ou dados usada para treinamento, avaliação ou análise. <strong>Corpora</strong> é o plural de corpus.</p>"
+  },
+  "cost-asymmetry": {
+    "term": "Assimetria de custos",
+    "html": "<p>Uma situação em que uma ação pequena ou barata de um atacante causa um custo computacional ou financeiro desproporcionalmente alto para o sistema-alvo.</p>"
+  },
+  "curated-dataset": {
+    "term": "Conjunto de dados com curadoria",
+    "html": "<p>Um conjunto de dados selecionado, revisado, limpo e organizado de forma intencional para uma finalidade ou um domínio específico.</p>"
+  },
+  "data-exfiltration": {
+    "term": "Exfiltração de dados",
+    "html": "<p>Transferência não autorizada de dados sensíveis ou protegidos de um sistema interno para um destino externo.</p>"
+  },
+  "data-poisoning": {
+    "term": "Envenenamento de dados",
+    "html": "<p>Manipulação ou contaminação de dados que leva um modelo a aprender comportamentos incorretos, enviesados ou maliciosos. Pode ser intencional ou acidental.</p>"
+  },
+  "denial-of-wallet--dow": {
+    "term": "DoW — Ataque de esgotamento financeiro",
+    "html": "<p>Um ataque que provoca deliberadamente o uso excessivo de recursos pagos até que a operação do serviço se torne financeiramente insustentável.</p>"
+  },
+  "deprecated": {
+    "term": "Obsoleto / Descontinuado",
+    "html": "<p>Um componente que ainda está disponível, mas deixou de ser recomendado ou mantido ativamente.</p>\n<p>Componentes descontinuados podem deixar de receber correções de segurança.</p>"
+  },
+  "digest": {
+    "term": "Resumo criptográfico",
+    "html": "<p>Um identificador criptográfico derivado do conteúdo exato de um artefato.</p>\n<p>Frequentemente usado para referenciar versões imutáveis de artefatos.</p>\n<p>Exemplo:</p>\n<pre class=\"code-block\"><code>sha256:...</code></pre>"
+  },
+  "distillation": {
+    "term": "Destilação",
+    "html": "<p>Uma técnica na qual um modelo é treinado usando as saídas de outro modelo como supervisão. Também pode ser usada indevidamente para criar uma aproximação funcional não autorizada de um modelo proprietário.</p>"
+  },
+  "downstream": {
+    "term": "A jusante / Etapas posteriores",
+    "html": "<p>Refere-se a modelos, sistemas ou processos que dependem da saída de um componente anterior em um pipeline.</p>"
+  },
+  "downstream-operation": {
+    "term": "Operação subsequente",
+    "html": "<p>Uma ação disparada mais adiante em um fluxo de trabalho como consequência de uma solicitação ou chamada de ferramenta anterior.</p>"
+  },
+  "drift": {
+    "term": "Deriva",
+    "html": "<p>Uma mudança gradual na distribuição dos dados ou no comportamento do modelo ao longo do tempo. Pode indicar degradação, mudanças no ambiente ou comportamento inesperado do sistema.</p>"
+  },
+  "durable-corruption": {
+    "term": "Corrupção persistente",
+    "html": "<p>Uma alteração persistente nos dados, na memória ou no comportamento do modelo que continua afetando o sistema além de uma única inferência ou sessão.</p>"
+  },
+  "dvc--data-version-control": {
+    "term": "DVC — Controle de versão de dados",
+    "html": "<p>Um sistema de controle de versão para conjuntos de dados, modelos e artefatos de aprendizado de máquina. Ajuda a acompanhar alterações, reproduzir versões anteriores e reverter mudanças quando necessário.</p>"
+  },
+  "embedding": {
+    "term": "Representação vetorial",
+    "html": "<p>Uma representação numérica vetorial de dados, como texto, imagens ou áudio, projetada para capturar relações semânticas.</p>"
+  },
+  "eos--end-of-sequence-token": {
+    "term": "EOS — Token de fim de sequência",
+    "html": "<p>Um token especial usado para indicar que a geração do modelo deve parar.</p>"
+  },
+  "fan-out": {
+    "term": "Ramificação de ações",
+    "html": "<p>Um padrão em que uma ação dispara várias ações adicionais, que por sua vez podem disparar ainda mais ações.</p>"
+  },
+  "feedback-loop": {
+    "term": "Ciclo de retroalimentação",
+    "html": "<p>Um processo no qual as saídas do sistema ou o feedback dos usuários são reutilizados em decisões futuras, no treinamento ou em atualizações do modelo. Ciclos mal controlados podem amplificar erros ou envenenamento.</p>"
+  },
+  "fine-tuning": {
+    "term": "Ajuste fino",
+    "html": "<p>Treinamento adicional realizado em um modelo existente para adaptá-lo a uma tarefa, um domínio ou um comportamento específico.</p>"
+  },
+  "graceful-degradation": {
+    "term": "Degradação controlada",
+    "html": "<p>Uma estratégia de projeto na qual o sistema reduz suas funcionalidades sob pressão, em vez de falhar completamente.</p>"
+  },
+  "grounding": {
+    "term": "Fundamentação",
+    "html": "<p>Conectar as saídas do modelo a informações externas ou verificáveis, em vez de depender apenas do conhecimento interno do modelo.</p>"
+  },
+  "hard-spending-cap": {
+    "term": "Limite rígido de gastos",
+    "html": "<p>Um limite orçamentário estrito que interrompe novas execuções ou o uso da API quando o teto financeiro configurado é atingido.</p>"
+  },
+  "hardening": {
+    "term": "Fortalecimento da segurança",
+    "html": "<p>O processo de reduzir a superfície de ataque de um sistema e reforçar sua configuração de segurança.</p>"
+  },
+  "hash": {
+    "term": "Hash",
+    "html": "<p>Um valor de tamanho fixo gerado a partir de dados.</p>\n<p>Pode ser usado para detectar se um artefato foi alterado.</p>\n<pre class=\"code-block\"><code>Hash esperado == Hash atual\n→ artefato inalterado</code></pre>\n<p>Um arquivo diferente produz um hash diferente.</p>"
+  },
+  "hash-pinning": {
+    "term": "Fixação por hash",
+    "html": "<p>Referenciar ou validar um artefato usando seu hash criptográfico esperado.</p>\n<p>Isso ajuda a impedir a substituição silenciosa de um artefato por outro.</p>"
+  },
+  "immutable-reference": {
+    "term": "Referência imutável",
+    "html": "<p>Uma referência que sempre identifica exatamente o mesmo artefato.</p>\n<p>Exemplo:</p>\n<pre class=\"code-block\"><code>sha256:abc123...</code></pre>\n<p>Diferentemente de referências mutáveis como:</p>\n<pre class=\"code-block\"><code>latest</code></pre>"
+  },
+  "inference": {
+    "term": "Inferência",
+    "html": "<p>A etapa em que um modelo treinado recebe uma entrada e gera uma previsão ou saída.</p>\n<pre class=\"code-block\"><code>Entrada → Modelo → Saída</code></pre>"
+  },
+  "inference-endpoint": {
+    "term": "Endpoint de inferência",
+    "html": "<p>Um endpoint de rede ou uma API por meio do qual aplicações enviam entradas a um modelo implantado e recebem resultados de inferência.</p>"
+  },
+  "integrity": {
+    "term": "Integridade",
+    "html": "<p>A garantia de que dados ou um artefato não foram alterados ou adulterados de forma inesperada.</p>\n<p>Na segurança da cadeia de suprimentos:</p>\n<blockquote>Este ainda é exatamente o artefato que eu esperava?</blockquote>"
+  },
+  "label-poisoning": {
+    "term": "Envenenamento de rótulos",
+    "html": "<p>Um tipo de envenenamento de dados em que exemplos recebem rótulos incorretos, de forma intencional ou acidental, levando o modelo a aprender padrões errados.</p>"
+  },
+  "lineage": {
+    "term": "Linhagem",
+    "html": "<p>O histórico de como dados ou um artefato percorreram um pipeline e foram alterados, incluindo transformações, versões e dependências.</p>"
+  },
+  "log-probabilities": {
+    "term": "Logaritmos das probabilidades",
+    "html": "<p>Os logaritmos das probabilidades dos tokens produzidos por um modelo. Fornecem informações mais detalhadas sobre a probabilidade de diferentes saídas.</p>"
+  },
+  "logits": {
+    "term": "Logits",
+    "html": "<p>Pontuações numéricas brutas produzidas por um modelo antes de serem convertidas em probabilidades.</p>"
+  },
+  "lora--low-rank-adaptation": {
+    "term": "LoRA — Adaptação de baixo posto",
+    "html": "<p>Uma técnica de PEFT que adiciona pequenas matrizes treináveis a um modelo base com parâmetros congelados.</p>\n<p>Em vez de retreinar todos os parâmetros do modelo, LoRA treina um número muito menor de parâmetros.</p>\n<pre class=\"code-block\"><code>Modelo base\n   +\nLoRA\n   ↓\nModelo adaptado</code></pre>"
+  },
+  "model-card": {
+    "term": "Ficha do modelo",
+    "html": "<p>Documentação que descreve um modelo.</p>\n<p>Pode conter:</p>\n<ul><li>uso pretendido</li><li>limitações</li><li>informações de treinamento</li><li>resultados de avaliação</li><li>informações de licenciamento</li></ul>\n<p>Porém:</p>\n<blockquote><strong>Ficha do modelo ≠ prova de origem</strong></blockquote>"
+  },
+  "model-extraction": {
+    "term": "Extração de modelo",
+    "html": "<p>Consultar repetidamente um modelo para coletar informações suficientes para aproximar, reproduzir ou imitar seu comportamento.</p>"
+  },
+  "model-poisoning": {
+    "term": "Envenenamento de modelo",
+    "html": "<p>Manipulação de um modelo ou de seu processo de aprendizado para introduzir comportamentos prejudiciais, enviesados ou controlados por um atacante.</p>"
+  },
+  "model-provenance": {
+    "term": "Proveniência do modelo",
+    "html": "<p>O histórico rastreável e a origem de um modelo.</p>\n<p>Pode descrever:</p>\n<ul><li>quem o criou</li><li>o modelo base</li><li>os conjuntos de dados utilizados</li><li>o ajuste fino</li><li>as transformações</li><li>as versões</li><li>a titularidade</li></ul>"
+  },
+  "multimodal": {
+    "term": "Multimodal",
+    "html": "<p>Um sistema capaz de processar mais de um tipo de dado, como texto, imagens, áudio ou vídeo.</p>"
+  },
+  "mutable-reference": {
+    "term": "Referência mutável",
+    "html": "<p>Uma referência cujo destino pode mudar ao longo do tempo.</p>\n<p>Exemplo:</p>\n<pre class=\"code-block\"><code>model:latest</code></pre>\n<p>Hoje ela pode apontar para um artefato e, mais tarde, para outro.</p>"
+  },
+  "output-budget": {
+    "term": "Limite de saída",
+    "html": "<p>A quantidade máxima de saída que um modelo tem permissão para gerar em uma solicitação.</p>"
+  },
+  "peft--parameter-efficient-fine-tuning": {
+    "term": "PEFT — Ajuste fino eficiente em parâmetros",
+    "html": "<p>Técnicas de ajuste fino que atualizam apenas uma pequena parte dos parâmetros do modelo, em vez de retreinar o modelo inteiro.</p>\n<p>Os benefícios incluem:</p>\n<ul><li>menor uso de memória</li><li>menor custo computacional</li><li>treinamento mais rápido</li><li>artefatos menores</li></ul>\n<p>LoRA é um exemplo de PEFT.</p>"
+  },
+  "poisoning": {
+    "term": "Envenenamento",
+    "html": "<p>A manipulação intencional de dados de treinamento, modelos ou outros componentes de IA para influenciar o comportamento futuro do modelo.</p>\n<p>Exemplos:</p>\n<ul><li>envenenamento de dados de treinamento</li><li>envenenamento de modelo</li><li>envenenamento de embeddings</li></ul>"
+  },
+  "pre-flight-token-estimation": {
+    "term": "Estimativa prévia de tokens",
+    "html": "<p>Estimar o uso de tokens e o custo esperado antes de enviar uma solicitação ao modelo, permitindo rejeitar antecipadamente solicitações caras demais.</p>"
+  },
+  "provenance": {
+    "term": "Proveniência",
+    "html": "<p>A origem e o histórico de um artefato.</p>\n<p>Responde a perguntas como:</p>\n<ul><li>De onde ele veio?</li><li>Quem o criou?</li><li>Quais transformações foram aplicadas?</li><li>Ele foi modificado?</li><li>Qual é esta versão?</li></ul>\n<p><strong>Também chamada de:</strong> rastreabilidade de origem.</p>"
+  },
+  "quantization": {
+    "term": "Quantização",
+    "html": "<p>Uma técnica que reduz a precisão numérica dos pesos do modelo para diminuir o uso de memória e o custo computacional.</p>\n<p>Exemplo:</p>\n<pre class=\"code-block\"><code>FP16 → INT8 → INT4</code></pre>\n<p>O modelo quantizado é um novo artefato e deve ser avaliado de forma independente.</p>"
+  },
+  "queue": {
+    "term": "Fila",
+    "html": "<p>Uma coleção de ações ou tarefas que aguardam execução.</p>"
+  },
+  "quota": {
+    "term": "Cota",
+    "html": "<p>Um limite predefinido de consumo de recursos, como solicitações, tokens, processamento, armazenamento ou custo.</p>"
+  },
+  "rag--retrieval-augmented-generation": {
+    "term": "RAG — Geração aumentada por recuperação",
+    "html": "<p>Uma arquitetura na qual informações externas são recuperadas e fornecidas ao modelo como contexto antes que ele gere uma resposta.</p>"
+  },
+  "rag-poisoning": {
+    "term": "Envenenamento de RAG",
+    "html": "<p>Manipulação de uma base de conhecimento de RAG para que conteúdo malicioso ou enganoso seja recuperado e influencie as saídas do modelo.</p>"
+  },
+  "rate-limiting": {
+    "term": "Limitação de taxa",
+    "html": "<p>Restringir a frequência com que um usuário, uma aplicação ou uma origem pode realizar ações ou enviar solicitações dentro de um período definido.</p>"
+  },
+  "reasoning-loop": {
+    "term": "Loop de raciocínio",
+    "html": "<p>Uma situação em que um modelo de raciocínio processa repetidamente as mesmas etapas ou etapas relacionadas sem chegar a um estado de conclusão útil.</p>"
+  },
+  "recursion-depth": {
+    "term": "Profundidade de recursão",
+    "html": "<p>O número de chamadas recursivas aninhadas ou de níveis de agentes e subagentes ativos no momento.</p>"
+  },
+  "red-teaming": {
+    "term": "Testes adversariais",
+    "html": "<p>Testes adversariais de um sistema para identificar vulnerabilidades, comportamentos inseguros e possíveis caminhos de ataque antes que atacantes reais os explorem.</p>"
+  },
+  "resource-allocation": {
+    "term": "Alocação de recursos",
+    "html": "<p>O processo de atribuir e limitar processamento, memória, tokens ou outros recursos entre usuários, solicitações ou cargas de trabalho.</p>"
+  },
+  "resource-exhaustion": {
+    "term": "Esgotamento de recursos",
+    "html": "<p>Uma condição em que recursos como GPU, CPU, memória, tokens, conexões ou cota de API são consumidos até que o desempenho do serviço se degrade ou o serviço falhe.</p>"
+  },
+  "rlhf--reinforcement-learning-from-human-feedback": {
+    "term": "RLHF — Aprendizado por reforço com feedback humano",
+    "html": "<p>Uma técnica de treinamento que usa preferências ou feedback de pessoas como sinal para moldar o comportamento do modelo.</p>"
+  },
+  "sandbox--sandboxing": {
+    "term": "Ambiente isolado / Isolamento",
+    "html": "<p>Um ambiente isolado que restringe o que um modelo, agente ou componente não confiável pode acessar ou executar.</p>"
+  },
+  "sbom--software-bill-of-materials": {
+    "term": "SBOM — Lista de materiais de software",
+    "html": "<p>Um inventário dos componentes e das dependências de software usados por uma aplicação.</p>\n<p>Pode conter:</p>\n<ul><li>nomes de pacotes</li><li>versões</li><li>dependências</li><li>licenças</li><li>informações sobre vulnerabilidades</li></ul>\n<p><strong>Pense em:</strong> uma lista de ingredientes do software.</p>"
+  },
+  "serialization": {
+    "term": "Serialização",
+    "html": "<p>O processo de converter um objeto ou modelo em um formato que possa ser armazenado ou transferido.</p>\n<p>Alguns formatos de serialização podem executar código durante o carregamento.</p>\n<p>Exemplo:</p>\n<pre class=\"code-block\"><code>Python pickle</code></pre>"
+  },
+  "sleeper-agent": {
+    "term": "Agente adormecido",
+    "html": "<p>Um modelo que contém um comportamento oculto, que permanece inativo até ser ativado por um gatilho ou uma condição específica.</p>"
+  },
+  "slopsquatting": {
+    "term": "Slopsquatting",
+    "html": "<p>Um ataque à cadeia de suprimentos no qual um assistente de programação com IA sugere um nome de pacote plausível, mas inexistente, e um atacante registra esse pacote com código malicioso.</p>\n<pre class=\"code-block\"><code>LLM inventa um pacote\n        ↓\nAtacante registra o pacote\n        ↓\nDesenvolvedor o instala</code></pre>"
+  },
+  "special-token": {
+    "term": "Token especial",
+    "html": "<p>Um token com significado estrutural ou de controle para um modelo, como tokens que representam limites entre sistema, usuário, assistente ou fim de sequência.</p>"
+  },
+  "sponge-example": {
+    "term": "Exemplo esponja",
+    "html": "<p>Uma entrada adversarial intencionalmente otimizada para causar um consumo de recursos computacionais incomumente alto.</p>"
+  },
+  "state-hashing": {
+    "term": "Geração de hashes de estado",
+    "html": "<p>Gerar hashes a partir dos estados de um agente para detectar estados repetidos, ajudando a identificar loops ou padrões repetidos de execução.</p>"
+  },
+  "supply-chain": {
+    "term": "Cadeia de suprimentos",
+    "html": "<p>Todos os componentes, fornecedores e transformações dos quais um sistema depende durante o desenvolvimento, o treinamento, a implantação e a execução.</p>\n<p>Em sistemas de IA, isso pode incluir:</p>\n<ul><li>código</li><li>modelos</li><li>conjuntos de dados</li><li>pacotes</li><li>adaptadores</li><li>pipelines</li><li>infraestrutura</li><li>dispositivos</li></ul>\n<p><strong>Definição simples:</strong></p>\n<blockquote>Se o sistema depende disso, faz parte da cadeia de suprimentos.</blockquote>"
+  },
+  "tampering": {
+    "term": "Adulteração",
+    "html": "<p>Modificação não autorizada ou maliciosa de um componente, arquivo, modelo ou artefato.</p>\n<p><strong>Em português:</strong> adulteração.</p>"
+  },
+  "tcs--terms-and-conditions": {
+    "term": "T&Cs — Termos e condições",
+    "html": "<p>Os termos contratuais que definem como um produto ou serviço pode ser utilizado.</p>\n<p>Para provedores de IA, podem definir:</p>\n<ul><li>retenção de dados</li><li>uso para treinamento</li><li>privacidade</li><li>titularidade</li><li>uso comercial</li></ul>"
+  },
+  "thinking-tokens": {
+    "term": "Tokens de raciocínio",
+    "html": "<p>Tokens ou orçamento computacional usados internamente por modelos de raciocínio ao trabalhar em um problema antes de produzir a resposta visível.</p>"
+  },
+  "third-party": {
+    "term": "Terceiro",
+    "html": "<p>Uma pessoa, organização, serviço ou componente externo à equipe ou empresa que desenvolve o sistema.</p>\n<p>Exemplos:</p>\n<ul><li>modelo externo</li><li>API externa</li><li>pacote de código aberto</li><li>conjunto de dados externo</li></ul>\n<p><strong>Definição simples:</strong></p>\n<blockquote>Algo externo do qual seu sistema depende.</blockquote>"
+  },
+  "token-budget": {
+    "term": "Orçamento de tokens",
+    "html": "<p>O número máximo de tokens permitidos ou alocados para entrada, saída, raciocínio ou uma execução inteira.</p>"
+  },
+  "tool-calling-loop": {
+    "term": "Loop de chamadas de ferramentas",
+    "html": "<p>Uma condição em que um agente invoca ferramentas repetidamente sem atingir um estado final válido.</p>"
+  },
+  "trigger": {
+    "term": "Gatilho",
+    "html": "<p>Uma entrada, frase, padrão de tokens ou condição específica que ativa um comportamento oculto ou uma porta dos fundos.</p>"
+  },
+  "trust-boundary": {
+    "term": "Fronteira de confiança",
+    "html": "<p>Uma fronteira entre componentes, usuários ou fontes de dados com diferentes níveis de confiança. Atravessá-la normalmente deve exigir validação ou controles adicionais.</p>"
+  },
+  "vet--vet-a-supplier": {
+    "term": "Avaliar / Verificar um fornecedor",
+    "html": "<p>Avaliar cuidadosamente um fornecedor antes de confiar em seus produtos ou serviços ou utilizá-los.</p>\n<p>Isso pode incluir verificar:</p>\n<ul><li>reputação</li><li>práticas de segurança</li><li>política de privacidade</li><li>termos e condições</li><li>tratamento de dados</li><li>proveniência dos artefatos</li></ul>\n<p><strong>Em português:</strong> avaliar / verificar cuidadosamente um fornecedor.</p>"
+  },
+  "signed--safe": {
+    "term": "Assinado ≠ Seguro",
+    "html": "<p>Uma assinatura digital válida pode comprovar:</p>\n<ul><li>origem</li><li>integridade</li></ul>\n<p>Ela <strong>não</strong> comprova que o modelo se comporta de forma segura.</p>"
+  },
+  "safe-format--safe-model": {
+    "term": "Formato seguro ≠ Modelo seguro",
+    "html": "<p>Um formato de serialização seguro reduz alguns riscos técnicos, mas não garante que o próprio modelo esteja livre de:</p>\n<ul><li>portas dos fundos</li><li>vieses</li><li>comportamento envenenado</li></ul>"
+  },
+  "provenance-vs-integrity": {
+    "term": "Proveniência vs. Integridade",
+    "html": "<p><strong>Proveniência</strong></p>\n<blockquote>De onde veio este artefato?</blockquote>\n<p><strong>Integridade</strong></p>\n<blockquote>Este artefato mudou desde que foi criado ou aprovado?</blockquote>"
+  },
+  "supply-chain-vs-poisoning": {
+    "term": "Cadeia de suprimentos vs. Envenenamento",
+    "html": "<p><strong>Envenenamento</strong> trata da manipulação maliciosa do modelo ou dos dados.</p>\n<p><strong>Cadeia de suprimentos</strong> trata de como um componente comprometido entrou no sistema ou se propagou por ele.</p>\n<p>O mesmo incidente pode envolver ambos.</p>"
+  }
+}

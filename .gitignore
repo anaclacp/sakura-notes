@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.preview/
+node_modules/
+_site/
+index.html
+glossary_data.json
+*.pem
+*.key
+.env

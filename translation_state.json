@@ -1,0 +1,374 @@
+{
+  "adapter": {
+    "source_sha256": "afc5dbbc5d8fb05753436c1cd0b3d8078f3d3516fe9cf60af383256746866b65",
+    "method": "reviewed"
+  },
+  "adversarial-perturbation": {
+    "source_sha256": "6bf26a77d9a94afab820cb1bf33e300f44b36a70418326730323e1e2f6f48d8d",
+    "method": "reviewed"
+  },
+  "aibom--ai-bill-of-materials": {
+    "source_sha256": "619774a272caaf94a2cfa239ac88dd27ba1d1592269e7d95aa76ee96d6869ea2",
+    "method": "reviewed"
+  },
+  "artifact": {
+    "source_sha256": "75cf12f30d7360e799ee3871f868f56118106c8c91ba03b99595c2bf03a969d3",
+    "method": "reviewed"
+  },
+  "attestation": {
+    "source_sha256": "871253c01716153553fbe287b09bc86c7763a114c12c13c687b8721376f4b60f",
+    "method": "reviewed"
+  },
+  "backdoor": {
+    "source_sha256": "f358b743b7acfb06871e4fb980581c2959ec5492e556670bed673fc04b43fda3",
+    "method": "reviewed"
+  },
+  "baseline": {
+    "source_sha256": "d15d2f58573d26612e2e9db2b39725f7fc312089b73ffefd24797945ed095e52",
+    "method": "reviewed"
+  },
+  "biased-output": {
+    "source_sha256": "41c9cc1d981854909d9dd4370e7de3ef72f09023296b2fdf261d605ef9da44b9",
+    "method": "reviewed"
+  },
+  "blast-radius": {
+    "source_sha256": "680c36043d631a781453b08d16fb2671669591169043b8d6774c785f0bafe34c",
+    "method": "reviewed"
+  },
+  "chat-template": {
+    "source_sha256": "25cc3f613e56d1b0112356f17e5bcb72593bc87ea579be7bbadad9291de045e9",
+    "method": "reviewed"
+  },
+  "circuit-breaker": {
+    "source_sha256": "a79161c907b4e8f5b74866ab225667a663e4557675e47e4ecdcccddb613d8c1a",
+    "method": "reviewed"
+  },
+  "concurrency": {
+    "source_sha256": "dd84e3e7863492753062d3f83904a357f40fdb99c5996f62be7f9986d264e390",
+    "method": "reviewed"
+  },
+  "context-window": {
+    "source_sha256": "3e088499eed635f6667e874c981f26c2e19bf100fd80c2e9dd471aa573ff2fe0",
+    "method": "reviewed"
+  },
+  "continuous-learning": {
+    "source_sha256": "720068e7f33a45d3f03bf9f311de2669d6dfae78480b77f9e4fad446776d4902",
+    "method": "reviewed"
+  },
+  "corpus--corpora": {
+    "source_sha256": "e89030b171e1f6db6b9dcd43da52e478223134498d20eb31eb8c1eeaf5a87b2b",
+    "method": "reviewed"
+  },
+  "cost-asymmetry": {
+    "source_sha256": "83cc3ae5bec9b4e83d9ff000404b34b5946b75277f75d829a441975b59dc88f3",
+    "method": "reviewed"
+  },
+  "curated-dataset": {
+    "source_sha256": "4596df7a33c639c9f0c0a9dc78ceae3160f55a4ba1f4f3570207239d471159ae",
+    "method": "reviewed"
+  },
+  "data-exfiltration": {
+    "source_sha256": "6b70c86a23420fad53e02e8c92e443172db5b33fe9f0389fb04128646a30321a",
+    "method": "reviewed"
+  },
+  "data-poisoning": {
+    "source_sha256": "f617cc7187cff3c4ac8c9d0b1be98d39fed7de50b8953230f95c575fc24caf11",
+    "method": "reviewed"
+  },
+  "denial-of-wallet--dow": {
+    "source_sha256": "c0a9e43f2a553ddc9532d6cd3296fab7310d304f4cfb41bcf4afc4e678f466d7",
+    "method": "reviewed"
+  },
+  "deprecated": {
+    "source_sha256": "6865acd6728ec64f319b7a2c2ae0ffe25f61e0272fc5dcca7e3e5d9c514b2425",
+    "method": "reviewed"
+  },
+  "digest": {
+    "source_sha256": "d49f660b14c206e4850cb9ab769f6d1c2438d0228604b73cd4b7b5072f665731",
+    "method": "reviewed"
+  },
+  "distillation": {
+    "source_sha256": "c337a5d35e9861e2ee9a846ba58d9504768413fe277262fc3685ef3aa4b89695",
+    "method": "reviewed"
+  },
+  "downstream": {
+    "source_sha256": "96f3e0ddcf66bad58d178608fd92bae3ba5ba15b482cb4acf74003b4814fb74e",
+    "method": "reviewed"
+  },
+  "downstream-operation": {
+    "source_sha256": "dd02b3007fa9b7c69d2e10bce2f923d9234af6d0e02f2ae0cf797436aae1f477",
+    "method": "reviewed"
+  },
+  "drift": {
+    "source_sha256": "c7f4248f384553361e2e20280f0120d866c29e076a3514a9920973aba5424ecd",
+    "method": "reviewed"
+  },
+  "durable-corruption": {
+    "source_sha256": "f1ae79728d63fc417b3c5f3988b28aa41ec1d99a120a4b6efb357a79343ade2a",
+    "method": "reviewed"
+  },
+  "dvc--data-version-control": {
+    "source_sha256": "e170dc8f5c3d7cd5623fe9460b84a43443f84e69e99b74a972462621cfc5fcf0",
+    "method": "reviewed"
+  },
+  "embedding": {
+    "source_sha256": "2c30849f8f86e2a43546f74b046db028e62a9fec41ee4a752e84d65f096f260a",
+    "method": "reviewed"
+  },
+  "eos--end-of-sequence-token": {
+    "source_sha256": "96d5e8b7c808ea8d9d8cac432ba050e28e718c0be86d121d2421e939089d57a4",
+    "method": "reviewed"
+  },
+  "fan-out": {
+    "source_sha256": "90f671bde99b744742131261a93ddd16892f69d572ed92347438c85180e0f9ca",
+    "method": "reviewed"
+  },
+  "feedback-loop": {
+    "source_sha256": "7e22e859f51a442e00ba0aa285e9a7327bcb6d6f18dd5310a46fa912bb5a713d",
+    "method": "reviewed"
+  },
+  "fine-tuning": {
+    "source_sha256": "1a1643a80fecc7a66355fc7a4d4b4cc029d42119df865d9a35a2601714808b48",
+    "method": "reviewed"
+  },
+  "graceful-degradation": {
+    "source_sha256": "7fd217d4bcacb634bd4e0ca371f66e8c7b0450794bb99409e465676c2edd9a46",
+    "method": "reviewed"
+  },
+  "grounding": {
+    "source_sha256": "549f4e175610c611038ff357744aa9eaecd2299f350069e7e957f08a3fabb4b3",
+    "method": "reviewed"
+  },
+  "hard-spending-cap": {
+    "source_sha256": "727776cc3357e8538de8ed7059610b03ca252c90078f9173ab9915d9e66a8abb",
+    "method": "reviewed"
+  },
+  "hardening": {
+    "source_sha256": "7669eeb52ef40e496b4bc792e9d5e33aa67bab550709c24157705159fe4cada9",
+    "method": "reviewed"
+  },
+  "hash": {
+    "source_sha256": "20b5d57e573e252594afc300fbabf57e1a9aa6f1d6ba78e37ff2ea4779fd39dd",
+    "method": "reviewed"
+  },
+  "hash-pinning": {
+    "source_sha256": "c68092e32b5c61f238c36e445b2e25d6abf547ab9e5e4c84ed3865250af98f4e",
+    "method": "reviewed"
+  },
+  "immutable-reference": {
+    "source_sha256": "ab67d7ba66e4644170db767a2715e35dc73840045876db04cebf55e46171ea67",
+    "method": "reviewed"
+  },
+  "inference": {
+    "source_sha256": "2bcdf75a89d10d08a4ccde904f48f462d15279e3209089e91f85e34cc670efaf",
+    "method": "reviewed"
+  },
+  "inference-endpoint": {
+    "source_sha256": "256b560d4b83ec675e6823a7f10ad628c60c6ff1fb9ad962e10046b1735d3ab8",
+    "method": "reviewed"
+  },
+  "integrity": {
+    "source_sha256": "3a1f3fe11bc78035f63f27e58f88cfce1ec56695a54bb1e57e7c609952d9b97e",
+    "method": "reviewed"
+  },
+  "label-poisoning": {
+    "source_sha256": "d954842b88f733e63910f6584e41a762e7916182b82ac0524deb113ebd241c8f",
+    "method": "reviewed"
+  },
+  "lineage": {
+    "source_sha256": "5cdf21ebb0c493cba193ccebe193f142204bdc5aa5d0a9699414f41baf252dce",
+    "method": "reviewed"
+  },
+  "log-probabilities": {
+    "source_sha256": "528167e19fc1e61754401d00dd186349aa7d07a61a2a6232ee4b81e99b0bf339",
+    "method": "reviewed"
+  },
+  "logits": {
+    "source_sha256": "9130f9fcbd121f3fc30e9b5cf0b3cee19438698be9422fbf694e0a70c41819d6",
+    "method": "reviewed"
+  },
+  "lora--low-rank-adaptation": {
+    "source_sha256": "aae6d6a36b74796c82e748a5687c579882cddb79f267d6550c27b44b14a3d0e4",
+    "method": "reviewed"
+  },
+  "model-card": {
+    "source_sha256": "7204f91672eb7104001a0bc0037baec882a2a75c866737135acd469ed7e876e3",
+    "method": "reviewed"
+  },
+  "model-extraction": {
+    "source_sha256": "5807f2e3bbc59727fe58515ab38170e05f7c150fca772605ce883d08960ac160",
+    "method": "reviewed"
+  },
+  "model-poisoning": {
+    "source_sha256": "5f2a0ed7af622a04ae5c2ddb4c257adfb72c778f37f3c59d86f7a23e19e96482",
+    "method": "reviewed"
+  },
+  "model-provenance": {
+    "source_sha256": "38cb40b85a71d89f8eaa486b679387af4630732aa444d6ac449bdf428f4be376",
+    "method": "reviewed"
+  },
+  "multimodal": {
+    "source_sha256": "37f4905a817e53d64c135e3a293761ba83f610c5c34318c7578cd8306d77e64d",
+    "method": "reviewed"
+  },
+  "mutable-reference": {
+    "source_sha256": "5931460a81662b127fe19804c703cea8d6347934195758970c7f6f8dbe772dec",
+    "method": "reviewed"
+  },
+  "output-budget": {
+    "source_sha256": "bdef9440c7907c403a64cf939c5750d4b13a2fd8d0c2a0d6d2e41f6f8c8646ad",
+    "method": "reviewed"
+  },
+  "peft--parameter-efficient-fine-tuning": {
+    "source_sha256": "6f0adc427cbbea625ef3d5eb7fce7e7a42af539c5647b1c94f0d26d885b0aa74",
+    "method": "reviewed"
+  },
+  "poisoning": {
+    "source_sha256": "f1b82b809bf7823ab0ad38d45f5935a25c5fa760a56d38aab3a6496bf0b79abe",
+    "method": "reviewed"
+  },
+  "pre-flight-token-estimation": {
+    "source_sha256": "2b6149a155ae41e89e116be18544d2e2e3bac406feeb265fa6210509dd85fb70",
+    "method": "reviewed"
+  },
+  "provenance": {
+    "source_sha256": "6c01694bcfbc65724b84ae8883d8a0b243291693a3d405725157b78a8a2cebe5",
+    "method": "reviewed"
+  },
+  "quantization": {
+    "source_sha256": "5196484041a114261639487b63f1ba6117739012d13fe70e14e4695bccbaa78a",
+    "method": "reviewed"
+  },
+  "queue": {
+    "source_sha256": "cfd02977a0002f98ead4bf4d77c1a6e651cb5279a709e100492513dba9f53591",
+    "method": "reviewed"
+  },
+  "quota": {
+    "source_sha256": "15ccfd5e0320bf3021ec4b8bb4dbc00967b824f8f45bd38097c1638b9f0df405",
+    "method": "reviewed"
+  },
+  "rag--retrieval-augmented-generation": {
+    "source_sha256": "8d8522357c71ac0b3cb358c8b8542efec602e2a3045c7ee3e06607eb3577aeff",
+    "method": "reviewed"
+  },
+  "rag-poisoning": {
+    "source_sha256": "30613ff3f91a4fdd3e376e31879923e36ff3d969e854e04d0301f46fd7dd0f56",
+    "method": "reviewed"
+  },
+  "rate-limiting": {
+    "source_sha256": "9685c8da42c6556a8a7dba2982b2ac496397f25ae653b40b4dc82e9d60429e82",
+    "method": "reviewed"
+  },
+  "reasoning-loop": {
+    "source_sha256": "11aff2b16ac6f7e4fd9c334ab165309c0a5bde9a8a05ccce5b190dae24148108",
+    "method": "reviewed"
+  },
+  "recursion-depth": {
+    "source_sha256": "374564f58960e80fa801cc22669fb43b4f3dfc4e5b25b2e457c698fbb686e790",
+    "method": "reviewed"
+  },
+  "red-teaming": {
+    "source_sha256": "8affd7b3ad1d177c3302cb4c438f162923c13031852374e2698ba0c9332778c8",
+    "method": "reviewed"
+  },
+  "resource-allocation": {
+    "source_sha256": "18d4acc55817d7418c44940e27f2d1680ffe701c69acc0a19448da2f0c1fe108",
+    "method": "reviewed"
+  },
+  "resource-exhaustion": {
+    "source_sha256": "ad2f78ebbdb0b6186ac46bf7c3b23d76014bde778f3a93de8a2e40f44a57ea31",
+    "method": "reviewed"
+  },
+  "rlhf--reinforcement-learning-from-human-feedback": {
+    "source_sha256": "4a94af58bb8631c30cd334837e554b210d3e617d319309116cfba2538ed7f541",
+    "method": "reviewed"
+  },
+  "sandbox--sandboxing": {
+    "source_sha256": "42566b1046b720bc6559a3924316133d716cdea47bce9d68efe3c33538adba1d",
+    "method": "reviewed"
+  },
+  "sbom--software-bill-of-materials": {
+    "source_sha256": "5ece884fc73e42ae17b321b6ecc99a7be6fd929a3dfa8fa3bf65786aa852fe3e",
+    "method": "reviewed"
+  },
+  "serialization": {
+    "source_sha256": "27bc2bc235f0c82c96f1866be2897bfb0892dd8caae392978059407010e296cc",
+    "method": "reviewed"
+  },
+  "sleeper-agent": {
+    "source_sha256": "5d3d917fdd65a565fc9336036a502f9ea00186a1e6610b56422eebe2a5cdc754",
+    "method": "reviewed"
+  },
+  "slopsquatting": {
+    "source_sha256": "534234e4fea07fd23a5060580adfc1daf2df831b0af231b930a5b54e54255163",
+    "method": "reviewed"
+  },
+  "special-token": {
+    "source_sha256": "64495e9dbd69efbf307d824e35b6c3afe29e93d3dfcc84cb5555689c42c5a5ae",
+    "method": "reviewed"
+  },
+  "sponge-example": {
+    "source_sha256": "0a7f0a6ebc8c49fa991ef087c90bc53da24ddd93fda5e26889fc9b8243f38d82",
+    "method": "reviewed"
+  },
+  "state-hashing": {
+    "source_sha256": "ccfa873ff79fadd524532f357f8c19c5ea2be132b359f46d62138b7afc17e051",
+    "method": "reviewed"
+  },
+  "supply-chain": {
+    "source_sha256": "8246f14f0124b75bcce72fb1a9e5e8a7ab18819463ba12d9bbf71b9e21dc3b70",
+    "method": "reviewed"
+  },
+  "tampering": {
+    "source_sha256": "aef3ad9cf90e0a4ae50cfec126090bc474d726e24f0956b2ffa12f20e5026ee0",
+    "method": "reviewed"
+  },
+  "tcs--terms-and-conditions": {
+    "source_sha256": "1182b8010ade618c495a0ea292ad0cc75741ba36831eecbc940ff2d56a57f3e9",
+    "method": "reviewed"
+  },
+  "thinking-tokens": {
+    "source_sha256": "a1661ff0bedd1f465b4bf5a8baa641f894408d1f4f4ff672f7c23b24e633d879",
+    "method": "reviewed"
+  },
+  "third-party": {
+    "source_sha256": "a36e87c01924243ca00151fc39c58f464bf7ba248d0c1ab3adf3b4bc21961291",
+    "method": "reviewed"
+  },
+  "token-budget": {
+    "source_sha256": "89436d6bf652dd307fb0d81db3e3731eae1963b697877d76498666fd0e5ce784",
+    "method": "reviewed"
+  },
+  "tool-calling-loop": {
+    "source_sha256": "b407b90b16f4275fc6acac8444cf8e71b133f54cdb94477fbf395af30419ee9d",
+    "method": "reviewed"
+  },
+  "trigger": {
+    "source_sha256": "e2c086bad5600f1fca04c11cb971508111139fb31d04d83e8ae8081cf100725b",
+    "method": "reviewed"
+  },
+  "trust-boundary": {
+    "source_sha256": "8fff38b589c85b89caa56b1f5fcc94b9b967250dc8051effed4380ac0db228c4",
+    "method": "reviewed"
+  },
+  "vet--vet-a-supplier": {
+    "source_sha256": "a078ee9b52879a8878a9c5e8d4f01949380a16664f36b88f2816f3fd236bc7c6",
+    "method": "reviewed"
+  },
+  "signed--safe": {
+    "source_sha256": "84e6b213e711b542eca410cd517b9251190a3b0fd5325e7894844d83d7db4e9b",
+    "method": "reviewed"
+  },
+  "safe-format--safe-model": {
+    "source_sha256": "9196a7ef7751a7ef173035b5391c1c8e84cd2771a3345a0f7e27e49257b9465e",
+    "method": "reviewed"
+  },
+  "provenance-vs-integrity": {
+    "source_sha256": "301c158b95e5cf143d70685e0e8ca9eb8007e7430beaa961bb164fbf2b32e305",
+    "method": "reviewed"
+  },
+  "supply-chain-vs-poisoning": {
+    "source_sha256": "3ed20e5fc92f3bc921900a8c2035f607da7d5e6bce049baa6ee035c99919d1e8",
+    "method": "reviewed"
+  }
+}
