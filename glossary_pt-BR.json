@@ -57,7 +57,7 @@
   },
   "assumption": {
     "term": "Suposição",
-    "html": "<p>Uma ideia ou condição tratada como verdadeira sem ter sido diretamente verificada.</p><p>Nos sistemas de IA, os pressupostos devem ser claramente distintos dos factos verificados.</p><p><strong>PT:</strong> Suposição.</p>"
+    "html": "<p>Uma ideia ou condição tratada como verdadeira sem ter sido verificada diretamente.</p>\n<p>Em sistemas de IA, suposições devem ser claramente distinguidas de fatos verificados.</p>\n<p><strong>PT:</strong> suposição.</p>"
   },
   "attestation": {
     "term": "Atestação",
@@ -69,7 +69,7 @@
   },
   "authorization": {
     "term": "Autorização",
-    "html": "<p>O processo de determinar se um usuário, agente ou serviço autenticado pode realizar uma ação específica ou acessar um recurso.</p><p>Respostas de autenticação <strong>Quem és tu?</strong></p><p>Respostas de autorização <strong>O que é que podes fazer?</strong></p>"
+    "html": "<p>O processo de determinar se um usuário, agente ou serviço autenticado tem permissão para realizar uma ação específica ou acessar um recurso.</p>\n<p>A autenticação responde <strong>quem é você?</strong></p>\n<p>A autorização responde <strong>o que você tem permissão para fazer?</strong></p>"
   },
   "backdoor": {
     "term": "Porta dos fundos",
@@ -112,8 +112,8 @@
     "html": "<p>Uma afirmação factual que pode ser verificada contra evidências.</p>\n<p><strong>PT:</strong> afirmação.</p>"
   },
   "claim-check-act": {
-    "term": "Reivindicação-Verificação-Ato",
-    "html": "<p>Um padrão de segurança que separa a geração do modelo da execução.</p><pre class=\"code-block\"><code>Claim\n  ↓\nCheck\n  ↓\nAct</code></pre><p>O modelo pode propor ou inferir algo, mas a reivindicação deve ser verificada de forma independente antes de uma ação ser executada.</p>"
+    "term": "Afirmar-Verificar-Agir (Claim-Check-Act)",
+    "html": "<p>Um padrão de segurança que separa a geração do modelo da execução.</p>\n<pre class=\"code-block\"><code>Claim\n  ↓\nCheck\n  ↓\nAct</code></pre>\n<p>O modelo pode propor ou inferir algo, mas a afirmação precisa ser verificada de forma independente antes que uma ação seja executada.</p>"
   },
   "claim-level-evaluation": {
     "term": "Avaliação por afirmação",
@@ -144,8 +144,8 @@
     "html": "<p>Definir explicitamente regras, limitações ou condições que o modelo deve seguir.</p>\n<p>Uma restrição no prompt orienta o comportamento, mas não o impõe; veja Controle técnico.</p>"
   },
   "content-security-policy--csp": {
-    "term": "Política de segurança do conteúdo — CSP",
-    "html": "<p>Um mecanismo de segurança do navegador que restringe os recursos, scripts, frames e outros conteúdos que uma página web pode carregar ou executar.</p><p>Útil como defesa em profundidade contra ataques como o XSS.</p>"
+    "term": "CSP — Política de Segurança de Conteúdo",
+    "html": "<p>Um mecanismo de segurança do navegador que restringe quais recursos, scripts, frames e outros conteúdos uma página web pode carregar ou executar.</p>\n<p>Útil como defesa em profundidade contra ataques como XSS.</p>"
   },
   "context-injection": {
     "term": "Injeção de contexto",
@@ -156,16 +156,16 @@
     "html": "<p>A quantidade máxima de informações ou tokens que um modelo consegue processar em um único contexto de inferência.</p>"
   },
   "context-aware-output-encoding": {
-    "term": "Codificação de Saída do Contexto- Aware",
-    "html": "<p>Codificação de saída do modelo de acordo com o ambiente onde será usado.</p><p>Exemplos:</p><ul><li>HTML → Codificação HTML</li><li>JavaScript → Codificação JavaScript</li><li>URL → codificação de URL</li><li>valores do banco de dados → consultas parametrizadas</li></ul><p>Não existe uma estratégia universal de fuga para cada contexto de saída.</p>"
+    "term": "Codificação de saída sensível ao contexto",
+    "html": "<p>Codificar a saída do modelo de acordo com o ambiente em que ela será usada.</p>\n<p>Exemplos:</p>\n<ul>\n<li>HTML → codificação HTML</li>\n<li>JavaScript → codificação JavaScript</li>\n<li>URL → codificação de URL</li>\n<li>valores de banco de dados → consultas parametrizadas</li>\n</ul>\n<p>Não existe uma estratégia universal de escaping para todos os contextos de saída.</p>"
   },
   "continuous-learning": {
     "term": "Aprendizado contínuo",
     "html": "<p>Um processo no qual um modelo ou sistema continua aprendendo com dados recém-coletados após sua implantação inicial.</p>"
   },
   "control-character": {
-    "term": "Caracter de Controle",
-    "html": "<p>Um caractere não imprimível que controla como um terminal, visualizador de logs, protocolo ou outro sistema se comporta ao invés de representar texto visível.</p><p>Os exemplos incluem:</p><ul><li>Sequências de fuga da ANSI</li><li>BEL</li><li>Regresso do transporte</li><li>backspace</li><li>Sequências OSC</li></ul>"
+    "term": "Caractere de controle",
+    "html": "<p>Um caractere não imprimível que controla como um terminal, visualizador de logs, protocolo ou outro sistema se comporta, em vez de representar texto visível.</p>\n<p>Exemplos:</p>\n<ul>\n<li>sequências de escape ANSI</li>\n<li>BEL</li>\n<li>retorno de carro (carriage return)</li>\n<li>backspace</li>\n<li>sequências OSC</li>\n</ul>"
   },
   "corpus--corpora": {
     "term": "Corpus / Corpora",
@@ -180,16 +180,16 @@
     "html": "<p>Erros que tendem a ocorrer juntos porque avaliadores ou modelos compartilham comportamentos ou vieses semelhantes.</p>\n<p>Exemplo: um modelo juiz da mesma família do modelo avaliado pode deixar passar os mesmos erros.</p>"
   },
   "cosine-similarity": {
-    "term": "Semelhança Cossena",
-    "html": "<p>Uma métrica comumente usada para medir quão semelhantes dois vetores de incorporação são baseados no ângulo entre eles.</p><p>A maior similaridade geralmente significa que dois vetores são considerados mais semanticamente relacionados.</p><p>Comumente usado em busca de vetores e RAG.</p>"
+    "term": "Similaridade de cosseno",
+    "html": "<p>Uma métrica comumente usada para medir o quão semelhantes são dois vetores de embedding, com base no ângulo entre eles.</p>\n<p>Uma similaridade maior geralmente significa que os dois vetores são considerados mais relacionados semanticamente.</p>\n<p>Muito usada em busca vetorial e RAG.</p>"
   },
   "cost-asymmetry": {
     "term": "Assimetria de custos",
     "html": "<p>Uma situação em que uma ação pequena ou barata de um atacante causa um custo computacional ou financeiro desproporcionalmente alto para o sistema-alvo.</p>"
   },
   "cross-tenant-leakage": {
-    "term": "Fuga de Tensão Cruzada",
-    "html": "<p>Exposição ou inferência de informações pertencentes a um inquilino por outro inquilino em um sistema multilocatário.</p><p>Em sistemas vetoriais, isso pode acontecer quando a pesquisa de similaridade passa por um índice compartilhado antes da filtragem de nível de inquilino ser aplicada.</p>"
+    "term": "Vazamento entre tenants",
+    "html": "<p>Exposição ou inferência de informações de um tenant por outro tenant em um sistema multi-tenant.</p>\n<p>Em sistemas vetoriais, isso pode acontecer quando a busca por similaridade roda sobre um índice compartilhado antes de o filtro por tenant ser aplicado.</p>"
   },
   "curated-dataset": {
     "term": "Conjunto de dados com curadoria",
@@ -212,8 +212,8 @@
     "html": "<p>Reduzir a dependência entre componentes do sistema para que possam evoluir ou escalar de forma independente.</p>"
   },
   "deduplication": {
-    "term": "Desduplicação",
-    "html": "<p>O processo de detecção e remoção de dados duplicados ou quase duplicados.</p><p>A deduplicação semântica pode usar a similaridade incorporada em vez de correspondência de texto exata.</p>"
+    "term": "Deduplicação",
+    "html": "<p>O processo de detectar e remover dados duplicados ou quase duplicados.</p>\n<p>A deduplicação semântica pode usar similaridade de embeddings em vez de correspondência exata de texto.</p>"
   },
   "delegated-execution": {
     "term": "Execução delegada",
@@ -236,8 +236,8 @@
     "html": "<p>Uma avaliação baseada em regras explícitas, com resultados previsíveis.</p>\n<p>Exemplos: correspondência exata, regex, validação de esquema, verificar se uma ferramenta foi chamada.</p>"
   },
   "developer-instructions": {
-    "term": "Instruções de Desenvolvimento",
-    "html": "<p>Instruções internas fornecidas pelo desenvolvedor do aplicativo para orientar o comportamento do modelo.</p><p>Normalmente, elas não se destinam a ser visíveis para o usuário final, mas ainda devem ser tratadas como potencialmente detectáveis.</p>"
+    "term": "Instruções do desenvolvedor",
+    "html": "<p>Instruções internas fornecidas pelo desenvolvedor da aplicação para orientar o comportamento do modelo.</p>\n<p>Normalmente não devem ficar visíveis para o usuário final, mas ainda assim devem ser tratadas como potencialmente descobríveis.</p>"
   },
   "digest": {
     "term": "Resumo criptográfico",
@@ -272,8 +272,8 @@
     "html": "<p>Uma representação numérica vetorial de dados, como texto, imagens ou áudio, projetada para capturar relações semânticas.</p>"
   },
   "embedding-inversion": {
-    "term": "Inversão Incorporada",
-    "html": "<p>Um ataque que tenta reconstruir o conteúdo original ou aproximado da fonte a partir de seus vetores incorporados.</p><pre class=\"code-block\"><code>Embedding\n   ↓\nInversion\n   ↓\nApproximate Source Data</code></pre><p><strong>Importante:</strong> Embutindo dados anônimos.</p>"
+    "term": "Inversão de embeddings",
+    "html": "<p>Um ataque que tenta reconstruir o conteúdo original, ou uma aproximação dele, a partir dos seus vetores de embedding.</p>\n<pre class=\"code-block\"><code>Embedding\n   ↓\nInversion\n   ↓\nApproximate Source Data</code></pre>\n<p><strong>Importante:</strong> embedding ≠ dado anônimo.</p>"
   },
   "enforce": {
     "term": "Enforce",
@@ -288,8 +288,8 @@
     "html": "<p>Encaminhar um caso para um nível superior de decisão, como um avaliador mais forte ou uma pessoa.</p>\n<p><strong>PT:</strong> escalonamento.</p>"
   },
   "escaping": {
-    "term": "Escapar",
-    "html": "<p>Transformando caracteres especiais para que sejam interpretados como dados em vez de instruções de sintaxe ou controle executáveis.</p><p>O método correto de fuga depende do contexto de destino.</p>"
+    "term": "Escaping (escape de caracteres)",
+    "html": "<p>Transformar caracteres especiais para que sejam interpretados como dados, e não como sintaxe executável ou instruções de controle.</p>\n<p>O método correto de escaping depende do contexto de destino.</p>"
   },
   "eval-suite": {
     "term": "Conjunto de avaliações",
@@ -328,12 +328,12 @@
     "html": "<p>Treinamento adicional realizado em um modelo existente para adaptá-lo a uma tarefa, um domínio ou um comportamento específico.</p>"
   },
   "forged-evidence": {
-    "term": "Evidência Forjada",
-    "html": "<p>Informação fabricada ou manipulada apresentada como se fosse uma prova legítima.</p><p>Exemplos:</p><ul><li>relatórios inexistentes</li><li>Citações fabricadas</li><li>resultados falsos da ferramenta</li><li>discos inventados</li></ul>"
+    "term": "Evidência forjada",
+    "html": "<p>Informação fabricada ou manipulada apresentada como se fosse uma evidência legítima.</p>\n<p>Exemplos:</p>\n<ul>\n<li>relatórios inexistentes</li>\n<li>citações fabricadas</li>\n<li>resultados de ferramentas falsos</li>\n<li>registros inventados</li>\n</ul>"
   },
   "function-schema": {
-    "term": "Esquema de Funções",
-    "html": "<p>Uma descrição estruturada de uma função disponível para um LLM ou agente.</p><p>Pode definir:</p><ul><li>nome da função</li><li>parâmetros</li><li>tipos de parâmetros</li><li>descrições</li><li>campos obrigatórios</li></ul><p>Esquemas de funções podem revelar capacidades de aplicação e não devem ser tratados como segredos ou mecanismos de autorização.</p>"
+    "term": "Esquema de função",
+    "html": "<p>Uma descrição estruturada de uma função disponível para um LLM ou agente.</p>\n<p>Pode definir:</p>\n<ul>\n<li>nome da função</li>\n<li>parâmetros</li>\n<li>tipos dos parâmetros</li>\n<li>descrições</li>\n<li>campos obrigatórios</li>\n</ul>\n<p>Esquemas de função podem revelar as capacidades da aplicação e não devem ser tratados como segredos nem como mecanismos de autorização.</p>"
   },
   "govern--governed": {
     "term": "Govern / Governed",
@@ -352,8 +352,8 @@
     "html": "<p>Uma resposta cujas afirmações são sustentadas por uma fonte aprovada ou pelo contexto recuperado.</p>\n<p>Uma resposta fundamentada não é necessariamente correta: a própria fonte pode estar errada.</p>"
   },
   "groundedness": {
-    "term": "Fundamentação",
-    "html": "<p>O grau em que as reivindicações de um modelo são apoiadas pela evidência fornecida ou autorizada.</p><p>Uma resposta pode ser fluente e confiante ao mesmo tempo em que tem um fundamento pobre.</p>"
+    "term": "Grau de fundamentação",
+    "html": "<p>O quanto as afirmações de um modelo são sustentadas pela evidência fornecida ou por uma fonte autorizada.</p>\n<p>Uma resposta pode ser fluente e confiante e, ainda assim, ter pouca fundamentação.</p>"
   },
   "grounding": {
     "term": "Fundamentação",
@@ -384,8 +384,8 @@
     "html": "<p>Referenciar ou validar um artefato usando seu hash criptográfico esperado.</p>\n<p>Isso ajuda a impedir a substituição silenciosa de um artefato por outro.</p>"
   },
   "hidden-context": {
-    "term": "Contexto Oculto",
-    "html": "<p>Informação disponível para o modelo, mas não normalmente exibida para o usuário final.</p><p>Pode incluir:</p><ul><li>instruções do sistema</li><li>instruções de desenvolvimento</li><li>Políticas das OAR</li><li>esquemas de ferramentas</li><li>regras de fluxo de trabalho</li><li>contexto do perfil</li></ul><p><strong>Segredo escondido.</strong></p>"
+    "term": "Contexto oculto",
+    "html": "<p>Informações disponíveis para o modelo, mas que normalmente não são exibidas ao usuário final.</p>\n<p>Pode incluir:</p>\n<ul>\n<li>prompts de sistema</li>\n<li>instruções do desenvolvedor</li>\n<li>políticas de RAG</li>\n<li>esquemas de ferramentas</li>\n<li>regras de fluxo de trabalho</li>\n<li>contexto de perfil</li>\n</ul>\n<p><strong>Oculto ≠ secreto.</strong></p>"
   },
   "high-stakes-decision": {
     "term": "Decisão de alto impacto",
@@ -408,12 +408,12 @@
     "html": "<p>Uma referência que sempre identifica exatamente o mesmo artefato.</p>\n<p>Exemplo:</p>\n<pre class=\"code-block\"><code>sha256:abc123...</code></pre>\n<p>Diferentemente de referências mutáveis como:</p>\n<pre class=\"code-block\"><code>latest</code></pre>"
   },
   "improper-output-handling": {
-    "term": "Tratamento de Saída Incorrecto",
-    "html": "<p>Uso inseguro da saída gerada por LLM antes de ser passada para outro componente ou sistema.</p><pre class=\"code-block\"><code>LLM → shell\nLLM → SQL\nLLM → browser\nLLM → filesystem\nLLM → tool</code></pre><p>A saída do modelo deve ser tratada como entrada não confiável.</p>"
+    "term": "Tratamento inadequado da saída",
+    "html": "<p>Uso inseguro da saída gerada por um LLM antes que ela seja passada para outro componente ou sistema.</p>\n<pre class=\"code-block\"><code>LLM → shell\nLLM → SQL\nLLM → browser\nLLM → filesystem\nLLM → tool</code></pre>\n<p>A saída do modelo deve ser tratada como entrada não confiável.</p>"
   },
   "incorrect-state-inference": {
-    "term": "Inferência do Estado Incorreta",
-    "html": "<p>Uma falha onde um modelo assume que uma condição do sistema é verdadeira sem verificar o estado real.</p><p>Exemplo:</p><pre class=\"code-block\"><code>LLM: payment = confirmed\n\nActual system:\npayment = pending</code></pre><p>Estado inferido: estado verificado.</p>"
+    "term": "Inferência incorreta de estado",
+    "html": "<p>Uma falha em que o modelo assume que uma condição do sistema é verdadeira sem verificar o estado real.</p>\n<p>Exemplo:</p>\n<pre class=\"code-block\"><code>LLM: payment = confirmed\n\nActual system:\npayment = pending</code></pre>\n<p>Estado inferido ≠ estado verificado.</p>"
   },
   "inference": {
     "term": "Inferência",
@@ -508,16 +508,16 @@
     "html": "<p>Um serviço que expõe ferramentas, recursos ou capacidades por meio do MCP.</p>"
   },
   "membership-inference": {
-    "term": "Inferência de Composição",
-    "html": "<p>Um ataque que tenta determinar se um dado específico existe em um conjunto de dados ou índice sem necessariamente recuperar seu conteúdo.</p><p>Em sistemas vetoriais, escores de similaridade, timing ou padrões de resposta podem revelar associação.</p>"
+    "term": "Inferência de pertencimento",
+    "html": "<p>Um ataque que tenta determinar se um dado específico existe em um conjunto de dados ou índice, sem necessariamente recuperar seu conteúdo.</p>\n<p>Em sistemas vetoriais, pontuações de similaridade, tempo de resposta ou padrões de resposta podem revelar esse pertencimento.</p>"
   },
   "misattributed-evidence": {
-    "term": "Evidências Desiguais",
-    "html": "<p>Informação real ou fabricada incorretamente atribuída à fonte, documento, pessoa ou autoridade errada.</p>"
+    "term": "Evidência mal atribuída",
+    "html": "<p>Informação real ou fabricada atribuída incorretamente à fonte, ao documento, à pessoa ou à autoridade errada.</p>"
   },
   "misinformation": {
     "term": "Desinformação",
-    "html": "<p>Informações incorretas, incompletas, não suportadas ou enganosas produzidas por um sistema de IA que podem influenciar uma decisão humana ou ação automatizada.</p><p>O risco primário não é apenas gerar informações incorretas, mas ter essa informação confiável e agida.</p>"
+    "html": "<p>Informação incorreta, incompleta, sem sustentação ou enganosa produzida por um sistema de IA, que pode influenciar uma decisão humana ou uma ação automatizada.</p>\n<p>O principal risco não é apenas gerar informação incorreta, mas essa informação ser confiada e usada como base para agir.</p>"
   },
   "mixed-leakage": {
     "term": "Vazamento misto",
@@ -552,8 +552,8 @@
     "html": "<p>Uma decisão pequena e claramente definida, com um conjunto limitado de saídas possíveis.</p>"
   },
   "omission-failure": {
-    "term": "Falha na Omissão",
-    "html": "<p>Um fracasso causado por deixar de fora informações necessárias para uma decisão correta.</p><p>Exemplos:</p><ul><li>Excepções em falta</li><li>Riscos em falta</li><li>Prazos em falta</li><li>condições em falta</li><li>Faltam datas</li></ul><p>As restantes informações podem parecer correctas, embora ainda sejam enganosas.</p>"
+    "term": "Falha por omissão",
+    "html": "<p>Uma falha causada pela ausência de informações necessárias para uma decisão correta.</p>\n<p>Exemplos:</p>\n<ul>\n<li>exceções ausentes</li>\n<li>riscos ausentes</li>\n<li>prazos ausentes</li>\n<li>condições ausentes</li>\n<li>datas e horários ausentes</li>\n</ul>\n<p>As informações restantes podem parecer corretas e, ainda assim, ser enganosas.</p>"
   },
   "operational-autonomy": {
     "term": "Autonomia operacional",
@@ -568,8 +568,8 @@
     "html": "<p>A quantidade máxima de saída que um modelo tem permissão para gerar em uma solicitação.</p>"
   },
   "output-encoding": {
-    "term": "Codificação de Saída",
-    "html": "<p>Transformando saída para caracteres especiais são interpretados com segurança como dados em vez de código executável ou marcação.</p><p>Exemplo:</p><pre class=\"code-block\"><code>&lt;script&gt;</code></pre><p>pode ser codificado para HTML assim que o navegador o exibe como texto em vez de executá-lo.</p>"
+    "term": "Codificação de saída",
+    "html": "<p>Transformar a saída para que caracteres especiais sejam interpretados com segurança como dados, e não como código executável ou marcação.</p>\n<p>Exemplo:</p>\n<pre class=\"code-block\"><code>&lt;script&gt;</code></pre>\n<p>pode ser codificado para HTML, de modo que o navegador o exiba como texto em vez de executá-lo.</p>"
   },
   "output-formatting": {
     "term": "Formatação da saída",
@@ -580,8 +580,8 @@
     "html": "<p>Quando um modelo aprende os dados de treinamento de forma específica demais, incluindo ruídos, exceções ou padrões acidentais, em vez de aprender padrões que generalizam bem.</p>\n<p>Como resultado, ele tem um desempenho muito bom nos dados que já viu, mas pior em dados novos ou não vistos.</p>\n<p><strong>Pense em:</strong> decorar as respostas em vez de aprender a matéria.</p>"
   },
   "overreliance": {
-    "term": "Sobreconfiança",
-    "html": "<p>Confiança excessiva na produção gerada por IA.</p><p>Muitas vezes ocorre porque respostas fluentes, confiantes ou bem estruturadas parecem autoritárias.</p><p><strong>Fluência, correção. Confiança, provas.</strong></p>"
+    "term": "Confiança excessiva",
+    "html": "<p>Confiança exagerada em saídas geradas por IA.</p>\n<p>Costuma acontecer porque respostas fluentes, confiantes ou bem estruturadas parecem ter autoridade.</p>\n<p><strong>Fluência ≠ correção. Confiança ≠ evidência.</strong></p>"
   },
   "oversight": {
     "term": "Oversight",
@@ -593,11 +593,11 @@
   },
   "parameterized-query": {
     "term": "Consulta parametrizada",
-    "html": "<p>Uma consulta de banco de dados onde os valores dos dados são fornecidos separadamente da estrutura de comando SQL.</p><p>Em vez de construir SQL usando strings geradas por modelos:</p><pre class=\"code-block\"><code>SQL + arbitrary value</code></pre><p>a estrutura SQL permanece fixa e os valores são tratados como dados. Isto reduz o risco de injeção SQL.</p>"
+    "html": "<p>Uma consulta ao banco de dados em que os valores são fornecidos separadamente da estrutura do comando SQL.</p>\n<p>Em vez de montar o SQL com strings geradas pelo modelo:</p>\n<pre class=\"code-block\"><code>SQL + arbitrary value</code></pre>\n<p>a estrutura do SQL permanece fixa e os valores são tratados como dados. Isso reduz o risco de SQL injection.</p>"
   },
   "path-traversal": {
-    "term": "Caminho Traversal",
-    "html": "<p>Uma vulnerabilidade onde um atacante manipula um caminho de arquivo para acessar arquivos fora do diretório pretendido.</p><p>Padrão comum:</p><pre class=\"code-block\"><code>../../</code></pre><p>Os caminhos de arquivos gerados pelo LLM devem ser validados antes do acesso ao sistema de arquivos.</p>"
+    "term": "Travessia de diretórios (path traversal)",
+    "html": "<p>Uma vulnerabilidade em que o atacante manipula um caminho de arquivo para acessar arquivos fora do diretório pretendido.</p>\n<p>Padrão comum:</p>\n<pre class=\"code-block\"><code>../../</code></pre>\n<p>Caminhos de arquivo gerados por LLM devem ser validados antes de qualquer acesso ao sistema de arquivos.</p>"
   },
   "peft--parameter-efficient-fine-tuning": {
     "term": "PEFT — Ajuste fino eficiente em parâmetros",
@@ -612,16 +612,16 @@
     "html": "<p>Estimar o uso de tokens e o custo esperado antes de enviar uma solicitação ao modelo, permitindo rejeitar antecipadamente solicitações caras demais.</p>"
   },
   "prepared-statement": {
-    "term": "Declaração Preparada",
-    "html": "<p>Uma estrutura de consulta de banco de dados predefinida onde os parâmetros são fornecidos separadamente da sintaxe SQL.</p><p>Declarações preparadas ajudam a evitar que dados não confiáveis se tornem SQL executável.</p>"
+    "term": "Prepared statement (instrução preparada)",
+    "html": "<p>Uma estrutura de consulta ao banco de dados predefinida, em que os parâmetros são fornecidos separadamente da sintaxe SQL.</p>\n<p>Prepared statements ajudam a impedir que dados não confiáveis se tornem SQL executável.</p>"
   },
   "privilege-separation": {
-    "term": "Separação do Privilégio",
-    "html": "<p>Um princípio de segurança que separa tarefas e componentes de acordo com os privilégios que exigem.</p><p>Um componente não deve herdar automaticamente o acesso a capacidades desnecessárias para a sua tarefa.</p>"
+    "term": "Separação de privilégios",
+    "html": "<p>Um princípio de segurança que separa tarefas e componentes de acordo com os privilégios de que cada um precisa.</p>\n<p>Um componente não deve herdar automaticamente acesso a capacidades desnecessárias para sua tarefa.</p>"
   },
   "probing": {
     "term": "Sondagem",
-    "html": "<p>Interagindo repetidamente com um sistema para descobrir:</p><ul><li>comportamento oculto</li><li>regras internas</li><li>limites</li><li>permissões</li><li>ferramentas disponíveis</li><li>potenciais deficiências</li></ul>"
+    "html": "<p>Interagir repetidamente com um sistema para descobrir:</p>\n<ul>\n<li>comportamentos ocultos</li>\n<li>regras internas</li>\n<li>limites</li>\n<li>permissões</li>\n<li>ferramentas disponíveis</li>\n<li>possíveis fraquezas</li>\n</ul>"
   },
   "prompt-chaining": {
     "term": "Encadeamento de prompts",
@@ -668,8 +668,8 @@
     "html": "<p>Restringir a frequência com que um usuário, uma aplicação ou uma origem pode realizar ações ou enviar solicitações dentro de um período definido.</p>"
   },
   "rce--remote-code-execution": {
-    "term": "RCE — Execução remota do código",
-    "html": "<p>Uma vulnerabilidade que permite que um atacante cause código ou comandos arbitrários para executar em outro sistema.</p><p>Em aplicações LLM isso pode acontecer quando a saída do modelo é passada diretamente para:</p><ul><li>comandos de shell</li><li><code>exec</code></li><li><code>eval</code></li><li>intérpretes inseguros</li></ul>"
+    "term": "RCE — Execução remota de código",
+    "html": "<p>Uma vulnerabilidade que permite a um atacante fazer com que códigos ou comandos arbitrários sejam executados em outro sistema.</p>\n<p>Em aplicações com LLM, isso pode acontecer quando a saída do modelo é passada diretamente para:</p>\n<ul>\n<li>comandos de shell</li>\n<li><code>exec</code></li>\n<li><code>eval</code></li>\n<li>interpretadores inseguros</li>\n</ul>"
   },
   "reasoning-loop": {
     "term": "Loop de raciocínio",
@@ -700,12 +700,12 @@
     "html": "<p>Uma interface baseada em HTTP, comumente usada por serviços para expor operações e recursos.</p>"
   },
   "retrieval-jamming": {
-    "term": "Obtenção de Inibição",
-    "html": "<p>Um ataque de disponibilidade contra um sistema de recuperação onde o conteúdo especialmente trabalhado interfere com a recuperação útil.</p><pre class=\"code-block\"><code>Query\n  ↓\nBlocker Document\n  ↓\nBad Retrieval\n  ↓\nRefusal / Missing Answer</code></pre><p>Ao contrário da injecção rápida, o conteúdo recuperado não contém necessariamente instruções maliciosas.</p>"
+    "term": "Bloqueio da recuperação (retrieval jamming)",
+    "html": "<p>Um ataque à disponibilidade de um sistema de recuperação, em que um conteúdo especialmente criado atrapalha a recuperação de informações úteis.</p>\n<pre class=\"code-block\"><code>Query\n  ↓\nBlocker Document\n  ↓\nBad Retrieval\n  ↓\nRefusal / Missing Answer</code></pre>\n<p>Diferente da injeção de prompt, o conteúdo recuperado não precisa conter instruções maliciosas.</p>"
   },
   "reverse-engineering": {
     "term": "Engenharia reversa",
-    "html": "<p>O processo de estudar o comportamento, estrutura ou saídas de um sistema para inferir como seus mecanismos internos funcionam.</p><p>Em segurança de IA, isto pode ser usado para inferir:</p><ul><li>Regras de recusa</li><li>instruções ocultas</li><li>limiares</li><li>ferramentas</li><li>fluxos de trabalho</li></ul>"
+    "html": "<p>O processo de estudar o comportamento, a estrutura ou as saídas de um sistema para inferir como seus mecanismos internos funcionam.</p>\n<p>Em segurança de IA, pode ser usada para inferir:</p>\n<ul>\n<li>regras de recusa</li>\n<li>instruções ocultas</li>\n<li>limiares</li>\n<li>ferramentas</li>\n<li>fluxos de trabalho</li>\n</ul>"
   },
   "reversibility": {
     "term": "Reversibilidade",
@@ -728,16 +728,16 @@
     "html": "<p>O ambiente ou o momento em que um programa está sendo executado.</p>\n<p><strong>PT:</strong> tempo / ambiente de execução.</p>"
   },
   "runtime-verification": {
-    "term": "Verificação em Tempo de Execução",
-    "html": "<p>Verificando condições e estado do sistema no momento uma ação está prestes a ser executada.</p><p>Usado especialmente para ações de alto impacto.</p><pre class=\"code-block\"><code>LLM proposes action\n        ↓\nRuntime Check\n        ↓\nAllow / Reject</code></pre>"
+    "term": "Verificação em tempo de execução",
+    "html": "<p>Verificar condições e o estado do sistema no momento em que uma ação está prestes a ser executada.</p>\n<p>Usada principalmente em ações de alto impacto.</p>\n<pre class=\"code-block\"><code>LLM proposes action\n        ↓\nRuntime Check\n        ↓\nAllow / Reject</code></pre>"
   },
   "sandbox--sandboxing": {
     "term": "Ambiente isolado / Isolamento",
     "html": "<p>Um ambiente isolado que restringe o que um modelo, agente ou componente não confiável pode acessar ou executar.</p>"
   },
   "sanitization": {
-    "term": "Saneamento",
-    "html": "<p>Removendo, modificando ou neutralizando conteúdo potencialmente perigoso antes de atingir outro componente.</p><p>Exemplos incluem remoção:</p><ul><li>HTML perigoso</li><li>caracteres de controlo</li><li>URLs inseguros</li><li>marcação inesperada</li></ul><p>A validação pergunta se algo é permitido. A higienização torna o conteúdo perigoso mais seguro.</p>"
+    "term": "Sanitização",
+    "html": "<p>Remover, modificar ou neutralizar conteúdo potencialmente perigoso antes que ele chegue a outro componente.</p>\n<p>Exemplos do que remover:</p>\n<ul>\n<li>HTML perigoso</li>\n<li>caracteres de controle</li>\n<li>URLs inseguras</li>\n<li>marcação inesperada</li>\n</ul>\n<p>A validação pergunta se algo é permitido. A sanitização torna o conteúdo perigoso mais seguro.</p>"
   },
   "sbom--software-bill-of-materials": {
     "term": "SBOM — Lista de materiais de software",
@@ -752,16 +752,16 @@
     "html": "<p>Uma permissão restrita a um recurso ou ação específicos.</p>\n<p>Exemplo: acesso de <code>read</code> a uma pasta, em vez de acesso de <code>read/write</code> ao drive inteiro.</p>"
   },
   "security-boundary": {
-    "term": "Limite de Segurança",
-    "html": "<p>Um limite em que os controlos de segurança determinam se o acesso ou uma acção é permitido.</p><p>As instruções do sistema e as instruções ocultas não devem ser tratadas como limites de segurança.</p>"
+    "term": "Fronteira de segurança",
+    "html": "<p>Um limite em que controles de segurança determinam se um acesso ou uma ação é permitido.</p>\n<p>Prompts de sistema e instruções ocultas não devem ser tratados como fronteiras de segurança.</p>"
   },
   "self-consistency": {
     "term": "Autoconsistência",
     "html": "<p>Gerar vários caminhos de raciocínio e escolher a resposta mais consistente entre eles.</p>\n<pre class=\"code-block\"><code>Same question → N reasoning paths → majority / most consistent answer</code></pre>"
   },
   "semantic-cache": {
-    "term": "Cache Semântico",
-    "html": "<p>Um cache que usa similaridade semântica em vez de correspondência exata para reutilizar resultados anteriores.</p><pre class=\"code-block\"><code>New Query\n   ↓\nEmbedding Similarity\n   ↓\nSimilar Cached Query?\n   ↓\nReuse Response</code></pre><p>Seu limiar de similaridade pode se tornar uma superfície de ataque.</p>"
+    "term": "Cache semântico",
+    "html": "<p>Um cache que usa similaridade semântica, em vez de correspondência exata, para reutilizar resultados anteriores.</p>\n<pre class=\"code-block\"><code>New Query\n   ↓\nEmbedding Similarity\n   ↓\nSimilar Cached Query?\n   ↓\nReuse Response</code></pre>\n<p>Seu limiar de similaridade pode se tornar uma superfície de ataque.</p>"
   },
   "semantic-classifier": {
     "term": "Classificador semântico",
@@ -785,7 +785,7 @@
   },
   "similarity-score": {
     "term": "Pontuação de similaridade",
-    "html": "<p>Uma medição numérica representando como dois vetores são semelhantes.</p><p>Os escores de similaridade são comumente usados para classificar os resultados de recuperação.</p><p>Expor as pontuações brutas pode permitir fuga de informação ou inferência de adesão.</p>"
+    "html": "<p>Uma medida numérica que representa o quão semelhantes são dois vetores.</p>\n<p>Pontuações de similaridade são comumente usadas para ordenar resultados de recuperação.</p>\n<p>Expor as pontuações brutas pode permitir vazamento de informações ou inferência de pertencimento.</p>"
   },
   "sleeper-agent": {
     "term": "Agente adormecido",
@@ -816,8 +816,8 @@
     "html": "<p>Gerar hashes a partir dos estados de um agente para detectar estados repetidos, ajudando a identificar loops ou padrões repetidos de execução.</p>"
   },
   "state-inference": {
-    "term": "Inferência do Estado",
-    "html": "<p>O processo de estimativa ou raciocínio sobre o estado atual de um sistema a partir de informações disponíveis em vez de ler esse estado diretamente de uma fonte autoritária.</p>"
+    "term": "Inferência de estado",
+    "html": "<p>O processo de estimar ou deduzir o estado atual de um sistema a partir das informações disponíveis, em vez de ler esse estado diretamente de uma fonte autorizada.</p>"
   },
   "stateful": {
     "term": "Com estado (stateful)",
@@ -856,8 +856,8 @@
     "html": "<p><strong>Supported:</strong> sustentado por evidência. <strong>Unsupported:</strong> não sustentado por evidência.</p>\n<p><strong>PT:</strong> sustentado / não sustentado (por evidência).</p>"
   },
   "system-prompt": {
-    "term": "Pergunta do Sistema",
-    "html": "<p>Instruções de alto nível fornecidas a um modelo pela aplicação para definir seu papel, comportamento, restrições ou contexto.</p><p>Um prompt do sistema pode influenciar o comportamento mas não deve ser tratado como:</p><ul><li>armazenamento seguro</li><li>autenticação</li><li>autorização</li><li>aplicação de políticas determinísticas</li></ul>"
+    "term": "Prompt de sistema",
+    "html": "<p>Instruções de alto nível fornecidas ao modelo pela aplicação para definir seu papel, comportamento, restrições ou contexto.</p>\n<p>Um prompt de sistema pode influenciar o comportamento, mas não deve ser tratado como:</p>\n<ul>\n<li>armazenamento seguro</li>\n<li>autenticação</li>\n<li>autorização</li>\n<li>aplicação determinística de políticas</li>\n</ul>"
   },
   "tampering": {
     "term": "Adulteração",
@@ -872,8 +872,8 @@
     "html": "<p>Um mecanismo imposto pelo sistema para restringir ou governar comportamentos.</p>\n<p>Exemplos:</p>\n<ul>\n<li>permissões</li>\n<li>limites de taxa</li>\n<li>pontos de aprovação</li>\n<li>bloqueios rígidos</li>\n<li>sandboxing</li>\n</ul>\n<p>Um prompt pede um comportamento; um controle técnico o impõe.</p>"
   },
   "tenant": {
-    "term": "Tenant",
-    "html": "<p>Um cliente, organização, espaço de trabalho ou grupo isolado compartilhando a mesma infraestrutura de aplicação subjacente.</p><p>Um sistema multi-doente serve vários inquilinos ao tentar manter seus dados e permissões isoladas.</p>"
+    "term": "Tenant (locatário)",
+    "html": "<p>Um cliente, organização, workspace ou grupo isolado que compartilha a mesma infraestrutura de aplicação.</p>\n<p>Um sistema multi-tenant atende vários tenants enquanto tenta manter seus dados e permissões isolados.</p>"
   },
   "test-case": {
     "term": "Caso de teste",
@@ -889,7 +889,7 @@
   },
   "threshold": {
     "term": "Limiar",
-    "html": "<p>Um limite predefinido usado para tomar uma decisão.</p><p>Exemplo:</p><pre class=\"code-block\"><code>similarity &gt;= 0.85 → match\nsimilarity &lt; 0.85  → no match</code></pre><p>Limiares são comuns na recuperação, caches semânticos, classificadores e controles de segurança.</p>"
+    "html": "<p>Um limite predefinido usado para tomar uma decisão.</p>\n<p>Exemplo:</p>\n<pre class=\"code-block\"><code>similarity &gt;= 0.85 → match\nsimilarity &lt; 0.85  → no match</code></pre>\n<p>Limiares são comuns em recuperação, caches semânticos, classificadores e controles de segurança.</p>"
   },
   "token-budget": {
     "term": "Orçamento de tokens",
@@ -912,8 +912,8 @@
     "html": "<p>O ato de solicitar e executar uma ferramenta.</p>\n<p>No MCP, é feito com <code>call_tool()</code>.</p>"
   },
   "tool-schema": {
-    "term": "Esquema de Ferramentas",
-    "html": "<p>Descrição estruturada de uma ferramenta exposta a um LLM ou agente.</p><p>Pode revelar:</p><ul><li>capacidades da ferramenta</li><li>argumentos aceites</li><li>parâmetros necessários</li><li>funcionalidade interna</li></ul><p>Os esquemas de ferramentas descrevem a capacidade; não devem determinar a autorização.</p>"
+    "term": "Esquema de ferramenta",
+    "html": "<p>Uma descrição estruturada de uma ferramenta exposta a um LLM ou agente.</p>\n<p>Pode revelar:</p>\n<ul>\n<li>capacidades da ferramenta</li>\n<li>argumentos aceitos</li>\n<li>parâmetros obrigatórios</li>\n<li>funcionamento interno</li>\n</ul>\n<p>Esquemas de ferramenta descrevem capacidade; não devem determinar autorização.</p>"
   },
   "tool-calling-loop": {
     "term": "Loop de chamadas de ferramentas",
@@ -948,8 +948,8 @@
     "html": "<p>Uma fronteira entre componentes, usuários ou fontes de dados com diferentes níveis de confiança. Atravessá-la normalmente deve exigir validação ou controles adicionais.</p>"
   },
   "trust-tier": {
-    "term": "Nível de Confiança",
-    "html": "<p>Uma classificação que representa o quanto uma fonte de dados ou componente é confiável.</p><p>Exemplo:</p><pre class=\"code-block\"><code>Tier 1 → internal verified data\nTier 2 → trusted partner data\nTier 3 → external / untrusted web data</code></pre><p>Diferentes níveis de confiança podem exigir índices separados ou controles de segurança.</p>"
+    "term": "Nível de confiança",
+    "html": "<p>Uma classificação que representa o quanto uma fonte de dados ou um componente é confiável.</p>\n<p>Exemplo:</p>\n<pre class=\"code-block\"><code>Tier 1 → internal verified data\nTier 2 → trusted partner data\nTier 3 → external / untrusted web data</code></pre>\n<p>Níveis de confiança diferentes podem exigir índices ou controles de segurança separados.</p>"
   },
   "type-safe-classifier": {
     "term": "Classificador com tipagem segura",
@@ -965,11 +965,11 @@
   },
   "validation": {
     "term": "Validação",
-    "html": "<p>Verificar se a entrada ou saída está em conformidade com as regras esperadas antes de ser aceita ou utilizada.</p><p>Exemplos:</p><ul><li>tipo correto</li><li>valores permitidos</li><li>esquema esperado</li><li>intervalo válido</li><li>acção permitida</li></ul><p>A validação não necessariamente remove conteúdo perigoso; esse é o papel da higienização.</p>"
+    "html": "<p>Verificar se uma entrada ou saída segue as regras esperadas antes de ser aceita ou usada.</p>\n<p>Exemplos:</p>\n<ul>\n<li>tipo correto</li>\n<li>valores permitidos</li>\n<li>esquema esperado</li>\n<li>intervalo válido</li>\n<li>ação permitida</li>\n</ul>\n<p>A validação não remove necessariamente conteúdo perigoso; esse é o papel da sanitização.</p>"
   },
   "vector-database": {
-    "term": "Base de Dados Vetor",
-    "html": "<p>Um banco de dados projetado para armazenar e pesquisar representações vetoriais, como incorporações.</p><p>Ele geralmente suporta a pesquisa de proximidade mais próxima ou semelhança e é frequentemente usado em:</p><ul><li>RAG</li><li>pesquisa semântica</li><li>memória do agente</li><li>sistemas de recomendação</li></ul>"
+    "term": "Banco de dados vetorial",
+    "html": "<p>Um banco de dados projetado para armazenar e buscar representações vetoriais, como embeddings.</p>\n<p>Normalmente oferece busca por vizinhos mais próximos ou por similaridade e é muito usado em:</p>\n<ul>\n<li>RAG</li>\n<li>busca semântica</li>\n<li>memória de agentes</li>\n<li>sistemas de recomendação</li>\n</ul>"
   },
   "vet--vet-a-supplier": {
     "term": "Avaliar / Verificar um fornecedor",
@@ -980,12 +980,12 @@
     "html": "<p>Uma instância responsável por processar tarefas ou requisições.</p>"
   },
   "xss--cross-site-scripting": {
-    "term": "XSS - Programação Cross- Site",
-    "html": "<p>Uma vulnerabilidade web onde o conteúdo controlado por atacante faz com que o JavaScript ou outro conteúdo ativo seja executado no navegador de outro usuário.</p><p>Em aplicações LLM, XSS pode ocorrer quando gerado HTML, Markdown, ou JavaScript é renderizado sem higienização adequada e codificação de saída.</p>"
+    "term": "XSS — Cross-Site Scripting",
+    "html": "<p>Uma vulnerabilidade web em que conteúdo controlado pelo atacante faz com que JavaScript ou outro conteúdo ativo seja executado no navegador de outro usuário.</p>\n<p>Em aplicações com LLM, XSS pode ocorrer quando HTML, Markdown ou JavaScript gerado é renderizado sem sanitização e codificação de saída adequadas.</p>"
   },
   "zero-trust": {
-    "term": "Zero Confiança",
-    "html": "<p>Um princípio de segurança baseado em não confiar automaticamente em um usuário, componente, rede ou saída de modelo.</p><p>Todo acesso ou ação deve ser explicitamente verificado com base em identidade, permissões, contexto e política.</p><p>Para aplicações LLM: tratar a saída do modelo como entrada não confiável.</p>"
+    "term": "Confiança zero (zero trust)",
+    "html": "<p>Um princípio de segurança baseado em não confiar automaticamente em nenhum usuário, componente, rede ou saída de modelo.</p>\n<p>Todo acesso ou ação deve ser verificado explicitamente com base em identidade, permissões, contexto e política.</p>\n<p>Em aplicações com LLM: trate a saída do modelo como entrada não confiável.</p>"
   },
   "zero-shot-prompting": {
     "term": "Prompting zero-shot",

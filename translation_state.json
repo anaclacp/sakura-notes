@@ -57,7 +57,7 @@
   },
   "assumption": {
     "source_sha256": "b8947eb76a1aac219b319900beff5b7c843384278b258c709517283ee8c63596",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "attestation": {
     "source_sha256": "871253c01716153553fbe287b09bc86c7763a114c12c13c687b8721376f4b60f",
@@ -69,7 +69,7 @@
   },
   "authorization": {
     "source_sha256": "5efce61acb584e584d49788d54bab39dd35a41508c70d925ac1adcfe4fd1c4a5",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "backdoor": {
     "source_sha256": "f358b743b7acfb06871e4fb980581c2959ec5492e556670bed673fc04b43fda3",
@@ -113,7 +113,7 @@
   },
   "claim-check-act": {
     "source_sha256": "c7ebd9e87c56cf29893ead086ed0f42919f172d5b553268a583cddbc33eb5f97",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "claim-level-evaluation": {
     "source_sha256": "891040fb8e6fa6d0ee7218a0a2338500edf4c4f6e8d73fea78c5d589925c46f2",
@@ -145,7 +145,7 @@
   },
   "content-security-policy--csp": {
     "source_sha256": "e756a774437e883c8630d8c9007690c9945659cb0c2d7da8987298d86d46f996",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "context-injection": {
     "source_sha256": "3a7e9e5e9b37a88c1c970eabe55be9085856fb00db0145f03e40ee7113c214a5",
@@ -157,7 +157,7 @@
   },
   "context-aware-output-encoding": {
     "source_sha256": "dd2f5e0d54c32410361cfd1dbd1534af6d861714cc2e4d420eed4ded13b39b6e",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "continuous-learning": {
     "source_sha256": "720068e7f33a45d3f03bf9f311de2669d6dfae78480b77f9e4fad446776d4902",
@@ -165,7 +165,7 @@
   },
   "control-character": {
     "source_sha256": "bc18058e6e4782bdefca2727682b07f3776b31d1daf83c02d9748696d0b0e828",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "corpus--corpora": {
     "source_sha256": "e89030b171e1f6db6b9dcd43da52e478223134498d20eb31eb8c1eeaf5a87b2b",
@@ -181,7 +181,7 @@
   },
   "cosine-similarity": {
     "source_sha256": "104e9a665046d63db4441e6416ac2832c4241189a73a25c9013b6f1985eae53a",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "cost-asymmetry": {
     "source_sha256": "83cc3ae5bec9b4e83d9ff000404b34b5946b75277f75d829a441975b59dc88f3",
@@ -189,7 +189,7 @@
   },
   "cross-tenant-leakage": {
     "source_sha256": "150e895b199b11b3608eb2ebcc3eaa2acc7c4a1fae96bbe660808fcc7ab40667",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "curated-dataset": {
     "source_sha256": "4596df7a33c639c9f0c0a9dc78ceae3160f55a4ba1f4f3570207239d471159ae",
@@ -213,7 +213,7 @@
   },
   "deduplication": {
     "source_sha256": "ef01d0a96218cdf3b58cfd2d1617b999cdf7d8a2fb1f183b8bf70ff6cca9fb2b",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "delegated-execution": {
     "source_sha256": "4051de9fc561f43a7b173834d797e044f7fd52ea81d450d21264494e9d59aad3",
@@ -237,7 +237,7 @@
   },
   "developer-instructions": {
     "source_sha256": "6cdd5069ea2a4cb310cddcdb401bea23f5283e5021bc469e969b6264b21e318b",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "digest": {
     "source_sha256": "d49f660b14c206e4850cb9ab769f6d1c2438d0228604b73cd4b7b5072f665731",
@@ -273,7 +273,7 @@
   },
   "embedding-inversion": {
     "source_sha256": "78f9ab6f2a4e62b4220721681636c1b427923c4abc6cf79596b76bc41b95274e",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "enforce": {
     "source_sha256": "de0b11515314750fd6d902aceda58c4abb0ec8bd3b673a8be14b04bce27895a1",
@@ -289,7 +289,7 @@
   },
   "escaping": {
     "source_sha256": "f13d0b57855e4e14c0646e7f24b0308d02538d3236fbeebf425bce40c4641fb1",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "eval-suite": {
     "source_sha256": "e3e6000ef946c72d0384fbe51bab2d11bdaaa41959d1bcce4184c872ab099cc8",
@@ -329,11 +329,11 @@
   },
   "forged-evidence": {
     "source_sha256": "098bafb897ab9e4d8f9289cf30d6ebc564ea05956e6c10217a7fdf2e8f348aba",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "function-schema": {
     "source_sha256": "1801b6f7df5f0db44e9f995749f979eb4a621362606474d267353206c5f8ffab",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "govern--governed": {
     "source_sha256": "84bcb602beafa275a8a02361c9f7a668e967dfb7fa5f321d403ca123acd63d93",
@@ -353,7 +353,7 @@
   },
   "groundedness": {
     "source_sha256": "d00cc450c77890beff02bcd8f8144f3b4bb578bc405a797e72241cf9b4d415d7",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "grounding": {
     "source_sha256": "549f4e175610c611038ff357744aa9eaecd2299f350069e7e957f08a3fabb4b3",
@@ -385,7 +385,7 @@
   },
   "hidden-context": {
     "source_sha256": "4df1f988e11777ee846e39af319e0c297d50553c39cfdb1310ec713ea69baae9",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "high-stakes-decision": {
     "source_sha256": "59adbacf18459b7e5642577d238b5d50f26000b3d59c8e054c0f895d103f7ac2",
@@ -409,11 +409,11 @@
   },
   "improper-output-handling": {
     "source_sha256": "ee6cbabb042a4ffa386daa8211cd4a9cb78f378aba78b1fa8a604f85a7138b8b",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "incorrect-state-inference": {
     "source_sha256": "e2a6be065fad86fd1afd0df3527c6ebb708cda102b69e15badbd8888e6b7a7e0",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "inference": {
     "source_sha256": "2bcdf75a89d10d08a4ccde904f48f462d15279e3209089e91f85e34cc670efaf",
@@ -509,15 +509,15 @@
   },
   "membership-inference": {
     "source_sha256": "b86953e1f8bb305f61c9de85d01fa05e4a43f16577942f54f65dbf5a9c34d148",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "misattributed-evidence": {
     "source_sha256": "576d98bdc80d4896b223639b81e8562f034dd7b8b540d1680ea7cf47d6b69447",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "misinformation": {
     "source_sha256": "ab4286eee7731cd120c17a6d554880f2a5eec515471da0765306da9498b40be2",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "mixed-leakage": {
     "source_sha256": "60b7bac613a4930bf4ad93f573da368794f6577467e7f3a1d010ac62ceb5cf02",
@@ -553,7 +553,7 @@
   },
   "omission-failure": {
     "source_sha256": "0d287e5c0a66c8a2e222a7b9e0e0037ae63fb3e8c7571cc57a37cb66d885b2c4",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "operational-autonomy": {
     "source_sha256": "83351a34b273f9c2eac1da5b1cc5faff88f42fdcafd39593318f8421c52ca471",
@@ -569,7 +569,7 @@
   },
   "output-encoding": {
     "source_sha256": "92e06e8248feead5321af9320e0255011fcb63512bec264701cae570077f9f2c",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "output-formatting": {
     "source_sha256": "3de3b0053196a4b65c561f9dc821069731bd3ac8760732f71ad0298a28af0ad4",
@@ -581,7 +581,7 @@
   },
   "overreliance": {
     "source_sha256": "73f6b6eb6849862680a2e9f42f37152ea1c36488e8c6dcec7416a29cc65f5b53",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "oversight": {
     "source_sha256": "047d3bedbb1d8897db3fb045fbcde084376194c854cc25f88cdeb41563aefced",
@@ -593,11 +593,11 @@
   },
   "parameterized-query": {
     "source_sha256": "a116a5c8d871b68e3025dc8ef436e0a3f5ced271a818b62b5abbb17c773cb483",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "path-traversal": {
     "source_sha256": "6d5224096006f46c16e392d757f94e512db823a90519ae88949a93c61f7c96f4",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "peft--parameter-efficient-fine-tuning": {
     "source_sha256": "6f0adc427cbbea625ef3d5eb7fce7e7a42af539c5647b1c94f0d26d885b0aa74",
@@ -613,15 +613,15 @@
   },
   "prepared-statement": {
     "source_sha256": "fb6c793609b14031d56e63872cef32a10d38687dfe51e1aaab87b04ca93c715a",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "privilege-separation": {
     "source_sha256": "524e9ca0bd7f2660e99a578993b82be41fe30ecc01975d48b0adf6c0e266b2a0",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "probing": {
     "source_sha256": "b58a79941da8e6699635512329db0ac72a480c436bb6857ff759b4ca6f16bf24",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "prompt-chaining": {
     "source_sha256": "fcd1b15dd39a76ae436a1a1a204a839bcfbc97b4fd5172e5f9cda18dcbda0cd9",
@@ -669,7 +669,7 @@
   },
   "rce--remote-code-execution": {
     "source_sha256": "0eb20b88cf7874d9e8a871c2c393405b1ce9f2ffca2452fbd8655b12380255e5",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "reasoning-loop": {
     "source_sha256": "11aff2b16ac6f7e4fd9c334ab165309c0a5bde9a8a05ccce5b190dae24148108",
@@ -701,11 +701,11 @@
   },
   "retrieval-jamming": {
     "source_sha256": "49fb030af700d7a74f5467887bdfbf817db3c8e9faf37cabb5618b37f7e83b85",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "reverse-engineering": {
     "source_sha256": "9e9351e793b6da919dc25101f07bbfa4f8551a6c6b20bdb18b5b18ec400f656a",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "reversibility": {
     "source_sha256": "253fbc0f689034ab0dcdf09924ffc889284fe421c53356e38ba0702f080353ac",
@@ -729,7 +729,7 @@
   },
   "runtime-verification": {
     "source_sha256": "2c4782143e9eb7797f27db0f65c02e5ec3146b342f8878b4aee55938b5cfae5f",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "sandbox--sandboxing": {
     "source_sha256": "42566b1046b720bc6559a3924316133d716cdea47bce9d68efe3c33538adba1d",
@@ -737,7 +737,7 @@
   },
   "sanitization": {
     "source_sha256": "348f1f3448b245a65e1dff6d6d8dd284697831275da7c6cf4a20594622c258fb",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "sbom--software-bill-of-materials": {
     "source_sha256": "5ece884fc73e42ae17b321b6ecc99a7be6fd929a3dfa8fa3bf65786aa852fe3e",
@@ -753,7 +753,7 @@
   },
   "security-boundary": {
     "source_sha256": "65cb7e294fef3c2949659401a9fb4528defc465a6d59ba894b3fcfc2206c3f2a",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "self-consistency": {
     "source_sha256": "340ec40c4f63ce0ac52d198257f5ad178bf342ea6ea5cc61053cabbf09081bc6",
@@ -761,7 +761,7 @@
   },
   "semantic-cache": {
     "source_sha256": "2f95f3ce22a6fafd056813dcdf7aa39c3e44225ed1646fabb48e8062ed949cd5",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "semantic-classifier": {
     "source_sha256": "f8b8deb31e6074d5cd7cbbb8c03083cf01249b058b885aaa13d74d9994839b40",
@@ -785,7 +785,7 @@
   },
   "similarity-score": {
     "source_sha256": "a92a10fadb377ccaf7d87fee0e7d7f88102b73bff9064a1553840718ecd62896",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "sleeper-agent": {
     "source_sha256": "5d3d917fdd65a565fc9336036a502f9ea00186a1e6610b56422eebe2a5cdc754",
@@ -817,7 +817,7 @@
   },
   "state-inference": {
     "source_sha256": "86b36ceb164f81c8460efacd069f1bd6e7cd8b43fd0a9ea19b7fca258c5081ed",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "stateful": {
     "source_sha256": "ce76e130f9c959822acc00591af242d0eec39c628174b8e95c9fe7de9532ee25",
@@ -857,7 +857,7 @@
   },
   "system-prompt": {
     "source_sha256": "03c15c980240f61e674b805dd68c16feabb77411d2fbb07aad867e852d6c49de",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "tampering": {
     "source_sha256": "aef3ad9cf90e0a4ae50cfec126090bc474d726e24f0956b2ffa12f20e5026ee0",
@@ -873,7 +873,7 @@
   },
   "tenant": {
     "source_sha256": "656be62f7a33d5952bcd6cd4de2eef886ed855c52b7f3d183215fff502bd5ef3",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "test-case": {
     "source_sha256": "710b1b989a2cbda6fdb09647dec287868f762b4b5061a913322c4515ce5d1dc9",
@@ -889,7 +889,7 @@
   },
   "threshold": {
     "source_sha256": "fdd6ae6c7b47976a92eb8e284c84813bac7a2760ace22cc6bf711fab57c354db",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "token-budget": {
     "source_sha256": "89436d6bf652dd307fb0d81db3e3731eae1963b697877d76498666fd0e5ce784",
@@ -913,7 +913,7 @@
   },
   "tool-schema": {
     "source_sha256": "289d8c924e24d66d3bf22be584364a5796ffc6dbedd29eeb581642f5fd48e68a",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "tool-calling-loop": {
     "source_sha256": "b407b90b16f4275fc6acac8444cf8e71b133f54cdb94477fbf395af30419ee9d",
@@ -949,7 +949,7 @@
   },
   "trust-tier": {
     "source_sha256": "73444ed6644ee8d26d29a2bfdc9c53ed50869a5264d2387e97316e12af4bca4c",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "type-safe-classifier": {
     "source_sha256": "4e3f7c25281dca5af94af24e07bc102b4e82ffb33489cbdbc596dc565612a69c",
@@ -965,11 +965,11 @@
   },
   "validation": {
     "source_sha256": "e1e1e87da9cb7c998437ed7fc6011ddc4aa49129645585542950f51eabdc802b",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "vector-database": {
     "source_sha256": "88ece7968780f34b73e07a98c5e25f54e2377ad6c7a4fcc35e7f72a7edf651e3",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "vet--vet-a-supplier": {
     "source_sha256": "a078ee9b52879a8878a9c5e8d4f01949380a16664f36b88f2816f3fd236bc7c6",
@@ -981,11 +981,11 @@
   },
   "xss--cross-site-scripting": {
     "source_sha256": "503a39b915c20bd998b89c16451bcaa5015836b9eb93db1c6905fa6eac0f73ec",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "zero-trust": {
     "source_sha256": "86d55012b4882fa4430d5944fde3dfab434dc8f75bbbae89f31684646a1ed81c",
-    "method": "argos-en-pt-1.9"
+    "method": "reviewed"
   },
   "zero-shot-prompting": {
     "source_sha256": "248761d33aaf7b5fd19e73c93c45faa91a3e6f611db40e567d72485af16f4e8d",
