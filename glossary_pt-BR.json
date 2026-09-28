@@ -1,4 +1,20 @@
 {
+  "abstain": {
+    "term": "Abstain",
+    "html": "<p>Deixar de responder ou de agir.</p>\n<p><strong>PT:</strong> abster-se.</p>"
+  },
+  "abstention": {
+    "term": "Abstenção",
+    "html": "<p>Escolher não responder quando o sistema não tem evidência suficiente.</p>"
+  },
+  "accountability": {
+    "term": "Responsabilização",
+    "html": "<p>A responsabilidade pelos resultados de uma decisão ou ação.</p>\n<p>A responsabilização continua com pessoas e organizações; ela não pode ser delegada a um modelo.</p>\n<p><strong>PT:</strong> responsabilização / prestação de contas.</p>"
+  },
+  "accountability-vacuum": {
+    "term": "Vácuo de responsabilização",
+    "html": "<p>Situação em que a responsabilidade fica pouco clara ou é afastada dos humanos.</p>\n<p>Sinal típico: &quot;o agente decidiu&quot; é dado como explicação para um resultado, e nenhuma pessoa responde por ele.</p>"
+  },
   "adapter": {
     "term": "Adaptador",
     "html": "<p>Um pequeno conjunto de parâmetros adicionais usado para modificar ou especializar o comportamento de um modelo base sem retreinar o modelo inteiro.</p>\n<p>Exemplo comum: <strong>adaptador LoRA</strong>.</p>\n<pre class=\"code-block\"><code>Modelo base + Adaptador → Modelo especializado</code></pre>"
@@ -7,9 +23,33 @@
     "term": "Perturbação adversarial",
     "html": "<p>Uma pequena modificação cuidadosamente elaborada em uma entrada, projetada para causar um comportamento inesperado ou prejudicial no modelo.</p>"
   },
+  "agent-autonomy": {
+    "term": "Autonomia do agente",
+    "html": "<p>O grau em que um agente pode agir sem aprovação humana constante.</p>\n<p>A autonomia deve crescer com a confiabilidade do agente e diminuir conforme aumentam o que está em jogo e a irreversibilidade da ação.</p>\n<p><strong>Pense em:</strong> o tamanho da coleira.</p>"
+  },
+  "agent-harness": {
+    "term": "Harness do agente",
+    "html": "<p>O sistema em volta de um modelo que gerencia ferramentas, contexto, estado, permissões, execução e controles.</p>\n<pre class=\"code-block\"><code>Agent = Model + Harness</code></pre>\n<p>A maior parte dos controles de governança fica no harness, não no modelo.</p>"
+  },
+  "agent-identity": {
+    "term": "Identidade do agente",
+    "html": "<p>Uma identidade verificável atribuída a um agente quando ele interage com outros sistemas.</p>\n<p>Permite vincular permissões, trilhas de auditoria e responsabilização a um agente específico.</p>"
+  },
+  "agent-registry": {
+    "term": "Registro de agentes",
+    "html": "<p>Um inventário governado dos agentes implantados e de seus metadados.</p>\n<p>Pode incluir:</p>\n<ul>\n<li>responsável</li>\n<li>finalidade</li>\n<li>permissões</li>\n<li>ferramentas</li>\n<li>versão do modelo</li>\n<li>status</li>\n</ul>"
+  },
+  "agent-runtime": {
+    "term": "Runtime do agente",
+    "html": "<p>O ambiente de execução em que um agente roda em produção.</p>"
+  },
   "aibom--ai-bill-of-materials": {
     "term": "AIBOM — Lista de materiais de IA",
     "html": "<p>Um inventário dos componentes relacionados à IA usados em um sistema.</p>\n<p>Pode incluir:</p>\n<ul><li>modelos</li><li>conjuntos de dados</li><li>adaptadores</li><li>tokenizadores</li><li>frameworks</li><li>ambientes de execução de inferência</li><li>serviços externos de IA</li></ul>\n<p>Útil para proveniência, segurança, governança e conformidade.</p>\n<p><strong>Pense em:</strong> uma lista de ingredientes da IA.</p>"
+  },
+  "approval-gate": {
+    "term": "Ponto de aprovação",
+    "html": "<p>Um ponto de controle que exige aprovação antes que uma ação possa continuar.</p>\n<p>Comum antes de ações irreversíveis ou de alto impacto, como pagamentos, exclusões ou comunicação externa.</p>"
   },
   "artifact": {
     "term": "Artefato",
@@ -22,6 +62,10 @@
   "attestation": {
     "term": "Atestação",
     "html": "<p>Um mecanismo usado para verificar se um dispositivo, ambiente ou instância de software está operando em um estado esperado e confiável.</p>\n<p>Frequentemente usado na segurança de dispositivos e infraestrutura.</p>"
+  },
+  "audit-trail": {
+    "term": "Trilha de auditoria",
+    "html": "<p>Um registro de ações e eventos usado para entender o que aconteceu e quem agiu.</p>"
   },
   "authorization": {
     "term": "Autorização",
@@ -43,6 +87,18 @@
     "term": "Raio de impacto",
     "html": "<p>O alcance máximo dos danos ou do impacto que um componente, uma conta ou um sistema comprometido pode causar.</p>"
   },
+  "capability": {
+    "term": "Capacidade",
+    "html": "<p>Uma função ou recurso que um sistema expõe para outro componente usar.</p>\n<p>Expor uma capacidade não significa que todo chamador está autorizado a usá-la.</p>"
+  },
+  "capability-boundary": {
+    "term": "Fronteira de capacidades",
+    "html": "<p>Uma interface definida que separa quais capacidades um serviço expõe de como elas são implementadas internamente.</p>"
+  },
+  "chain-of-thought-prompting": {
+    "term": "Prompting com cadeia de raciocínio (chain-of-thought)",
+    "html": "<p>Pedir ao modelo que raciocine por etapas intermediárias antes de produzir uma resposta.</p>\n<p>Costuma melhorar os resultados em problemas de várias etapas, como matemática, lógica e planejamento.</p>"
+  },
   "chat-template": {
     "term": "Template de conversa",
     "html": "<p>Um template de formatação que converte mensagens estruturadas de conversa e seus papéis na sequência de tokens esperada por um modelo específico.</p>"
@@ -51,17 +107,49 @@
     "term": "Disjuntor",
     "html": "<p>Um controle que interrompe automaticamente a execução quando limites predefinidos de custo, tempo, etapas ou profundidade de recursão são atingidos.</p>"
   },
+  "claim": {
+    "term": "Claim",
+    "html": "<p>Uma afirmação factual que pode ser verificada contra evidências.</p>\n<p><strong>PT:</strong> afirmação.</p>"
+  },
   "claim-check-act": {
     "term": "Reivindicação-Verificação-Ato",
     "html": "<p>Um padrão de segurança que separa a geração do modelo da execução.</p><pre class=\"code-block\"><code>Claim\n  ↓\nCheck\n  ↓\nAct</code></pre><p>O modelo pode propor ou inferir algo, mas a reivindicação deve ser verificada de forma independente antes de uma ação ser executada.</p>"
+  },
+  "claim-level-evaluation": {
+    "term": "Avaliação por afirmação",
+    "html": "<p>Avaliar cada afirmação factual individualmente, em vez de julgar a resposta inteira como uma unidade.</p>\n<pre class=\"code-block\"><code>Answer → split into claims → check each claim against evidence</code></pre>"
+  },
+  "classifier": {
+    "term": "Classificador",
+    "html": "<p>Um modelo ou sistema que atribui entradas a categorias predefinidas.</p>"
+  },
+  "cold-start": {
+    "term": "Partida a frio (cold start)",
+    "html": "<p>O atraso causado pela inicialização de uma nova instância de computação antes que ela possa processar uma requisição.</p>"
   },
   "concurrency": {
     "term": "Concorrência",
     "html": "<p>O número de operações ou tarefas em execução ao mesmo tempo.</p>"
   },
+  "confidence-score": {
+    "term": "Pontuação de confiança",
+    "html": "<p>Um valor que representa o quão confiante um classificador está em sua previsão.</p>\n<p>Costuma ser comparado a um limiar para decidir se o resultado é aceito ou escalonado.</p>"
+  },
+  "constraint": {
+    "term": "Constraint",
+    "html": "<p>Uma restrição que limita o que é possível ou permitido.</p>\n<p><strong>PT:</strong> restrição.</p>"
+  },
+  "constraint-prompting": {
+    "term": "Prompting com restrições",
+    "html": "<p>Definir explicitamente regras, limitações ou condições que o modelo deve seguir.</p>\n<p>Uma restrição no prompt orienta o comportamento, mas não o impõe; veja Controle técnico.</p>"
+  },
   "content-security-policy--csp": {
     "term": "Política de segurança do conteúdo — CSP",
     "html": "<p>Um mecanismo de segurança do navegador que restringe os recursos, scripts, frames e outros conteúdos que uma página web pode carregar ou executar.</p><p>Útil como defesa em profundidade contra ataques como o XSS.</p>"
+  },
+  "context-injection": {
+    "term": "Injeção de contexto",
+    "html": "<p>Adicionar informações externas relevantes ao prompt para que o modelo possa usá-las ao gerar uma resposta.</p>\n<p>RAG é uma forma comum de injeção de contexto.</p>\n<p>Não confundir com injeção de prompt (prompt injection), que é um ataque.</p>"
   },
   "context-window": {
     "term": "Janela de contexto",
@@ -82,6 +170,14 @@
   "corpus--corpora": {
     "term": "Corpus / Corpora",
     "html": "<p>Uma coleção de textos ou dados usada para treinamento, avaliação ou análise. <strong>Corpora</strong> é o plural de corpus.</p>"
+  },
+  "correct-abstention": {
+    "term": "Abstenção correta",
+    "html": "<p>Recusar-se corretamente a responder quando não há evidência suficiente.</p>\n<p>Em evals, uma abstenção correta conta como acerto, não como falha.</p>"
+  },
+  "correlated-errors": {
+    "term": "Erros correlacionados",
+    "html": "<p>Erros que tendem a ocorrer juntos porque avaliadores ou modelos compartilham comportamentos ou vieses semelhantes.</p>\n<p>Exemplo: um modelo juiz da mesma família do modelo avaliado pode deixar passar os mesmos erros.</p>"
   },
   "cosine-similarity": {
     "term": "Semelhança Cossena",
@@ -107,17 +203,37 @@
     "term": "Envenenamento de dados",
     "html": "<p>Manipulação ou contaminação de dados que leva um modelo a aprender comportamentos incorretos, enviesados ou maliciosos. Pode ser intencional ou acidental.</p>"
   },
+  "decision-model": {
+    "term": "Modelo de decisão",
+    "html": "<p>Um modelo projetado principalmente para tomar decisões estruturadas, em vez de gerar texto livre.</p>"
+  },
+  "decoupling": {
+    "term": "Desacoplamento",
+    "html": "<p>Reduzir a dependência entre componentes do sistema para que possam evoluir ou escalar de forma independente.</p>"
+  },
   "deduplication": {
     "term": "Desduplicação",
     "html": "<p>O processo de detecção e remoção de dados duplicados ou quase duplicados.</p><p>A deduplicação semântica pode usar a similaridade incorporada em vez de correspondência de texto exata.</p>"
+  },
+  "delegated-execution": {
+    "term": "Execução delegada",
+    "html": "<p>Execução realizada de forma independente por um agente, dentro de limites definidos por humanos.</p>\n<pre class=\"code-block\"><code>Human defines scope + limits → Agent executes inside them</code></pre>"
   },
   "denial-of-wallet--dow": {
     "term": "DoW — Ataque de esgotamento financeiro",
     "html": "<p>Um ataque que provoca deliberadamente o uso excessivo de recursos pagos até que a operação do serviço se torne financeiramente insustentável.</p>"
   },
+  "deploy--deployment": {
+    "term": "Deploy / Deployment",
+    "html": "<p>Colocar um sistema em um ambiente onde ele roda e é usado; o deployment é o resultado desse processo.</p>\n<p><strong>PT:</strong> implantar / implantação.</p>"
+  },
   "deprecated": {
     "term": "Obsoleto / Descontinuado",
     "html": "<p>Um componente que ainda está disponível, mas deixou de ser recomendado ou mantido ativamente.</p>\n<p>Componentes descontinuados podem deixar de receber correções de segurança.</p>"
+  },
+  "deterministic-eval": {
+    "term": "Avaliação determinística",
+    "html": "<p>Uma avaliação baseada em regras explícitas, com resultados previsíveis.</p>\n<p>Exemplos: correspondência exata, regex, validação de esquema, verificar se uma ferramenta foi chamada.</p>"
   },
   "developer-instructions": {
     "term": "Instruções de Desenvolvimento",
@@ -159,13 +275,41 @@
     "term": "Inversão Incorporada",
     "html": "<p>Um ataque que tenta reconstruir o conteúdo original ou aproximado da fonte a partir de seus vetores incorporados.</p><pre class=\"code-block\"><code>Embedding\n   ↓\nInversion\n   ↓\nApproximate Source Data</code></pre><p><strong>Importante:</strong> Embutindo dados anônimos.</p>"
   },
+  "enforce": {
+    "term": "Enforce",
+    "html": "<p>Fazer uma regra ser efetivamente cumprida, geralmente por meio de um mecanismo, e não de um pedido.</p>\n<p><strong>PT:</strong> fazer cumprir / impor.</p>"
+  },
   "eos--end-of-sequence-token": {
     "term": "EOS — Token de fim de sequência",
     "html": "<p>Um token especial usado para indicar que a geração do modelo deve parar.</p>"
   },
+  "escalation": {
+    "term": "Escalation",
+    "html": "<p>Encaminhar um caso para um nível superior de decisão, como um avaliador mais forte ou uma pessoa.</p>\n<p><strong>PT:</strong> escalonamento.</p>"
+  },
   "escaping": {
     "term": "Escapar",
     "html": "<p>Transformando caracteres especiais para que sejam interpretados como dados em vez de instruções de sintaxe ou controle executáveis.</p><p>O método correto de fuga depende do contexto de destino.</p>"
+  },
+  "eval-suite": {
+    "term": "Conjunto de avaliações",
+    "html": "<p>Uma coleção de casos de avaliação usada para testar um sistema repetidamente, por exemplo a cada mudança de modelo, prompt ou ferramenta.</p>"
+  },
+  "evaluation--eval": {
+    "term": "Avaliação / Eval",
+    "html": "<p>Um teste usado para medir se um sistema de IA se comporta de acordo com critérios definidos.</p>"
+  },
+  "evaluation-cascade": {
+    "term": "Cascata de avaliação",
+    "html": "<p>Uma sequência em que avaliadores mais simples tratam os casos fáceis e os casos difíceis são escalonados para avaliadores mais fortes.</p>\n<pre class=\"code-block\"><code>Deterministic check → Classifier → LLM judge → Human review</code></pre>"
+  },
+  "evidence": {
+    "term": "Evidence",
+    "html": "<p>Informação que sustenta ou refuta uma afirmação.</p>\n<p><strong>PT:</strong> evidência.</p>"
+  },
+  "execution-trace": {
+    "term": "Rastro de execução",
+    "html": "<p>A sequência registrada de chamadas ao modelo, chamadas de ferramentas, estados e saídas de uma execução do agente.</p>\n<p>Útil para depuração, avaliação e auditoria.</p>"
   },
   "fan-out": {
     "term": "Ramificação de ações",
@@ -174,6 +318,10 @@
   "feedback-loop": {
     "term": "Ciclo de retroalimentação",
     "html": "<p>Um processo no qual as saídas do sistema ou o feedback dos usuários são reutilizados em decisões futuras, no treinamento ou em atualizações do modelo. Ciclos mal controlados podem amplificar erros ou envenenamento.</p>"
+  },
+  "few-shot-prompting": {
+    "term": "Prompting few-shot",
+    "html": "<p>Fornecer um pequeno número de exemplos para guiar o modelo até o comportamento ou o formato de saída desejado.</p>\n<pre class=\"code-block\"><code>Example 1 → Example 2 → Example 3 → New input</code></pre>"
   },
   "fine-tuning": {
     "term": "Ajuste fino",
@@ -187,9 +335,21 @@
     "term": "Esquema de Funções",
     "html": "<p>Uma descrição estruturada de uma função disponível para um LLM ou agente.</p><p>Pode definir:</p><ul><li>nome da função</li><li>parâmetros</li><li>tipos de parâmetros</li><li>descrições</li><li>campos obrigatórios</li></ul><p>Esquemas de funções podem revelar capacidades de aplicação e não devem ser tratados como segredos ou mecanismos de autorização.</p>"
   },
+  "govern--governed": {
+    "term": "Govern / Governed",
+    "html": "<p><strong>Govern</strong> significa controlar por meio de regras e mecanismos. <strong>Governed</strong> significa submetido a mecanismos de governança.</p>\n<p><strong>PT:</strong> governar / governado.</p>"
+  },
+  "governance-by-design": {
+    "term": "Governança desde a concepção",
+    "html": "<p>Incorporar controles de governança diretamente na arquitetura do sistema, em vez de depender apenas de políticas, documentos ou instruções ao modelo.</p>"
+  },
   "graceful-degradation": {
     "term": "Degradação controlada",
     "html": "<p>Uma estratégia de projeto na qual o sistema reduz suas funcionalidades sob pressão, em vez de falhar completamente.</p>"
+  },
+  "grounded-answer": {
+    "term": "Resposta fundamentada",
+    "html": "<p>Uma resposta cujas afirmações são sustentadas por uma fonte aprovada ou pelo contexto recuperado.</p>\n<p>Uma resposta fundamentada não é necessariamente correta: a própria fonte pode estar errada.</p>"
   },
   "groundedness": {
     "term": "Fundamentação",
@@ -199,9 +359,17 @@
     "term": "Fundamentação",
     "html": "<p>Conectar as saídas do modelo a informações externas ou verificáveis, em vez de depender apenas do conhecimento interno do modelo.</p>"
   },
+  "guardrail": {
+    "term": "Guardrail",
+    "html": "<p>Um controle técnico ou procedimental projetado para restringir o comportamento de um sistema de IA e reduzir ações inseguras ou indesejadas.</p>\n<p>Exemplos:</p>\n<ul>\n<li>filtros de entrada e saída</li>\n<li>controle de risco de ferramentas</li>\n<li>pontos de aprovação</li>\n<li>bloqueios rígidos</li>\n</ul>\n<p>Guardrails impostos pelo sistema são mais fortes do que instruções escritas apenas no prompt.</p>"
+  },
   "hard-spending-cap": {
     "term": "Limite rígido de gastos",
     "html": "<p>Um limite orçamentário estrito que interrompe novas execuções ou o uso da API quando o teto financeiro configurado é atingido.</p>"
+  },
+  "hard-stop": {
+    "term": "Bloqueio rígido",
+    "html": "<p>Um controle técnico que bloqueia a execução quando uma condição predefinida é atingida.</p>\n<p>Diferente de uma instrução no prompt, o bloqueio rígido é imposto pelo sistema e o modelo não consegue contorná-lo com argumentos.</p>"
   },
   "hardening": {
     "term": "Fortalecimento da segurança",
@@ -218,6 +386,22 @@
   "hidden-context": {
     "term": "Contexto Oculto",
     "html": "<p>Informação disponível para o modelo, mas não normalmente exibida para o usuário final.</p><p>Pode incluir:</p><ul><li>instruções do sistema</li><li>instruções de desenvolvimento</li><li>Políticas das OAR</li><li>esquemas de ferramentas</li><li>regras de fluxo de trabalho</li><li>contexto do perfil</li></ul><p><strong>Segredo escondido.</strong></p>"
+  },
+  "high-stakes-decision": {
+    "term": "Decisão de alto impacto",
+    "html": "<p>Uma decisão cujas consequências podem afetar significativamente pessoas, dinheiro, direitos, segurança ou operações.</p>\n<p>Decisões de alto impacto normalmente exigem controles mais fortes, como pontos de aprovação e revisão humana.</p>"
+  },
+  "horizontal-scaling": {
+    "term": "Escalabilidade horizontal",
+    "html": "<p>Aumentar a capacidade adicionando mais instâncias, em vez de tornar uma única instância maior.</p>\n<p>Muito mais fácil quando o serviço é sem estado.</p>"
+  },
+  "human-label": {
+    "term": "Rótulo humano",
+    "html": "<p>Uma avaliação ou classificação de referência criada por uma pessoa.</p>\n<p>Usada como verdade de referência para medir o quanto os avaliadores automáticos concordam com humanos.</p>"
+  },
+  "human-oversight": {
+    "term": "Supervisão humana",
+    "html": "<p>Supervisão humana sobre as decisões e ações de uma IA.</p>\n<p>Pode acontecer antes (aprovação), durante (monitoramento) ou depois (revisão e auditoria) de uma ação.</p>"
   },
   "immutable-reference": {
     "term": "Referência imutável",
@@ -239,17 +423,53 @@
     "term": "Endpoint de inferência",
     "html": "<p>Um endpoint de rede ou uma API por meio do qual aplicações enviam entradas a um modelo implantado e recebem resultados de inferência.</p>"
   },
+  "input-schema": {
+    "term": "Esquema de entrada",
+    "html": "<p>Uma definição estruturada dos argumentos aceitos por uma ferramenta.</p>\n<p>Veja também: Esquema de ferramentas.</p>"
+  },
   "integrity": {
     "term": "Integridade",
     "html": "<p>A garantia de que dados ou um artefato não foram alterados ou adulterados de forma inesperada.</p>\n<p>Na segurança da cadeia de suprimentos:</p>\n<blockquote>Este ainda é exatamente o artefato que eu esperava?</blockquote>"
+  },
+  "intent-classification": {
+    "term": "Classificação de intenção",
+    "html": "<p>Identificar o propósito ou a intenção por trás de uma solicitação do usuário.</p>"
+  },
+  "interchangeable-workers": {
+    "term": "Workers intercambiáveis",
+    "html": "<p>Workers capazes de tratar qualquer requisição de forma independente, porque nenhum estado de sessão local é necessário.</p>"
+  },
+  "jev": {
+    "term": "Jev",
+    "html": "<p>Um modelo de decisão/classificação projetado para julgamentos semânticos rápidos e estruturados.</p>"
+  },
+  "judge-model": {
+    "term": "Modelo juiz",
+    "html": "<p>O modelo responsável por avaliar a saída ou o comportamento de outro sistema.</p>"
   },
   "label-poisoning": {
     "term": "Envenenamento de rótulos",
     "html": "<p>Um tipo de envenenamento de dados em que exemplos recebem rótulos incorretos, de forma intencional ou acidental, levando o modelo a aprender padrões errados.</p>"
   },
+  "leakage": {
+    "term": "Leakage",
+    "html": "<p>Exposição ou passagem não intencional de informações para onde não deveriam estar.</p>\n<p><strong>PT:</strong> vazamento.</p>"
+  },
+  "least-privilege": {
+    "term": "Privilégio mínimo",
+    "html": "<p>Conceder a um usuário, agente ou serviço apenas as permissões mínimas necessárias para realizar sua tarefa.</p>\n<p>Reduz o raio de impacto caso o componente seja comprometido ou se comporte mal.</p>"
+  },
   "lineage": {
     "term": "Linhagem",
     "html": "<p>O histórico de como dados ou um artefato percorreram um pipeline e foram alterados, incluindo transformações, versões e dependências.</p>"
+  },
+  "llm-as-a-judge": {
+    "term": "LLM como juiz",
+    "html": "<p>Usar um LLM para avaliar a saída de outro modelo ou agente.</p>\n<p>É flexível, mas o juiz pode compartilhar os mesmos vieses e pontos cegos do sistema avaliado.</p>"
+  },
+  "load-balancing": {
+    "term": "Balanceamento de carga",
+    "html": "<p>Distribuir as requisições recebidas entre várias instâncias de um serviço.</p>"
   },
   "log-probabilities": {
     "term": "Logaritmos das probabilidades",
@@ -259,9 +479,33 @@
     "term": "Logits",
     "html": "<p>Pontuações numéricas brutas produzidas por um modelo antes de serem convertidas em probabilidades.</p>"
   },
+  "long-running-operation": {
+    "term": "Operação de longa duração",
+    "html": "<p>Uma tarefa que continua em execução por um período prolongado, e não dentro da janela curta de uma requisição.</p>\n<p>Normalmente exige estado persistido, acompanhamento de progresso e a capacidade de ser retomada.</p>"
+  },
   "lora--low-rank-adaptation": {
     "term": "LoRA — Adaptação de baixo posto",
     "html": "<p>Uma técnica de PEFT que adiciona pequenas matrizes treináveis a um modelo base com parâmetros congelados.</p>\n<p>Em vez de retreinar todos os parâmetros do modelo, LoRA treina um número muito menor de parâmetros.</p>\n<pre class=\"code-block\"><code>Modelo base\n   +\nLoRA\n   ↓\nModelo adaptado</code></pre>"
+  },
+  "mcp--model-context-protocol": {
+    "term": "MCP — Protocolo de Contexto de Modelo",
+    "html": "<p>Um protocolo padronizado para conectar aplicações de IA a ferramentas, recursos e sistemas externos.</p>\n<pre class=\"code-block\"><code>MCP Host → MCP Client → MCP Server → REST / API / service</code></pre>"
+  },
+  "mcp-client": {
+    "term": "Cliente MCP",
+    "html": "<p>O componente dentro do host que se comunica com um servidor MCP.</p>\n<p>Normalmente há um cliente para cada conexão com um servidor.</p>"
+  },
+  "mcp-host": {
+    "term": "Host MCP",
+    "html": "<p>A aplicação que executa ou coordena o modelo de IA e se conecta aos servidores MCP.</p>"
+  },
+  "mcp-sdk-primitives": {
+    "term": "Primitivas do SDK do MCP",
+    "html": "<p>Blocos de construção comuns do SDK de Python do MCP:</p>\n<ul>\n<li><code>list_tools()</code> — obtém as ferramentas disponíveis em um servidor (descoberta de ferramentas)</li>\n<li><code>call_tool()</code> — invoca uma ferramenta exposta por um servidor</li>\n<li><code>@mcp.tool()</code> — decorator que expõe uma função Python como ferramenta MCP</li>\n<li><code>TextContent</code> — representação de conteúdo para respostas em texto</li>\n<li><code>is_error</code> — campo que indica se o resultado de uma ferramenta representa um erro</li>\n</ul>"
+  },
+  "mcp-server": {
+    "term": "Servidor MCP",
+    "html": "<p>Um serviço que expõe ferramentas, recursos ou capacidades por meio do MCP.</p>"
   },
   "membership-inference": {
     "term": "Inferência de Composição",
@@ -274,6 +518,10 @@
   "misinformation": {
     "term": "Desinformação",
     "html": "<p>Informações incorretas, incompletas, não suportadas ou enganosas produzidas por um sistema de IA que podem influenciar uma decisão humana ou ação automatizada.</p><p>O risco primário não é apenas gerar informações incorretas, mas ter essa informação confiável e agida.</p>"
+  },
+  "mixed-leakage": {
+    "term": "Vazamento misto",
+    "html": "<p>Uma resposta majoritariamente fundamentada, mas que inclui informações não sustentadas.</p>\n<p>Difícil de detectar quando a resposta é julgada como um todo; a avaliação por afirmação ajuda a identificá-lo.</p>"
   },
   "model-card": {
     "term": "Ficha do modelo",
@@ -299,9 +547,21 @@
     "term": "Referência mutável",
     "html": "<p>Uma referência cujo destino pode mudar ao longo do tempo.</p>\n<p>Exemplo:</p>\n<pre class=\"code-block\"><code>model:latest</code></pre>\n<p>Hoje ela pode apontar para um artefato e, mais tarde, para outro.</p>"
   },
+  "narrow-decision": {
+    "term": "Decisão restrita",
+    "html": "<p>Uma decisão pequena e claramente definida, com um conjunto limitado de saídas possíveis.</p>"
+  },
   "omission-failure": {
     "term": "Falha na Omissão",
     "html": "<p>Um fracasso causado por deixar de fora informações necessárias para uma decisão correta.</p><p>Exemplos:</p><ul><li>Excepções em falta</li><li>Riscos em falta</li><li>Prazos em falta</li><li>condições em falta</li><li>Faltam datas</li></ul><p>As restantes informações podem parecer correctas, embora ainda sejam enganosas.</p>"
+  },
+  "operational-autonomy": {
+    "term": "Autonomia operacional",
+    "html": "<p>A capacidade de executar ações e fluxos de trabalho de forma independente.</p>\n<p>Ter autonomia operacional não transfere a responsabilização para longe das pessoas ou da organização que implantaram o agente.</p>"
+  },
+  "outcome": {
+    "term": "Outcome",
+    "html": "<p>O resultado ou a consequência de uma decisão ou ação.</p>\n<p><strong>PT:</strong> resultado / consequência.</p>"
   },
   "output-budget": {
     "term": "Limite de saída",
@@ -311,9 +571,25 @@
     "term": "Codificação de Saída",
     "html": "<p>Transformando saída para caracteres especiais são interpretados com segurança como dados em vez de código executável ou marcação.</p><p>Exemplo:</p><pre class=\"code-block\"><code>&lt;script&gt;</code></pre><p>pode ser codificado para HTML assim que o navegador o exibe como texto em vez de executá-lo.</p>"
   },
+  "output-formatting": {
+    "term": "Formatação da saída",
+    "html": "<p>Especificar a estrutura ou o formato exato esperado do modelo, como JSON, XML ou um esquema.</p>\n<p>Veja também: Saída tipada.</p>"
+  },
+  "overfitting": {
+    "term": "Sobreajuste (overfitting)",
+    "html": "<p>Quando um modelo aprende os dados de treinamento de forma específica demais, incluindo ruídos, exceções ou padrões acidentais, em vez de aprender padrões que generalizam bem.</p>\n<p>Como resultado, ele tem um desempenho muito bom nos dados que já viu, mas pior em dados novos ou não vistos.</p>\n<p><strong>Pense em:</strong> decorar as respostas em vez de aprender a matéria.</p>"
+  },
   "overreliance": {
     "term": "Sobreconfiança",
     "html": "<p>Confiança excessiva na produção gerada por IA.</p><p>Muitas vezes ocorre porque respostas fluentes, confiantes ou bem estruturadas parecem autoritárias.</p><p><strong>Fluência, correção. Confiança, provas.</strong></p>"
+  },
+  "oversight": {
+    "term": "Oversight",
+    "html": "<p>Supervisão ou monitoramento de uma atividade.</p>\n<p><strong>PT:</strong> supervisão.</p>"
+  },
+  "ownership": {
+    "term": "Ownership",
+    "html": "<p>Responsabilidade atribuída sobre algo, como um sistema, agente ou decisão.</p>\n<p><strong>PT:</strong> responsabilidade / posse (de quem é o dono).</p>"
   },
   "parameterized-query": {
     "term": "Consulta parametrizada",
@@ -346,6 +622,22 @@
   "probing": {
     "term": "Sondagem",
     "html": "<p>Interagindo repetidamente com um sistema para descobrir:</p><ul><li>comportamento oculto</li><li>regras internas</li><li>limites</li><li>permissões</li><li>ferramentas disponíveis</li><li>potenciais deficiências</li></ul>"
+  },
+  "prompt-chaining": {
+    "term": "Encadeamento de prompts",
+    "html": "<p>Dividir uma tarefa complexa em vários prompts sequenciais, em que cada etapa alimenta a seguinte.</p>\n<pre class=\"code-block\"><code>Prompt 1 → Output 1 → Prompt 2 → Output 2 → Final result</code></pre>"
+  },
+  "prompt-decomposition": {
+    "term": "Decomposição de prompt",
+    "html": "<p>Dividir um problema complexo em subproblemas menores e mais simples antes de resolvê-lo.</p>\n<p>Costuma ser combinada com o encadeamento de prompts: a decomposição define as etapas e o encadeamento as executa em sequência.</p>"
+  },
+  "prompt-template": {
+    "term": "Template de prompt",
+    "html": "<p>Uma estrutura de prompt reutilizável, com espaços reservados para entradas dinâmicas.</p>\n<p>Exemplo: <code>Summarize the following document for {audience}: {document}</code>.</p>"
+  },
+  "protocol-boundary": {
+    "term": "Fronteira de protocolo",
+    "html": "<p>O ponto em que um protocolo de comunicação termina e outro começa.</p>\n<p>Exemplo: um servidor MCP recebe requisições MCP e as traduz em chamadas REST para um serviço de backend.</p>"
   },
   "provenance": {
     "term": "Proveniência",
@@ -391,6 +683,10 @@
     "term": "Testes adversariais",
     "html": "<p>Testes adversariais de um sistema para identificar vulnerabilidades, comportamentos inseguros e possíveis caminhos de ataque antes que atacantes reais os explorem.</p>"
   },
+  "reliability": {
+    "term": "Reliability",
+    "html": "<p>A capacidade de um sistema de se comportar como esperado de forma consistente ao longo do tempo.</p>\n<p><strong>PT:</strong> confiabilidade.</p>"
+  },
   "resource-allocation": {
     "term": "Alocação de recursos",
     "html": "<p>O processo de atribuir e limitar processamento, memória, tokens ou outros recursos entre usuários, solicitações ou cargas de trabalho.</p>"
@@ -398,6 +694,10 @@
   "resource-exhaustion": {
     "term": "Esgotamento de recursos",
     "html": "<p>Uma condição em que recursos como GPU, CPU, memória, tokens, conexões ou cota de API são consumidos até que o desempenho do serviço se degrade ou o serviço falhe.</p>"
+  },
+  "rest-api": {
+    "term": "API REST",
+    "html": "<p>Uma interface baseada em HTTP, comumente usada por serviços para expor operações e recursos.</p>"
   },
   "retrieval-jamming": {
     "term": "Obtenção de Inibição",
@@ -407,9 +707,25 @@
     "term": "Engenharia reversa",
     "html": "<p>O processo de estudar o comportamento, estrutura ou saídas de um sistema para inferir como seus mecanismos internos funcionam.</p><p>Em segurança de IA, isto pode ser usado para inferir:</p><ul><li>Regras de recusa</li><li>instruções ocultas</li><li>limiares</li><li>ferramentas</li><li>fluxos de trabalho</li></ul>"
   },
+  "reversibility": {
+    "term": "Reversibilidade",
+    "html": "<p>O quão facilmente uma ação ou decisão pode ser desfeita.</p>\n<pre class=\"code-block\"><code>Reversible + low stakes    → more autonomy\nIrreversible + high stakes → approval gate / hard stop</code></pre>"
+  },
+  "risk-classification": {
+    "term": "Classificação de risco",
+    "html": "<p>Atribuir uma ação ou entrada a um nível de risco predefinido.</p>"
+  },
   "rlhf--reinforcement-learning-from-human-feedback": {
     "term": "RLHF — Aprendizado por reforço com feedback humano",
     "html": "<p>Uma técnica de treinamento que usa preferências ou feedback de pessoas como sinal para moldar o comportamento do modelo.</p>"
+  },
+  "role-prompting": {
+    "term": "Prompting com papel",
+    "html": "<p>Atribuir ao modelo um papel, uma perspectiva ou uma especialidade específica para moldar seu comportamento.</p>\n<p>Exemplo: &quot;Você é um revisor de segurança…&quot;.</p>"
+  },
+  "runtime": {
+    "term": "Runtime",
+    "html": "<p>O ambiente ou o momento em que um programa está sendo executado.</p>\n<p><strong>PT:</strong> tempo / ambiente de execução.</p>"
   },
   "runtime-verification": {
     "term": "Verificação em Tempo de Execução",
@@ -427,17 +743,45 @@
     "term": "SBOM — Lista de materiais de software",
     "html": "<p>Um inventário dos componentes e das dependências de software usados por uma aplicação.</p>\n<p>Pode conter:</p>\n<ul><li>nomes de pacotes</li><li>versões</li><li>dependências</li><li>licenças</li><li>informações sobre vulnerabilidades</li></ul>\n<p><strong>Pense em:</strong> uma lista de ingredientes do software.</p>"
   },
+  "scope--scoped": {
+    "term": "Scope / Scoped",
+    "html": "<p><strong>Scope</strong> é o limite do que algo abrange ou pode fazer. <strong>Scoped</strong> significa limitado a um escopo específico.</p>\n<p><strong>PT:</strong> escopo / limitado a um escopo.</p>"
+  },
+  "scoped-permission": {
+    "term": "Permissão com escopo",
+    "html": "<p>Uma permissão restrita a um recurso ou ação específicos.</p>\n<p>Exemplo: acesso de <code>read</code> a uma pasta, em vez de acesso de <code>read/write</code> ao drive inteiro.</p>"
+  },
   "security-boundary": {
     "term": "Limite de Segurança",
     "html": "<p>Um limite em que os controlos de segurança determinam se o acesso ou uma acção é permitido.</p><p>As instruções do sistema e as instruções ocultas não devem ser tratadas como limites de segurança.</p>"
+  },
+  "self-consistency": {
+    "term": "Autoconsistência",
+    "html": "<p>Gerar vários caminhos de raciocínio e escolher a resposta mais consistente entre eles.</p>\n<pre class=\"code-block\"><code>Same question → N reasoning paths → majority / most consistent answer</code></pre>"
   },
   "semantic-cache": {
     "term": "Cache Semântico",
     "html": "<p>Um cache que usa similaridade semântica em vez de correspondência exata para reutilizar resultados anteriores.</p><pre class=\"code-block\"><code>New Query\n   ↓\nEmbedding Similarity\n   ↓\nSimilar Cached Query?\n   ↓\nReuse Response</code></pre><p>Seu limiar de similaridade pode se tornar uma superfície de ataque.</p>"
   },
+  "semantic-classifier": {
+    "term": "Classificador semântico",
+    "html": "<p>Um classificador que toma decisões com base no significado, e não em regras exatas.</p>"
+  },
+  "semantic-evaluation": {
+    "term": "Avaliação semântica",
+    "html": "<p>Avaliação baseada no significado, e não em correspondência exata de texto ou em regras.</p>"
+  },
   "serialization": {
     "term": "Serialização",
     "html": "<p>O processo de converter um objeto ou modelo em um formato que possa ser armazenado ou transferido.</p>\n<p>Alguns formatos de serialização podem executar código durante o carregamento.</p>\n<p>Exemplo:</p>\n<pre class=\"code-block\"><code>Python pickle</code></pre>"
+  },
+  "session-state": {
+    "term": "Estado da sessão",
+    "html": "<p>Informações armazenadas e reutilizadas ao longo de uma sessão.</p>"
+  },
+  "session-oriented-architecture": {
+    "term": "Arquitetura orientada a sessão",
+    "html": "<p>Uma arquitetura em que as interações dependem de uma sessão persistente.</p>"
   },
   "similarity-score": {
     "term": "Pontuação de similaridade",
@@ -451,6 +795,10 @@
     "term": "Slopsquatting",
     "html": "<p>Um ataque à cadeia de suprimentos no qual um assistente de programação com IA sugere um nome de pacote plausível, mas inexistente, e um atacante registra esse pacote com código malicioso.</p>\n<pre class=\"code-block\"><code>LLM inventa um pacote\n        ↓\nAtacante registra o pacote\n        ↓\nDesenvolvedor o instala</code></pre>"
   },
+  "sociotechnical-system": {
+    "term": "Sistema sociotécnico",
+    "html": "<p>Um sistema formado por tecnologia, pessoas, organizações, processos e contexto.</p>\n<p>Os riscos e resultados de um sistema de IA dependem de todas essas partes, não apenas do modelo.</p>"
+  },
   "special-token": {
     "term": "Token especial",
     "html": "<p>Um token com significado estrutural ou de controle para um modelo, como tokens que representam limites entre sistema, usuário, assistente ou fim de sequência.</p>"
@@ -458,6 +806,10 @@
   "sponge-example": {
     "term": "Exemplo esponja",
     "html": "<p>Uma entrada adversarial intencionalmente otimizada para causar um consumo de recursos computacionais incomumente alto.</p>"
+  },
+  "stakes": {
+    "term": "Stakes",
+    "html": "<p>O nível de consequência ou importância envolvido em uma decisão ou ação.</p>\n<p><strong>PT:</strong> o que está em jogo / nível de consequência.</p>"
   },
   "state-hashing": {
     "term": "Geração de hashes de estado",
@@ -467,9 +819,41 @@
     "term": "Inferência do Estado",
     "html": "<p>O processo de estimativa ou raciocínio sobre o estado atual de um sistema a partir de informações disponíveis em vez de ler esse estado diretamente de uma fonte autoritária.</p>"
   },
+  "stateful": {
+    "term": "Com estado (stateful)",
+    "html": "<p>Um design em que operações posteriores dependem de estado preservado de interações anteriores.</p>"
+  },
+  "stateless": {
+    "term": "Sem estado (stateless)",
+    "html": "<p>Um design em que cada requisição pode ser tratada de forma independente, sem depender de estado de sessão armazenado.</p>"
+  },
+  "stateless-request": {
+    "term": "Requisição sem estado",
+    "html": "<p>Uma requisição que contém tudo o que é necessário para ser processada de forma independente.</p>"
+  },
+  "stdio": {
+    "term": "STDIO",
+    "html": "<p>Um transporte que se comunica pelos fluxos de entrada e saída padrão.</p>\n<p>Típico de servidores MCP locais iniciados como subprocesso.</p>"
+  },
+  "streamable-http": {
+    "term": "Streamable HTTP",
+    "html": "<p>Um transporte do MCP que se comunica via HTTP e suporta comunicação em streaming.</p>\n<p>Típico de servidores MCP remotos.</p>"
+  },
+  "structured-judgment": {
+    "term": "Julgamento estruturado",
+    "html": "<p>Uma avaliação semântica que produz um resultado restrito, em vez de um raciocínio em texto livre.</p>"
+  },
+  "structured-prompting": {
+    "term": "Prompting estruturado",
+    "html": "<p>Organizar instruções, contexto, restrições e formato de saída em uma estrutura clara e explícita, por exemplo com seções ou tags XML.</p>"
+  },
   "supply-chain": {
     "term": "Cadeia de suprimentos",
     "html": "<p>Todos os componentes, fornecedores e transformações dos quais um sistema depende durante o desenvolvimento, o treinamento, a implantação e a execução.</p>\n<p>Em sistemas de IA, isso pode incluir:</p>\n<ul><li>código</li><li>modelos</li><li>conjuntos de dados</li><li>pacotes</li><li>adaptadores</li><li>pipelines</li><li>infraestrutura</li><li>dispositivos</li></ul>\n<p><strong>Definição simples:</strong></p>\n<blockquote>Se o sistema depende disso, faz parte da cadeia de suprimentos.</blockquote>"
+  },
+  "supported--unsupported": {
+    "term": "Supported / Unsupported",
+    "html": "<p><strong>Supported:</strong> sustentado por evidência. <strong>Unsupported:</strong> não sustentado por evidência.</p>\n<p><strong>PT:</strong> sustentado / não sustentado (por evidência).</p>"
   },
   "system-prompt": {
     "term": "Pergunta do Sistema",
@@ -483,9 +867,17 @@
     "term": "T&Cs — Termos e condições",
     "html": "<p>Os termos contratuais que definem como um produto ou serviço pode ser utilizado.</p>\n<p>Para provedores de IA, podem definir:</p>\n<ul><li>retenção de dados</li><li>uso para treinamento</li><li>privacidade</li><li>titularidade</li><li>uso comercial</li></ul>"
   },
+  "technical-control": {
+    "term": "Controle técnico",
+    "html": "<p>Um mecanismo imposto pelo sistema para restringir ou governar comportamentos.</p>\n<p>Exemplos:</p>\n<ul>\n<li>permissões</li>\n<li>limites de taxa</li>\n<li>pontos de aprovação</li>\n<li>bloqueios rígidos</li>\n<li>sandboxing</li>\n</ul>\n<p>Um prompt pede um comportamento; um controle técnico o impõe.</p>"
+  },
   "tenant": {
     "term": "Tenant",
     "html": "<p>Um cliente, organização, espaço de trabalho ou grupo isolado compartilhando a mesma infraestrutura de aplicação subjacente.</p><p>Um sistema multi-doente serve vários inquilinos ao tentar manter seus dados e permissões isoladas.</p>"
+  },
+  "test-case": {
+    "term": "Caso de teste",
+    "html": "<p>Uma entrada predefinida e o comportamento esperado, usados durante a avaliação.</p>"
   },
   "thinking-tokens": {
     "term": "Tokens de raciocínio",
@@ -503,6 +895,22 @@
     "term": "Orçamento de tokens",
     "html": "<p>O número máximo de tokens permitidos ou alocados para entrada, saída, raciocínio ou uma execução inteira.</p>"
   },
+  "tool-call": {
+    "term": "Chamada de ferramenta",
+    "html": "<p>Uma solicitação de um agente ou modelo para executar uma ferramenta específica.</p>"
+  },
+  "tool-contract": {
+    "term": "Contrato da ferramenta",
+    "html": "<p>A entrada, a saída e o comportamento esperados de uma ferramenta.</p>"
+  },
+  "tool-discovery": {
+    "term": "Descoberta de ferramentas",
+    "html": "<p>O processo de descobrir quais ferramentas estão disponíveis em um servidor.</p>\n<p>No MCP, é feito com <code>list_tools()</code>.</p>"
+  },
+  "tool-invocation": {
+    "term": "Invocação de ferramenta",
+    "html": "<p>O ato de solicitar e executar uma ferramenta.</p>\n<p>No MCP, é feito com <code>call_tool()</code>.</p>"
+  },
   "tool-schema": {
     "term": "Esquema de Ferramentas",
     "html": "<p>Descrição estruturada de uma ferramenta exposta a um LLM ou agente.</p><p>Pode revelar:</p><ul><li>capacidades da ferramenta</li><li>argumentos aceites</li><li>parâmetros necessários</li><li>funcionalidade interna</li></ul><p>Os esquemas de ferramentas descrevem a capacidade; não devem determinar a autorização.</p>"
@@ -510,6 +918,26 @@
   "tool-calling-loop": {
     "term": "Loop de chamadas de ferramentas",
     "html": "<p>Uma condição em que um agente invoca ferramentas repetidamente sem atingir um estado final válido.</p>"
+  },
+  "tool-risk-gating": {
+    "term": "Controle de risco de ferramentas",
+    "html": "<p>Avaliar o risco de uma chamada de ferramenta antes de permitir que ela seja executada.</p>\n<pre class=\"code-block\"><code>Tool call → Risk classification → allow / ask for approval / block</code></pre>"
+  },
+  "trace": {
+    "term": "Trace",
+    "html": "<p>Um registro estruturado de uma execução.</p>\n<p><strong>PT:</strong> rastro / registro de execução.</p>"
+  },
+  "tracing": {
+    "term": "Rastreamento",
+    "html": "<p>Registrar a sequência, o tempo e as relações entre as etapas de uma execução do sistema.</p>"
+  },
+  "trade-off": {
+    "term": "Trade-off",
+    "html": "<p>Ganhar em um aspecto em troca de perder em outro.</p>\n<p>Exemplo: mais autonomia ↔ menos supervisão.</p>\n<p><strong>PT:</strong> troca / compromisso entre vantagens e desvantagens.</p>"
+  },
+  "transport": {
+    "term": "Transporte",
+    "html": "<p>O mecanismo de comunicação usado entre dois componentes.</p>"
   },
   "trigger": {
     "term": "Gatilho",
@@ -523,6 +951,18 @@
     "term": "Nível de Confiança",
     "html": "<p>Uma classificação que representa o quanto uma fonte de dados ou componente é confiável.</p><p>Exemplo:</p><pre class=\"code-block\"><code>Tier 1 → internal verified data\nTier 2 → trusted partner data\nTier 3 → external / untrusted web data</code></pre><p>Diferentes níveis de confiança podem exigir índices separados ou controles de segurança.</p>"
   },
+  "type-safe-classifier": {
+    "term": "Classificador com tipagem segura",
+    "html": "<p>Um classificador cujas saídas seguem tipos estruturados predefinidos.</p>"
+  },
+  "typed-output": {
+    "term": "Saída tipada",
+    "html": "<p>Uma saída restrita a um tipo ou esquema definido.</p>\n<p>Exemplo: <code>&quot;allow&quot; | &quot;review&quot; | &quot;block&quot;</code> em vez de um parágrafo de texto livre.</p>"
+  },
+  "ungrounded-answer": {
+    "term": "Resposta não fundamentada",
+    "html": "<p>Uma resposta que contém afirmações não sustentadas pela evidência fornecida.</p>"
+  },
   "validation": {
     "term": "Validação",
     "html": "<p>Verificar se a entrada ou saída está em conformidade com as regras esperadas antes de ser aceita ou utilizada.</p><p>Exemplos:</p><ul><li>tipo correto</li><li>valores permitidos</li><li>esquema esperado</li><li>intervalo válido</li><li>acção permitida</li></ul><p>A validação não necessariamente remove conteúdo perigoso; esse é o papel da higienização.</p>"
@@ -535,6 +975,10 @@
     "term": "Avaliar / Verificar um fornecedor",
     "html": "<p>Avaliar cuidadosamente um fornecedor antes de confiar em seus produtos ou serviços ou utilizá-los.</p>\n<p>Isso pode incluir verificar:</p>\n<ul><li>reputação</li><li>práticas de segurança</li><li>política de privacidade</li><li>termos e condições</li><li>tratamento de dados</li><li>proveniência dos artefatos</li></ul>\n<p><strong>Em português:</strong> avaliar / verificar cuidadosamente um fornecedor.</p>"
   },
+  "worker": {
+    "term": "Worker",
+    "html": "<p>Uma instância responsável por processar tarefas ou requisições.</p>"
+  },
   "xss--cross-site-scripting": {
     "term": "XSS - Programação Cross- Site",
     "html": "<p>Uma vulnerabilidade web onde o conteúdo controlado por atacante faz com que o JavaScript ou outro conteúdo ativo seja executado no navegador de outro usuário.</p><p>Em aplicações LLM, XSS pode ocorrer quando gerado HTML, Markdown, ou JavaScript é renderizado sem higienização adequada e codificação de saída.</p>"
@@ -542,6 +986,10 @@
   "zero-trust": {
     "term": "Zero Confiança",
     "html": "<p>Um princípio de segurança baseado em não confiar automaticamente em um usuário, componente, rede ou saída de modelo.</p><p>Todo acesso ou ação deve ser explicitamente verificado com base em identidade, permissões, contexto e política.</p><p>Para aplicações LLM: tratar a saída do modelo como entrada não confiável.</p>"
+  },
+  "zero-shot-prompting": {
+    "term": "Prompting zero-shot",
+    "html": "<p>Pedir ao modelo que realize uma tarefa sem fornecer exemplos.</p>"
   },
   "signed--safe": {
     "term": "Assinado ≠ Seguro",
@@ -558,5 +1006,45 @@
   "supply-chain-vs-poisoning": {
     "term": "Cadeia de suprimentos vs. Envenenamento",
     "html": "<p><strong>Envenenamento</strong> trata da manipulação maliciosa do modelo ou dos dados.</p>\n<p><strong>Cadeia de suprimentos</strong> trata de como um componente comprometido entrou no sistema ou se propagou por ele.</p>\n<p>O mesmo incidente pode envolver ambos.</p>"
+  },
+  "operational-autonomy--accountability": {
+    "term": "Autonomia operacional ≠ Responsabilização",
+    "html": "<p>Um agente pode executar ações por conta própria, mas a responsabilidade pelo resultado continua com as pessoas e a organização que o implantaram.</p>"
+  },
+  "agent-autonomy--unrestricted-permissions": {
+    "term": "Autonomia do agente ≠ Permissões irrestritas",
+    "html": "<p>Autonomia é agir sem aprovação constante. As permissões ainda devem seguir o privilégio mínimo e o acesso com escopo.</p>"
+  },
+  "capability--authorization": {
+    "term": "Capacidade ≠ Autorização",
+    "html": "<p>Um servidor que expõe uma capacidade diz apenas <strong>o que pode ser feito</strong>. A autorização decide <strong>quem pode fazer</strong>.</p>"
+  },
+  "tool-schema--permission": {
+    "term": "Esquema de ferramenta ≠ Permissão",
+    "html": "<p>Um esquema de ferramenta descreve como chamar a ferramenta. Ele não concede nem verifica a permissão para chamá-la.</p>"
+  },
+  "stateful-agent--stateful-mcp-server": {
+    "term": "Agente com estado ≠ Servidor MCP com estado",
+    "html": "<p>Um agente pode manter o estado da conversa e da tarefa no seu harness, enquanto os servidores MCP que ele chama continuam sem estado e escaláveis horizontalmente.</p>"
+  },
+  "agent--harness": {
+    "term": "Agente ≠ Harness",
+    "html": "<p>O <strong>agente</strong> é o comportamento que surge do modelo + harness. O <strong>harness</strong> é o sistema em volta que gerencia ferramentas, contexto, estado, permissões e controles.</p>"
+  },
+  "mcp--rest": {
+    "term": "MCP ≠ REST",
+    "html": "<p>MCP é um protocolo entre aplicações de IA e servidores de ferramentas. REST é uma interface comum entre serviços. Os dois costumam aparecer juntos:</p>\n<pre class=\"code-block\"><code>MCP Client → MCP Server → REST / API / service</code></pre>"
+  },
+  "grounded-answer--factually-correct-answer": {
+    "term": "Resposta fundamentada ≠ Resposta factualmente correta",
+    "html": "<p>Fundamentada significa <strong>sustentada pela fonte fornecida</strong>. Se a fonte estiver errada ou desatualizada, uma resposta fundamentada ainda pode estar incorreta.</p>"
+  },
+  "deterministic-check--semantic-evaluation": {
+    "term": "Verificação determinística ≠ Avaliação semântica",
+    "html": "<p>Uma <strong>verificação determinística</strong> segue regras explícitas (correspondência exata, regex, esquema). Uma <strong>avaliação semântica</strong> julga o significado, o que exige um classificador, um LLM ou uma pessoa.</p>"
+  },
+  "classifier--llm-as-a-judge": {
+    "term": "Classificador ≠ LLM como juiz",
+    "html": "<p>Um <strong>classificador</strong> retorna uma categoria restrita, muitas vezes com uma pontuação de confiança. O <strong>LLM como juiz</strong> usa um modelo geral para avaliar com raciocínio em texto livre. Classificadores são mais rápidos e previsíveis; juízes LLM são mais flexíveis.</p>"
   }
 }

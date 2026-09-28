@@ -1,4 +1,20 @@
 {
+  "abstain": {
+    "source_sha256": "78660d400a3916e64ef26adcd97aa924e1425f524a959148ee6037287cc93d04",
+    "method": "reviewed"
+  },
+  "abstention": {
+    "source_sha256": "36ab1e2aeee92e19032a7fdca66973457a28b9d7332d1dd3e7e887c64b23aa39",
+    "method": "reviewed"
+  },
+  "accountability": {
+    "source_sha256": "20332ff22951905da32e9e32df341d3e65bde72658a9c97f157eaba348500ceb",
+    "method": "reviewed"
+  },
+  "accountability-vacuum": {
+    "source_sha256": "8d0123fa215a599237e84b4d4b945fe6c5d63433c10de20cbba818942bc3e4ed",
+    "method": "reviewed"
+  },
   "adapter": {
     "source_sha256": "afc5dbbc5d8fb05753436c1cd0b3d8078f3d3516fe9cf60af383256746866b65",
     "method": "reviewed"
@@ -7,8 +23,32 @@
     "source_sha256": "6bf26a77d9a94afab820cb1bf33e300f44b36a70418326730323e1e2f6f48d8d",
     "method": "reviewed"
   },
+  "agent-autonomy": {
+    "source_sha256": "366244ff09786bbdea898d5f78429ba38e86d68c010b395b28794dd0f22c523f",
+    "method": "reviewed"
+  },
+  "agent-harness": {
+    "source_sha256": "feb55caf454a8fe0424284e93761cf411a815e76c49fe8e0203a109f2de7a36d",
+    "method": "reviewed"
+  },
+  "agent-identity": {
+    "source_sha256": "9df43d1ae40051004dbd42b05f48cdec3acc0c59b235f578debbf89083bfa30f",
+    "method": "reviewed"
+  },
+  "agent-registry": {
+    "source_sha256": "ebfa8ae395b161736e6cd03c05b815308231b5af4a83787de8c85f29c508da97",
+    "method": "reviewed"
+  },
+  "agent-runtime": {
+    "source_sha256": "868e033c36ec969c25a39a3360d88c7247a01743771f53345077c3751be3068b",
+    "method": "reviewed"
+  },
   "aibom--ai-bill-of-materials": {
     "source_sha256": "619774a272caaf94a2cfa239ac88dd27ba1d1592269e7d95aa76ee96d6869ea2",
+    "method": "reviewed"
+  },
+  "approval-gate": {
+    "source_sha256": "1a084a2a3e3c160a832cee7a29d5fe16160fe101ed86b6327320ea9480cccbf0",
     "method": "reviewed"
   },
   "artifact": {
@@ -21,6 +61,10 @@
   },
   "attestation": {
     "source_sha256": "871253c01716153553fbe287b09bc86c7763a114c12c13c687b8721376f4b60f",
+    "method": "reviewed"
+  },
+  "audit-trail": {
+    "source_sha256": "eff48cf738d674b6a09df5b131d14474afae3753ad6c0a2a2a6ff642dd051e07",
     "method": "reviewed"
   },
   "authorization": {
@@ -43,6 +87,18 @@
     "source_sha256": "680c36043d631a781453b08d16fb2671669591169043b8d6774c785f0bafe34c",
     "method": "reviewed"
   },
+  "capability": {
+    "source_sha256": "cc5043a192bfd60a7f569bafde130e48748a4e6bbf0530b83c7ec16a1b461cf0",
+    "method": "reviewed"
+  },
+  "capability-boundary": {
+    "source_sha256": "b4c27d3845e3efe9133d23633968af48ce2c8a1cd08c30b2934259715ff02046",
+    "method": "reviewed"
+  },
+  "chain-of-thought-prompting": {
+    "source_sha256": "91cff250f3cd47d8c97b5874b2f3a0b73d550667c44449da61b1134265b25c87",
+    "method": "reviewed"
+  },
   "chat-template": {
     "source_sha256": "25cc3f613e56d1b0112356f17e5bcb72593bc87ea579be7bbadad9291de045e9",
     "method": "reviewed"
@@ -51,17 +107,49 @@
     "source_sha256": "a79161c907b4e8f5b74866ab225667a663e4557675e47e4ecdcccddb613d8c1a",
     "method": "reviewed"
   },
+  "claim": {
+    "source_sha256": "b19e58d183aa7c82f94b18bcfa9ff8890e24f670a0fbf9dedd8eb023d71bd6df",
+    "method": "reviewed"
+  },
   "claim-check-act": {
     "source_sha256": "c7ebd9e87c56cf29893ead086ed0f42919f172d5b553268a583cddbc33eb5f97",
     "method": "argos-en-pt-1.9"
+  },
+  "claim-level-evaluation": {
+    "source_sha256": "891040fb8e6fa6d0ee7218a0a2338500edf4c4f6e8d73fea78c5d589925c46f2",
+    "method": "reviewed"
+  },
+  "classifier": {
+    "source_sha256": "faa9c54c029efe0b2d41235c7d7249b6b7b8e32e03fdeab8fe63f953d204eb40",
+    "method": "reviewed"
+  },
+  "cold-start": {
+    "source_sha256": "b8ac8046210c3c06a169d6afbbd8ff29a78c4f141375c35e3cedebc2bf828fc0",
+    "method": "reviewed"
   },
   "concurrency": {
     "source_sha256": "dd84e3e7863492753062d3f83904a357f40fdb99c5996f62be7f9986d264e390",
     "method": "reviewed"
   },
+  "confidence-score": {
+    "source_sha256": "2abcf534f5deb85572125696d74ba8a837b6e5d568810fc41b1cedfe20901739",
+    "method": "reviewed"
+  },
+  "constraint": {
+    "source_sha256": "fd926ddc45f6d7adcfe63c47e697b6d9e52d7dec638e95afb7f3eaa931facf49",
+    "method": "reviewed"
+  },
+  "constraint-prompting": {
+    "source_sha256": "5e84e861cef4e499f204d22a668d983cd87cb069860749cbdb87adcf7ea25980",
+    "method": "reviewed"
+  },
   "content-security-policy--csp": {
     "source_sha256": "e756a774437e883c8630d8c9007690c9945659cb0c2d7da8987298d86d46f996",
     "method": "argos-en-pt-1.9"
+  },
+  "context-injection": {
+    "source_sha256": "3a7e9e5e9b37a88c1c970eabe55be9085856fb00db0145f03e40ee7113c214a5",
+    "method": "reviewed"
   },
   "context-window": {
     "source_sha256": "3e088499eed635f6667e874c981f26c2e19bf100fd80c2e9dd471aa573ff2fe0",
@@ -81,6 +169,14 @@
   },
   "corpus--corpora": {
     "source_sha256": "e89030b171e1f6db6b9dcd43da52e478223134498d20eb31eb8c1eeaf5a87b2b",
+    "method": "reviewed"
+  },
+  "correct-abstention": {
+    "source_sha256": "57f1335df43cf93be1e38dd60422bfb5c8f46f007a84a6dddf2c26f2e595d094",
+    "method": "reviewed"
+  },
+  "correlated-errors": {
+    "source_sha256": "1dbb649b3ff6c7f41b43aed83deaff547b94082a767e4577c7053279ebe3c88a",
     "method": "reviewed"
   },
   "cosine-similarity": {
@@ -107,16 +203,36 @@
     "source_sha256": "f617cc7187cff3c4ac8c9d0b1be98d39fed7de50b8953230f95c575fc24caf11",
     "method": "reviewed"
   },
+  "decision-model": {
+    "source_sha256": "800ab83151f3050c13aecb6ccbb2b4d6c5fd3f44f34f80dfd59eb4ed30f89741",
+    "method": "reviewed"
+  },
+  "decoupling": {
+    "source_sha256": "3d18acdb12e419113d8e8d48aebf43dde558e09a55a308921fca26a246517cb3",
+    "method": "reviewed"
+  },
   "deduplication": {
     "source_sha256": "ef01d0a96218cdf3b58cfd2d1617b999cdf7d8a2fb1f183b8bf70ff6cca9fb2b",
     "method": "argos-en-pt-1.9"
+  },
+  "delegated-execution": {
+    "source_sha256": "4051de9fc561f43a7b173834d797e044f7fd52ea81d450d21264494e9d59aad3",
+    "method": "reviewed"
   },
   "denial-of-wallet--dow": {
     "source_sha256": "c0a9e43f2a553ddc9532d6cd3296fab7310d304f4cfb41bcf4afc4e678f466d7",
     "method": "reviewed"
   },
+  "deploy--deployment": {
+    "source_sha256": "a50a6b39261a61b70f7f14ada9d9d3504e27abdfb22785f3ed056fce4f5d8c81",
+    "method": "reviewed"
+  },
   "deprecated": {
     "source_sha256": "6865acd6728ec64f319b7a2c2ae0ffe25f61e0272fc5dcca7e3e5d9c514b2425",
+    "method": "reviewed"
+  },
+  "deterministic-eval": {
+    "source_sha256": "d80b3ee1ff98e15af0706f62430042ab82960e649dee495d18a1b8b062fd666f",
     "method": "reviewed"
   },
   "developer-instructions": {
@@ -159,13 +275,41 @@
     "source_sha256": "78f9ab6f2a4e62b4220721681636c1b427923c4abc6cf79596b76bc41b95274e",
     "method": "argos-en-pt-1.9"
   },
+  "enforce": {
+    "source_sha256": "de0b11515314750fd6d902aceda58c4abb0ec8bd3b673a8be14b04bce27895a1",
+    "method": "reviewed"
+  },
   "eos--end-of-sequence-token": {
     "source_sha256": "96d5e8b7c808ea8d9d8cac432ba050e28e718c0be86d121d2421e939089d57a4",
+    "method": "reviewed"
+  },
+  "escalation": {
+    "source_sha256": "4be35b076bd9846fe08073be359dfcf7b2ef9c3e2c1f615e58153c1091a9789e",
     "method": "reviewed"
   },
   "escaping": {
     "source_sha256": "f13d0b57855e4e14c0646e7f24b0308d02538d3236fbeebf425bce40c4641fb1",
     "method": "argos-en-pt-1.9"
+  },
+  "eval-suite": {
+    "source_sha256": "e3e6000ef946c72d0384fbe51bab2d11bdaaa41959d1bcce4184c872ab099cc8",
+    "method": "reviewed"
+  },
+  "evaluation--eval": {
+    "source_sha256": "e1ffe8b0dba65443f2b48f4209e0f49c25529bfc666fb92d85ecc8bbaa8c9c0d",
+    "method": "reviewed"
+  },
+  "evaluation-cascade": {
+    "source_sha256": "b5402abcc45fd855c66d567c1edb5ce25d5017ded55b221d64223ed35083a42a",
+    "method": "reviewed"
+  },
+  "evidence": {
+    "source_sha256": "3619cc714f2339f8df43a3d97b3412b82ef8772abe4af526956b33d29763d6ec",
+    "method": "reviewed"
+  },
+  "execution-trace": {
+    "source_sha256": "9a0ff7598eb45955d0872af62c39282b9fbce54e46d228d99e9bc6768dc506a0",
+    "method": "reviewed"
   },
   "fan-out": {
     "source_sha256": "90f671bde99b744742131261a93ddd16892f69d572ed92347438c85180e0f9ca",
@@ -173,6 +317,10 @@
   },
   "feedback-loop": {
     "source_sha256": "7e22e859f51a442e00ba0aa285e9a7327bcb6d6f18dd5310a46fa912bb5a713d",
+    "method": "reviewed"
+  },
+  "few-shot-prompting": {
+    "source_sha256": "3cda8b4bad090a5451a762832ae2482b96f0c894314d40c95c530f0044d54c6e",
     "method": "reviewed"
   },
   "fine-tuning": {
@@ -187,8 +335,20 @@
     "source_sha256": "1801b6f7df5f0db44e9f995749f979eb4a621362606474d267353206c5f8ffab",
     "method": "argos-en-pt-1.9"
   },
+  "govern--governed": {
+    "source_sha256": "84bcb602beafa275a8a02361c9f7a668e967dfb7fa5f321d403ca123acd63d93",
+    "method": "reviewed"
+  },
+  "governance-by-design": {
+    "source_sha256": "5a156994a0740fa38999bf9145b888e11e382270ce03ff445541b2e34bf33966",
+    "method": "reviewed"
+  },
   "graceful-degradation": {
     "source_sha256": "7fd217d4bcacb634bd4e0ca371f66e8c7b0450794bb99409e465676c2edd9a46",
+    "method": "reviewed"
+  },
+  "grounded-answer": {
+    "source_sha256": "7d4c34641bfaf0fac9b90dd2fecac0de703c5b212f99b3c587ff191c8a34a098",
     "method": "reviewed"
   },
   "groundedness": {
@@ -199,8 +359,16 @@
     "source_sha256": "549f4e175610c611038ff357744aa9eaecd2299f350069e7e957f08a3fabb4b3",
     "method": "reviewed"
   },
+  "guardrail": {
+    "source_sha256": "584c88a7111fb324f61b79cd50afdba9be23d803af3cf6078ad7658d1a3952a4",
+    "method": "reviewed"
+  },
   "hard-spending-cap": {
     "source_sha256": "727776cc3357e8538de8ed7059610b03ca252c90078f9173ab9915d9e66a8abb",
+    "method": "reviewed"
+  },
+  "hard-stop": {
+    "source_sha256": "4c6c5ed1bf024a71ed7a912605df9bfa6625fb5e3fd2e83269885d7f90b2a263",
     "method": "reviewed"
   },
   "hardening": {
@@ -218,6 +386,22 @@
   "hidden-context": {
     "source_sha256": "4df1f988e11777ee846e39af319e0c297d50553c39cfdb1310ec713ea69baae9",
     "method": "argos-en-pt-1.9"
+  },
+  "high-stakes-decision": {
+    "source_sha256": "59adbacf18459b7e5642577d238b5d50f26000b3d59c8e054c0f895d103f7ac2",
+    "method": "reviewed"
+  },
+  "horizontal-scaling": {
+    "source_sha256": "9eede3b17dfd8a63b54de5f1dcf283a53437efc76b8104ed048845bc6039e661",
+    "method": "reviewed"
+  },
+  "human-label": {
+    "source_sha256": "47e15d4a5b786712594e2b265940223b2abb0cf63cd9cf94f2600c1acde84c43",
+    "method": "reviewed"
+  },
+  "human-oversight": {
+    "source_sha256": "18aa747313889c42f082c10f19bf702bcc99470d004f8e990ed05fb6016a9ec0",
+    "method": "reviewed"
   },
   "immutable-reference": {
     "source_sha256": "ab67d7ba66e4644170db767a2715e35dc73840045876db04cebf55e46171ea67",
@@ -239,16 +423,52 @@
     "source_sha256": "256b560d4b83ec675e6823a7f10ad628c60c6ff1fb9ad962e10046b1735d3ab8",
     "method": "reviewed"
   },
+  "input-schema": {
+    "source_sha256": "620925617c62d58039a49f45acdf4fe862d08db0aa651d113de025c34403e74a",
+    "method": "reviewed"
+  },
   "integrity": {
     "source_sha256": "3a1f3fe11bc78035f63f27e58f88cfce1ec56695a54bb1e57e7c609952d9b97e",
+    "method": "reviewed"
+  },
+  "intent-classification": {
+    "source_sha256": "a6c0b341ba6c496c32fdc7519373ef1f9d72651b0302c7d7e4c1c2bc488a71d7",
+    "method": "reviewed"
+  },
+  "interchangeable-workers": {
+    "source_sha256": "0e8a034e19d2145937a6d92cdb31e4ec1c5792fbe2dc3968aa336a5f82c9dc48",
+    "method": "reviewed"
+  },
+  "jev": {
+    "source_sha256": "2547edda62942a3a87e564a5b415982f507a2f78b6d7acd957a7969426fa210d",
+    "method": "reviewed"
+  },
+  "judge-model": {
+    "source_sha256": "88ded74695035bc05954cc38addf17ec271abad0562165e43ab7fe643397c28e",
     "method": "reviewed"
   },
   "label-poisoning": {
     "source_sha256": "d954842b88f733e63910f6584e41a762e7916182b82ac0524deb113ebd241c8f",
     "method": "reviewed"
   },
+  "leakage": {
+    "source_sha256": "e132e1b440d3d122e14719cc9e07a8a35dfa3b5b238d88d2e0f5bd903290b469",
+    "method": "reviewed"
+  },
+  "least-privilege": {
+    "source_sha256": "f7ee80834db26a69be13271c397846ad334f5bbc2a8222983494d5f23aef9502",
+    "method": "reviewed"
+  },
   "lineage": {
     "source_sha256": "5cdf21ebb0c493cba193ccebe193f142204bdc5aa5d0a9699414f41baf252dce",
+    "method": "reviewed"
+  },
+  "llm-as-a-judge": {
+    "source_sha256": "d4cbab54d6b5cd3b572cd5da24315564857afd554f7b0ad3770541ea9dd971f5",
+    "method": "reviewed"
+  },
+  "load-balancing": {
+    "source_sha256": "3036b9b494f73ea4dfc783c1c6e9c0e28f45175a768e00c08864235cff333c9e",
     "method": "reviewed"
   },
   "log-probabilities": {
@@ -259,8 +479,32 @@
     "source_sha256": "9130f9fcbd121f3fc30e9b5cf0b3cee19438698be9422fbf694e0a70c41819d6",
     "method": "reviewed"
   },
+  "long-running-operation": {
+    "source_sha256": "32e530a5c1da63590905e6f1429901c5ca7918510aa3d6057aeba715c93603fd",
+    "method": "reviewed"
+  },
   "lora--low-rank-adaptation": {
     "source_sha256": "aae6d6a36b74796c82e748a5687c579882cddb79f267d6550c27b44b14a3d0e4",
+    "method": "reviewed"
+  },
+  "mcp--model-context-protocol": {
+    "source_sha256": "3c3b1d49c0ca77fe797d5ff8a23939742c8eb0a643811aa4c48db4d93aa86ff0",
+    "method": "reviewed"
+  },
+  "mcp-client": {
+    "source_sha256": "bc2cabd19f57c7b1f31f51614bc658742671748b5ddd73efc851adcc4e348947",
+    "method": "reviewed"
+  },
+  "mcp-host": {
+    "source_sha256": "217cb8bcd77b2eb211e19eaf80aa7c03f2dd7a206a53e7a777af859399077f24",
+    "method": "reviewed"
+  },
+  "mcp-sdk-primitives": {
+    "source_sha256": "542170517d3db7da4dccfadc7f5548424cb48e4b1d7f43472b282c6426cd6a84",
+    "method": "reviewed"
+  },
+  "mcp-server": {
+    "source_sha256": "6bcf21b9b168836ed413966d19a56f237d7d2e941d2a8c7a2318bd0c2d9a9492",
     "method": "reviewed"
   },
   "membership-inference": {
@@ -274,6 +518,10 @@
   "misinformation": {
     "source_sha256": "ab4286eee7731cd120c17a6d554880f2a5eec515471da0765306da9498b40be2",
     "method": "argos-en-pt-1.9"
+  },
+  "mixed-leakage": {
+    "source_sha256": "60b7bac613a4930bf4ad93f573da368794f6577467e7f3a1d010ac62ceb5cf02",
+    "method": "reviewed"
   },
   "model-card": {
     "source_sha256": "7204f91672eb7104001a0bc0037baec882a2a75c866737135acd469ed7e876e3",
@@ -299,9 +547,21 @@
     "source_sha256": "5931460a81662b127fe19804c703cea8d6347934195758970c7f6f8dbe772dec",
     "method": "reviewed"
   },
+  "narrow-decision": {
+    "source_sha256": "556468da8dd330671284b69355f0736c6d5cc4b0bdb5bb5e8aabc055053ffc09",
+    "method": "reviewed"
+  },
   "omission-failure": {
     "source_sha256": "0d287e5c0a66c8a2e222a7b9e0e0037ae63fb3e8c7571cc57a37cb66d885b2c4",
     "method": "argos-en-pt-1.9"
+  },
+  "operational-autonomy": {
+    "source_sha256": "83351a34b273f9c2eac1da5b1cc5faff88f42fdcafd39593318f8421c52ca471",
+    "method": "reviewed"
+  },
+  "outcome": {
+    "source_sha256": "568674c5d47a8098ffbd4ab52ecbff386d4f83bc27e3a57ee3f0146b78be4b23",
+    "method": "reviewed"
   },
   "output-budget": {
     "source_sha256": "bdef9440c7907c403a64cf939c5750d4b13a2fd8d0c2a0d6d2e41f6f8c8646ad",
@@ -311,9 +571,25 @@
     "source_sha256": "92e06e8248feead5321af9320e0255011fcb63512bec264701cae570077f9f2c",
     "method": "argos-en-pt-1.9"
   },
+  "output-formatting": {
+    "source_sha256": "3de3b0053196a4b65c561f9dc821069731bd3ac8760732f71ad0298a28af0ad4",
+    "method": "reviewed"
+  },
+  "overfitting": {
+    "source_sha256": "dc553972fd51be5098699b10cbcd240b51ac644f1aa4baa3f4f315db63fe0e1d",
+    "method": "reviewed"
+  },
   "overreliance": {
     "source_sha256": "73f6b6eb6849862680a2e9f42f37152ea1c36488e8c6dcec7416a29cc65f5b53",
     "method": "argos-en-pt-1.9"
+  },
+  "oversight": {
+    "source_sha256": "047d3bedbb1d8897db3fb045fbcde084376194c854cc25f88cdeb41563aefced",
+    "method": "reviewed"
+  },
+  "ownership": {
+    "source_sha256": "c260e95c417aaa95472ee967156a8ee93d433b1d1af546c9ed69b965a2595141",
+    "method": "reviewed"
   },
   "parameterized-query": {
     "source_sha256": "a116a5c8d871b68e3025dc8ef436e0a3f5ced271a818b62b5abbb17c773cb483",
@@ -346,6 +622,22 @@
   "probing": {
     "source_sha256": "b58a79941da8e6699635512329db0ac72a480c436bb6857ff759b4ca6f16bf24",
     "method": "argos-en-pt-1.9"
+  },
+  "prompt-chaining": {
+    "source_sha256": "fcd1b15dd39a76ae436a1a1a204a839bcfbc97b4fd5172e5f9cda18dcbda0cd9",
+    "method": "reviewed"
+  },
+  "prompt-decomposition": {
+    "source_sha256": "347858c6f8468ad28b352ae2c03d10dbae78a885d462068e1318d88791bc8b09",
+    "method": "reviewed"
+  },
+  "prompt-template": {
+    "source_sha256": "5cb8387a83fbc732385e5aeb1be7d5fc0664774f1e9a515c533ffc7beaf9876f",
+    "method": "reviewed"
+  },
+  "protocol-boundary": {
+    "source_sha256": "e43acdb5630b58de12232a99d354f43770cd38cd7ff5e3d7a579d6ee18eebf52",
+    "method": "reviewed"
   },
   "provenance": {
     "source_sha256": "6c01694bcfbc65724b84ae8883d8a0b243291693a3d405725157b78a8a2cebe5",
@@ -391,12 +683,20 @@
     "source_sha256": "8affd7b3ad1d177c3302cb4c438f162923c13031852374e2698ba0c9332778c8",
     "method": "reviewed"
   },
+  "reliability": {
+    "source_sha256": "3c1eb1433c363d5285013313188d8247bddd8ed45f566c55f7bc36d7f007666e",
+    "method": "reviewed"
+  },
   "resource-allocation": {
     "source_sha256": "18d4acc55817d7418c44940e27f2d1680ffe701c69acc0a19448da2f0c1fe108",
     "method": "reviewed"
   },
   "resource-exhaustion": {
     "source_sha256": "ad2f78ebbdb0b6186ac46bf7c3b23d76014bde778f3a93de8a2e40f44a57ea31",
+    "method": "reviewed"
+  },
+  "rest-api": {
+    "source_sha256": "859800f92cd6f15bb93349f344799bbe29e6e2625f785a46ce3f23418b14b08c",
     "method": "reviewed"
   },
   "retrieval-jamming": {
@@ -407,8 +707,24 @@
     "source_sha256": "9e9351e793b6da919dc25101f07bbfa4f8551a6c6b20bdb18b5b18ec400f656a",
     "method": "argos-en-pt-1.9"
   },
+  "reversibility": {
+    "source_sha256": "253fbc0f689034ab0dcdf09924ffc889284fe421c53356e38ba0702f080353ac",
+    "method": "reviewed"
+  },
+  "risk-classification": {
+    "source_sha256": "7ae884e6330f91eb7d61ebb1e1b197dc98569a6c3f9fef4101655e31560f0bbf",
+    "method": "reviewed"
+  },
   "rlhf--reinforcement-learning-from-human-feedback": {
     "source_sha256": "4a94af58bb8631c30cd334837e554b210d3e617d319309116cfba2538ed7f541",
+    "method": "reviewed"
+  },
+  "role-prompting": {
+    "source_sha256": "ae045cd62b0f75ce8935b87071ac94aa57de8b689c5ec4361ed9bd68f89909ad",
+    "method": "reviewed"
+  },
+  "runtime": {
+    "source_sha256": "edc7d1b462be438a1457865e1494e66da8acf5e861aeb00c407b948d183c448a",
     "method": "reviewed"
   },
   "runtime-verification": {
@@ -427,16 +743,44 @@
     "source_sha256": "5ece884fc73e42ae17b321b6ecc99a7be6fd929a3dfa8fa3bf65786aa852fe3e",
     "method": "reviewed"
   },
+  "scope--scoped": {
+    "source_sha256": "487b49c78e4bf3ef2b38869df3e82aa1685d72c46496d7e94db485e1e374b2dd",
+    "method": "reviewed"
+  },
+  "scoped-permission": {
+    "source_sha256": "f2957054d1989808c39c9c2017c5e18b7941f46682a62e3a49900c5e3fb7198b",
+    "method": "reviewed"
+  },
   "security-boundary": {
     "source_sha256": "65cb7e294fef3c2949659401a9fb4528defc465a6d59ba894b3fcfc2206c3f2a",
     "method": "argos-en-pt-1.9"
+  },
+  "self-consistency": {
+    "source_sha256": "340ec40c4f63ce0ac52d198257f5ad178bf342ea6ea5cc61053cabbf09081bc6",
+    "method": "reviewed"
   },
   "semantic-cache": {
     "source_sha256": "2f95f3ce22a6fafd056813dcdf7aa39c3e44225ed1646fabb48e8062ed949cd5",
     "method": "argos-en-pt-1.9"
   },
+  "semantic-classifier": {
+    "source_sha256": "f8b8deb31e6074d5cd7cbbb8c03083cf01249b058b885aaa13d74d9994839b40",
+    "method": "reviewed"
+  },
+  "semantic-evaluation": {
+    "source_sha256": "bc66fff1cf4d7097ac0433e6ecc4c39e8f09e1f0324ad89d975fb9c7bc249c0e",
+    "method": "reviewed"
+  },
   "serialization": {
     "source_sha256": "27bc2bc235f0c82c96f1866be2897bfb0892dd8caae392978059407010e296cc",
+    "method": "reviewed"
+  },
+  "session-state": {
+    "source_sha256": "8ca7f4086dc34c2d7266ad3fd5187fc7591fb413cd02939cb14d6eda64237e47",
+    "method": "reviewed"
+  },
+  "session-oriented-architecture": {
+    "source_sha256": "4405226e37c9d08a1380ee3cf9fa7345b76d5806cf0d98bf91118d006fb14f7c",
     "method": "reviewed"
   },
   "similarity-score": {
@@ -451,12 +795,20 @@
     "source_sha256": "534234e4fea07fd23a5060580adfc1daf2df831b0af231b930a5b54e54255163",
     "method": "reviewed"
   },
+  "sociotechnical-system": {
+    "source_sha256": "b04e83c268ad59cffd395fed7ca1c2af92724960c32ff16a1ddd14c5ddbf1a95",
+    "method": "reviewed"
+  },
   "special-token": {
     "source_sha256": "64495e9dbd69efbf307d824e35b6c3afe29e93d3dfcc84cb5555689c42c5a5ae",
     "method": "reviewed"
   },
   "sponge-example": {
     "source_sha256": "0a7f0a6ebc8c49fa991ef087c90bc53da24ddd93fda5e26889fc9b8243f38d82",
+    "method": "reviewed"
+  },
+  "stakes": {
+    "source_sha256": "cf4281c68f3c62ff6cc147de6eedaec6fe13c2bc085e03ee98bd44b519ad1733",
     "method": "reviewed"
   },
   "state-hashing": {
@@ -467,8 +819,40 @@
     "source_sha256": "86b36ceb164f81c8460efacd069f1bd6e7cd8b43fd0a9ea19b7fca258c5081ed",
     "method": "argos-en-pt-1.9"
   },
+  "stateful": {
+    "source_sha256": "ce76e130f9c959822acc00591af242d0eec39c628174b8e95c9fe7de9532ee25",
+    "method": "reviewed"
+  },
+  "stateless": {
+    "source_sha256": "04d28fddd00f1e6d493400b2e84c0fe5af40d3c230ce59cc52c8d6535c0e1e07",
+    "method": "reviewed"
+  },
+  "stateless-request": {
+    "source_sha256": "ca38402d6eab2cf1429eacbd2ec1bf4697bfbeaeea6c99d70105c5cff1b24a39",
+    "method": "reviewed"
+  },
+  "stdio": {
+    "source_sha256": "db732872c3b7fa502d95b89ada6cf9a5eb6d4019e94cb57a9fb2657f4bab04e7",
+    "method": "reviewed"
+  },
+  "streamable-http": {
+    "source_sha256": "23b5a331b292d53f656649fb9815b50146187b5b1f6ca091ca2626f06645ffd7",
+    "method": "reviewed"
+  },
+  "structured-judgment": {
+    "source_sha256": "6fa350b6370702e21a45eaceec9de27bbad7c06db02c4ef4d95dbf588c866f6c",
+    "method": "reviewed"
+  },
+  "structured-prompting": {
+    "source_sha256": "9d162a9d031a8a1df746a6bd799c31b8cafbf5b7b0b422a5964f3d605018c89c",
+    "method": "reviewed"
+  },
   "supply-chain": {
     "source_sha256": "8246f14f0124b75bcce72fb1a9e5e8a7ab18819463ba12d9bbf71b9e21dc3b70",
+    "method": "reviewed"
+  },
+  "supported--unsupported": {
+    "source_sha256": "f0f76aa2094b35963e5ce38730b61b6b97bedd108c081279c9ee7bbe508b6b32",
     "method": "reviewed"
   },
   "system-prompt": {
@@ -483,9 +867,17 @@
     "source_sha256": "1182b8010ade618c495a0ea292ad0cc75741ba36831eecbc940ff2d56a57f3e9",
     "method": "reviewed"
   },
+  "technical-control": {
+    "source_sha256": "f3f5108bd3fa49fc36efd60f4bd54f9fa061bea8b9df62716e3f18c8db993ebb",
+    "method": "reviewed"
+  },
   "tenant": {
     "source_sha256": "656be62f7a33d5952bcd6cd4de2eef886ed855c52b7f3d183215fff502bd5ef3",
     "method": "argos-en-pt-1.9"
+  },
+  "test-case": {
+    "source_sha256": "710b1b989a2cbda6fdb09647dec287868f762b4b5061a913322c4515ce5d1dc9",
+    "method": "reviewed"
   },
   "thinking-tokens": {
     "source_sha256": "a1661ff0bedd1f465b4bf5a8baa641f894408d1f4f4ff672f7c23b24e633d879",
@@ -503,12 +895,48 @@
     "source_sha256": "89436d6bf652dd307fb0d81db3e3731eae1963b697877d76498666fd0e5ce784",
     "method": "reviewed"
   },
+  "tool-call": {
+    "source_sha256": "33e0f77ebb5570f638808dc522ef7bfed8c803329ef1ecdb2f7dbc89f32c4319",
+    "method": "reviewed"
+  },
+  "tool-contract": {
+    "source_sha256": "c4f92e3bbb2a4f62360d7a5045484c87d14159d83d38796c1095dd1c771f0ae4",
+    "method": "reviewed"
+  },
+  "tool-discovery": {
+    "source_sha256": "bb0828f827a92ebeae34a60910f7560f8548be03a4571d617b250343b8d2d47b",
+    "method": "reviewed"
+  },
+  "tool-invocation": {
+    "source_sha256": "b58c14cb91a6d7eeedebb9b58ff3701c35001ff5deaf82d7fa1e9c8f53db652a",
+    "method": "reviewed"
+  },
   "tool-schema": {
     "source_sha256": "289d8c924e24d66d3bf22be584364a5796ffc6dbedd29eeb581642f5fd48e68a",
     "method": "argos-en-pt-1.9"
   },
   "tool-calling-loop": {
     "source_sha256": "b407b90b16f4275fc6acac8444cf8e71b133f54cdb94477fbf395af30419ee9d",
+    "method": "reviewed"
+  },
+  "tool-risk-gating": {
+    "source_sha256": "b0a4b89e21cdbd314dc64548970fcc3f539353e77169ed321f6af30983507fa6",
+    "method": "reviewed"
+  },
+  "trace": {
+    "source_sha256": "cb40fba5e3d2c0239796d4678cefb5c8c496dab992b37561c4ca12b71efe1f99",
+    "method": "reviewed"
+  },
+  "tracing": {
+    "source_sha256": "e31ddec3c3cbf476f57fb0257dcbcd5a655d3a919756de890ead64eafaeffa85",
+    "method": "reviewed"
+  },
+  "trade-off": {
+    "source_sha256": "5f5aab9f63f51b9d52806a8916fb7704b7c30431a058eb61d28cc55462a779b9",
+    "method": "reviewed"
+  },
+  "transport": {
+    "source_sha256": "0fe4102af830cbe01ef7fea08cf6f9581670fc0dcf75abd31f947b0f03642e92",
     "method": "reviewed"
   },
   "trigger": {
@@ -523,6 +951,18 @@
     "source_sha256": "73444ed6644ee8d26d29a2bfdc9c53ed50869a5264d2387e97316e12af4bca4c",
     "method": "argos-en-pt-1.9"
   },
+  "type-safe-classifier": {
+    "source_sha256": "4e3f7c25281dca5af94af24e07bc102b4e82ffb33489cbdbc596dc565612a69c",
+    "method": "reviewed"
+  },
+  "typed-output": {
+    "source_sha256": "cf7fbcb785d6b01d96904bb8e113c804581467eb49141fb2b5cdd5adcd774c1c",
+    "method": "reviewed"
+  },
+  "ungrounded-answer": {
+    "source_sha256": "3abf25ac589ac1bb04851173879767c45bdc3516664dee9cad1d7a8528b7ea7e",
+    "method": "reviewed"
+  },
   "validation": {
     "source_sha256": "e1e1e87da9cb7c998437ed7fc6011ddc4aa49129645585542950f51eabdc802b",
     "method": "argos-en-pt-1.9"
@@ -535,6 +975,10 @@
     "source_sha256": "a078ee9b52879a8878a9c5e8d4f01949380a16664f36b88f2816f3fd236bc7c6",
     "method": "reviewed"
   },
+  "worker": {
+    "source_sha256": "cacb221db1b17644f62caf7deb47411172d09f128a96064040880889912772fc",
+    "method": "reviewed"
+  },
   "xss--cross-site-scripting": {
     "source_sha256": "503a39b915c20bd998b89c16451bcaa5015836b9eb93db1c6905fa6eac0f73ec",
     "method": "argos-en-pt-1.9"
@@ -542,6 +986,10 @@
   "zero-trust": {
     "source_sha256": "86d55012b4882fa4430d5944fde3dfab434dc8f75bbbae89f31684646a1ed81c",
     "method": "argos-en-pt-1.9"
+  },
+  "zero-shot-prompting": {
+    "source_sha256": "248761d33aaf7b5fd19e73c93c45faa91a3e6f611db40e567d72485af16f4e8d",
+    "method": "reviewed"
   },
   "signed--safe": {
     "source_sha256": "84e6b213e711b542eca410cd517b9251190a3b0fd5325e7894844d83d7db4e9b",
@@ -557,6 +1005,46 @@
   },
   "supply-chain-vs-poisoning": {
     "source_sha256": "3ed20e5fc92f3bc921900a8c2035f607da7d5e6bce049baa6ee035c99919d1e8",
+    "method": "reviewed"
+  },
+  "operational-autonomy--accountability": {
+    "source_sha256": "9b828dbfdef26010fc6810f30e2c5b9d5d885eb392224db20812f6ee272585f5",
+    "method": "reviewed"
+  },
+  "agent-autonomy--unrestricted-permissions": {
+    "source_sha256": "7494811f18b3a1d97aab692a6bb2c820afcded8de50bf9a934ccc0742da1b7d8",
+    "method": "reviewed"
+  },
+  "capability--authorization": {
+    "source_sha256": "5587da2c8da80cdd3c851eaee9576423db3e023907e78a85bcbfefcf17cb3f81",
+    "method": "reviewed"
+  },
+  "tool-schema--permission": {
+    "source_sha256": "ec8e409b4806ecf38aecc447cd0375417bd1c17ae9eb99929eff3d4b026f5626",
+    "method": "reviewed"
+  },
+  "stateful-agent--stateful-mcp-server": {
+    "source_sha256": "15706036b55705fcb87e818a16fe8d7740960cda3f9f6d194332bcc8fc2e523a",
+    "method": "reviewed"
+  },
+  "agent--harness": {
+    "source_sha256": "60a527306b38739e0a4b54329b92a3af7b6cb63268dd2333b067145995a72ced",
+    "method": "reviewed"
+  },
+  "mcp--rest": {
+    "source_sha256": "da2b2afbd60b093e0d93dbbd5e1ef140bca04755ddcd5fe55cad41558e057f6a",
+    "method": "reviewed"
+  },
+  "grounded-answer--factually-correct-answer": {
+    "source_sha256": "a0025f48453d2560fec1c4fdc2daba0d683768d5f70cf0e2e44bbbf9b806f314",
+    "method": "reviewed"
+  },
+  "deterministic-check--semantic-evaluation": {
+    "source_sha256": "efa061d5a78602d8e88ee8dd19b8c53c564bb84f33044175f1b396c5166713cc",
+    "method": "reviewed"
+  },
+  "classifier--llm-as-a-judge": {
+    "source_sha256": "7fd5eec73e4ee1da8bd971df787572c91b9bd60386ba7a54368c8c8f17f5b231",
     "method": "reviewed"
   }
 }
